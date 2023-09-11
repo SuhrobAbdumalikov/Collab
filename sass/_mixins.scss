@@ -1,0 +1,22 @@
+@mixin d-flex($gap){
+    display: flex;
+    align-items: center;
+    gap:$gap;
+}
+
+@mixin d-column($gap){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:$gap;
+}
+
+@mixin btnActive(){
+    transition: all .3s ease-in-out;
+    &:hover{
+        opacity: 0.8;
+    }
+    &:active{
+        transform: scale(0.95);
+    }
+}

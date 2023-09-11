@@ -1,0 +1,12 @@
+@import './buttons';
+@import '._mixins';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+//=============>>Desktop==============>>
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
