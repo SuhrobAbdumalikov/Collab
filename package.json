@@ -1,0 +1,13 @@
+{
+  "name": "collab",
+  "version": "1.0.0",
+  "description": "This is Collab website",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Abdumalikov Suhrob",
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^10.2.0"
+  }
+}
