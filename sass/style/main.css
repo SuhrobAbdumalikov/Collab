@@ -1,1 +1,214 @@
-/*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DM_Sans/static/DMSans-Black.ttf");
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DM_Sans/static/DMSans-Bold.ttf");
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DM_Sans/static/DMSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DM_Sans/static/DMSans-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DM_Sans/static/DMSans-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DM_Sans/static/DMSans-Light.ttf");
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DM_Sans/static/DMSans-Medium.ttf");
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DM_Sans/static/DMSans-Regular.ttf");
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DM_Sans/static/DMSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DM_Sans/static/DMSans-Thin.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.navBarSection {
+  position: relative;
+}
+.navBarSection .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px 0 80px 0;
+}
+.navBarSection .navbar .leftNav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.navBarSection .navbar .leftNav .logo a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.navBarSection .navbar .leftNav .logo a h4 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 97.827%;
+  letter-spacing: -0.84px;
+}
+.navBarSection .navbar .leftNav .navBarLinks {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+}
+.navBarSection .navbar .leftNav .navBarLinks li {
+  list-style: none;
+  position: relative;
+}
+.navBarSection .navbar .leftNav .navBarLinks li a {
+  color: #999fae;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.64px;
+  transition: all 0.3s ease-in-out;
+}
+.navBarSection .navbar .leftNav .navBarLinks li a:hover {
+  color: black;
+}
+.navBarSection .navbar .leftNav .navBarLinks li:after {
+  display: block;
+  content: "";
+  padding-bottom: 3px;
+  border-bottom: solid 2px #5956e9;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.navBarSection .navbar .leftNav .navBarLinks li:hover:after {
+  transform: scaleX(1);
+}
+.navBarSection .navbar .leftNav .navBarLinks #dropDownMenuLi a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navBarSection .navbar .leftNav .dropDownMenu {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  background-color: #fff;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: space-between;
+  align-items: start;
+  padding: 50px 101px;
+  border-radius: 32px;
+  margin-top: 420px;
+  margin-left: 100px;
+  width: 1240px;
+  display: none;
+}
+.navBarSection .navbar .leftNav .dropDownMenu .features,
+.navBarSection .navbar .leftNav .dropDownMenu .features2,
+.navBarSection .navbar .leftNav .dropDownMenu .company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  align-items: start;
+}
+.navBarSection .navbar .leftNav .dropDownMenu .line {
+  width: 1px;
+  height: 248px;
+  opacity: 0.4;
+  background: #999fae;
+}
+.navBarSection .navbar .leftNav .dropDownMenu .items {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+.navBarSection .navbar .leftNav .dropDownMenu .items .itemTexts .divH4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.navBarSection .navbar .leftNav .dropDownMenu .items .itemTexts .divH4 i {
+  opacity: 0;
+}
+.navBarSection .navbar .leftNav .dropDownMenu .items .itemTexts span {
+  color: #999fae;
+  font-size: 13px;
+}
+.navBarSection .navbar .leftNav .dropDownMenu .items:hover .divH4 {
+  color: #5956e9;
+}
+.navBarSection .navbar .leftNav .dropDownMenu .items:hover .divH4 i {
+  opacity: 1;
+}
+.navBarSection .navbar .rightNav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.navBarSection .navbar .rightNav .searchDiv {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.navBarSection .navbar .rightNav .searchDiv input {
+  width: 140px;
+  border: 1px solid #5956e9;
+  border-radius: 20px;
+  padding: 5px 10px;
+  outline: none;
+  font-size: 16px;
+}
+.navBarSection .navbar .rightNav .searchDiv i {
+  font-size: 20px;
+  cursor: pointer;
+}
+.navBarSection .navbar .rightNav #getStart {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 20px 47px;
+  background-color: #fab8c4;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.64px;
+  color: #2522ba;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.navBarSection .navbar .rightNav #getStart:hover {
+  opacity: 0.8;
+}
+.navBarSection .navbar .rightNav #getStart:active {
+  transform: scale(0.95);
+}/*# sourceMappingURL=main.css.map */

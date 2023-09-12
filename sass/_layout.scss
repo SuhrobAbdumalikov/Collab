@@ -1,12 +1,164 @@
-@import './buttons';
-@import '._mixins';
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import "./buttons";
+@import "./mixins";
+@import "./fonts";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
 }
-//=============>>Desktop==============>>
-.container{
-    width: 1440px;
-    margin: 0 auto;
+//=============>>Desktop<<================//
+// .fullPage{
+//     width: 1440px;
+//     margin: 0 auto;
+// }
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.navBarSection {
+  position: relative;
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 0 80px 0;
+
+    .leftNav {
+      position: relative;
+      @include d-flex(60px);
+      .logo a {
+        text-decoration: none;
+        color: black;
+        @include d-flex(2px);
+        h4 {
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 97.827%;
+          letter-spacing: -0.84px;
+        }
+      }
+      .navBarLinks {
+        @include d-flex(55px);
+        li {
+          list-style: none;
+          position: relative;
+          a {
+            color: #999fae;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: -0.64px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              color: black;
+            }
+          }
+          &:after {
+            display: block;
+            content: "";
+            padding-bottom: 3px;
+            border-bottom: solid 2px #5956e9;
+            transform: scaleX(0);
+            transition: transform 250ms ease-in-out;
+          }
+          &:hover:after {
+            transform: scaleX(1);
+          }
+        }
+        //== arrow down ====>>
+        #dropDownMenuLi a {
+          @include d-flex(10px);
+        }
+      }
+      .dropDownMenu {
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        background-color: #fff;
+        position: absolute;
+        @include d-flex(100px);
+        justify-content: space-between;
+        align-items: start;
+        padding: 50px 101px;
+        border-radius: 32px;
+        margin-top: 420px;
+        margin-left: 100px;
+        width: 1240px;
+        display: none;
+        h3 {
+          // padding-bottom: 10px;
+        }
+        .features,
+        .features2,
+        .company {
+          @include d-column(25px);
+          align-items: start;
+        }
+        .line {
+          width: 1px;
+          height: 248px;
+          opacity: 0.4;
+          background: #999fae;
+        }
+
+        .items {
+          cursor: pointer;
+          @include d-flex(23px);
+          .itemTexts {
+            .divH4 {
+              @include d-flex(10px);
+              transition: all 0.3s ease-in-out;
+              i {
+                opacity: 0;
+              }
+            }
+            span {
+              color: #999fae;
+              font-size: 13px;
+            }
+          }
+
+          &:hover {
+            .divH4 {
+              color: #5956e9;
+              i {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .rightNav {
+      @include d-flex(40px);
+      .searchDiv {
+        @include d-flex(5px);
+        input {
+          width: 140px;
+          border: 1px solid #5956e9;
+          border-radius: 20px;
+          padding: 5px 10px;
+          outline: none;
+          font-size: 16px;
+        }
+        i {
+          font-size: 20px;
+          cursor: pointer;
+          // color: white;
+        }
+      }
+      #getStart {
+        @include btnPink(20px, 47px);
+      }
+    }
+  }
+}
+
+//============>> Tablet <<============//
+@media screen and (max-width: 1024px) {
+}
+
+//============>> mobile <<============//
+@media screen and (max-width: 375px) {
 }

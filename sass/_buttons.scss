@@ -7,6 +7,8 @@
   padding: $paddingTop $paddingBottom;
   background-color: #5956e9;
   color: white;
+  text-decoration: none;
+  cursor: pointer;
   @include btnActive();
 }
 
@@ -16,18 +18,23 @@
   outline: none;
   padding: $paddingTop $paddingBottom;
   background-color: #fab8c4;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 500;
   letter-spacing: -0.64px;
+  color: #2522ba;
+  cursor: pointer;
+  text-decoration: none;
   @include btnActive();
 }
 
 @mixin btnBlue($paddingTop, $paddingBottom) {
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    padding: $paddingTop $paddingBottom;
-    background-color: #fff;
-    color: black;
-    @include btnActive();
-  }
+  text-decoration: none;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: $paddingTop $paddingBottom;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  @include btnActive();
+}
