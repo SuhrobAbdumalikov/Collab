@@ -46,48 +46,52 @@
 }
 
 .container {
-  width: 1440px;
+  width: 1215px;
   margin: 0 auto;
 }
 
-.navBarSection {
+.fullPage {
+  width: 1440px;
+  margin: 0 auto;
+}
+.fullPage .navBarSection {
   position: relative;
 }
-.navBarSection .navbar {
+.fullPage .navBarSection .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 48px 0 80px 0;
 }
-.navBarSection .navbar .leftNav {
+.fullPage .navBarSection .navbar .leftNav {
   position: relative;
   display: flex;
   align-items: center;
   gap: 60px;
 }
-.navBarSection .navbar .leftNav .logo a {
+.fullPage .navBarSection .navbar .leftNav .logo a {
   text-decoration: none;
   color: black;
   display: flex;
   align-items: center;
   gap: 2px;
 }
-.navBarSection .navbar .leftNav .logo a h4 {
+.fullPage .navBarSection .navbar .leftNav .logo a h4 {
   font-size: 28px;
   font-weight: 600;
   line-height: 97.827%;
   letter-spacing: -0.84px;
 }
-.navBarSection .navbar .leftNav .navBarLinks {
+.fullPage .navBarSection .navbar .leftNav .navBarLinks {
   display: flex;
   align-items: center;
   gap: 55px;
 }
-.navBarSection .navbar .leftNav .navBarLinks li {
+.fullPage .navBarSection .navbar .leftNav .navBarLinks li {
   list-style: none;
   position: relative;
 }
-.navBarSection .navbar .leftNav .navBarLinks li a {
+.fullPage .navBarSection .navbar .leftNav .navBarLinks li a {
   color: #999fae;
   text-decoration: none;
   font-size: 16px;
@@ -95,10 +99,10 @@
   letter-spacing: -0.64px;
   transition: all 0.3s ease-in-out;
 }
-.navBarSection .navbar .leftNav .navBarLinks li a:hover {
+.fullPage .navBarSection .navbar .leftNav .navBarLinks li a:hover {
   color: black;
 }
-.navBarSection .navbar .leftNav .navBarLinks li:after {
+.fullPage .navBarSection .navbar .leftNav .navBarLinks li:after {
   display: block;
   content: "";
   padding-bottom: 3px;
@@ -106,15 +110,15 @@
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
-.navBarSection .navbar .leftNav .navBarLinks li:hover:after {
+.fullPage .navBarSection .navbar .leftNav .navBarLinks li:hover:after {
   transform: scaleX(1);
 }
-.navBarSection .navbar .leftNav .navBarLinks #dropDownMenuLi a {
+.fullPage .navBarSection .navbar .leftNav .navBarLinks #dropDownMenuLi a {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.navBarSection .navbar .leftNav .dropDownMenu {
+.fullPage .navBarSection .navbar .leftNav .dropDownMenu {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   background-color: #fff;
   position: absolute;
@@ -125,74 +129,76 @@
   align-items: start;
   padding: 50px 101px;
   border-radius: 32px;
-  margin-top: 420px;
-  margin-left: 100px;
+  margin-top: 440px;
+  margin-left: -40px;
   width: 1240px;
+  z-index: 5;
   display: none;
 }
-.navBarSection .navbar .leftNav .dropDownMenu .features,
-.navBarSection .navbar .leftNav .dropDownMenu .features2,
-.navBarSection .navbar .leftNav .dropDownMenu .company {
+.fullPage .navBarSection .navbar .leftNav .dropDownMenu .features,
+.fullPage .navBarSection .navbar .leftNav .dropDownMenu .features2,
+.fullPage .navBarSection .navbar .leftNav .dropDownMenu .company {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 25px;
   align-items: start;
 }
-.navBarSection .navbar .leftNav .dropDownMenu .line {
+.fullPage .navBarSection .navbar .leftNav .dropDownMenu .line {
   width: 1px;
   height: 248px;
   opacity: 0.4;
   background: #999fae;
 }
-.navBarSection .navbar .leftNav .dropDownMenu .items {
+.fullPage .navBarSection .navbar .leftNav .dropDownMenu .items {
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 23px;
 }
-.navBarSection .navbar .leftNav .dropDownMenu .items .itemTexts .divH4 {
+.fullPage .navBarSection .navbar .leftNav .dropDownMenu .items .itemTexts .divH4 {
   display: flex;
   align-items: center;
   gap: 10px;
   transition: all 0.3s ease-in-out;
 }
-.navBarSection .navbar .leftNav .dropDownMenu .items .itemTexts .divH4 i {
+.fullPage .navBarSection .navbar .leftNav .dropDownMenu .items .itemTexts .divH4 i {
   opacity: 0;
 }
-.navBarSection .navbar .leftNav .dropDownMenu .items .itemTexts span {
+.fullPage .navBarSection .navbar .leftNav .dropDownMenu .items .itemTexts span {
   color: #999fae;
   font-size: 13px;
 }
-.navBarSection .navbar .leftNav .dropDownMenu .items:hover .divH4 {
+.fullPage .navBarSection .navbar .leftNav .dropDownMenu .items:hover .divH4 {
   color: #5956e9;
 }
-.navBarSection .navbar .leftNav .dropDownMenu .items:hover .divH4 i {
+.fullPage .navBarSection .navbar .leftNav .dropDownMenu .items:hover .divH4 i {
   opacity: 1;
 }
-.navBarSection .navbar .rightNav {
+.fullPage .navBarSection .navbar .rightNav {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-.navBarSection .navbar .rightNav .searchDiv {
+.fullPage .navBarSection .navbar .rightNav .searchDiv {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.navBarSection .navbar .rightNav .searchDiv input {
+.fullPage .navBarSection .navbar .rightNav .searchDiv input {
   width: 140px;
-  border: 1px solid #5956e9;
+  border: 2px solid #5956e9;
   border-radius: 20px;
   padding: 5px 10px;
   outline: none;
   font-size: 16px;
 }
-.navBarSection .navbar .rightNav .searchDiv i {
+.fullPage .navBarSection .navbar .rightNav .searchDiv i {
   font-size: 20px;
   cursor: pointer;
+  color: white;
 }
-.navBarSection .navbar .rightNav #getStart {
+.fullPage .navBarSection .navbar .rightNav #getStart {
   border-radius: 20px;
   border: none;
   outline: none;
@@ -206,9 +212,143 @@
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
-.navBarSection .navbar .rightNav #getStart:hover {
+.fullPage .navBarSection .navbar .rightNav #getStart:hover {
   opacity: 0.8;
 }
-.navBarSection .navbar .rightNav #getStart:active {
+.fullPage .navBarSection .navbar .rightNav #getStart:active {
   transform: scale(0.95);
+}
+.fullPage main .mainSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 73px;
+  justify-content: center;
+}
+.fullPage main .mainSection .leftContent {
+  margin-left: 160px;
+}
+.fullPage main .mainSection .leftContent h1 {
+  font-family: "DM Sans";
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 99.327%; /* 95.354px */
+  letter-spacing: -2.4px;
+}
+.fullPage main .mainSection .leftContent h1 span {
+  color: #5956e9;
+  font-weight: 900;
+}
+.fullPage main .mainSection .leftContent h1 span:last-child {
+  font-weight: normal;
+}
+.fullPage main .mainSection .leftContent p {
+  font-size: 18px;
+  font-weight: 400;
+  width: 370px;
+  color: #999fae;
+  margin: 24px 0 40px 0;
+}
+.fullPage main .mainSection .leftContent .btns {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.fullPage main .mainSection .leftContent .btns #mainBtn {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 29px 46px;
+  background-color: #5956e9;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.fullPage main .mainSection .leftContent .btns #mainBtn:hover {
+  opacity: 0.8;
+}
+.fullPage main .mainSection .leftContent .btns #mainBtn:active {
+  transform: scale(0.95);
+}
+.fullPage main .mainSection .leftContent .btns .actionBtn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.fullPage main .mainSection .leftContent .btns .actionBtn a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.64px;
+  color: #999fae;
+}
+.fullPage main .mainSection .leftContent .scrollHorizontalDiv {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 100px;
+}
+.fullPage main .mainSection .leftContent .scrollHorizontalDiv a {
+  text-decoration: none;
+  color: #999fae;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+}
+.fullPage main .mainSection .rightContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+.fullPage main .mainSection .rightContent img:first-child {
+  margin-bottom: 220px;
+  z-index: 2;
+}
+.fullPage main .mainSection .rightContent img:nth-child(2) {
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 70px;
+}
+.fullPage main .mainSection .rightContent img:nth-child(3) {
+  position: absolute;
+  margin-bottom: 160px;
+  margin-left: -70px;
+  bottom: 0;
+}
+.fullPage main .mainSection .rightContent img:last-child {
+  position: absolute;
+  bottom: 163px;
+  margin-left: 350px;
+}
+.fullPage main .mainSection #circlePinkLittle {
+  position: absolute;
+  left: 0;
+  top: 260px;
+}
+.fullPage main .mainSection #circleBottmPink {
+  position: absolute;
+  bottom: -98px;
+  right: 360px;
+}
+.fullPage main .mainSection #circleYellowMain {
+  position: absolute;
+  top: 40px;
+}
+.fullPage main .mainSection #circleWhiteMain {
+  position: absolute;
+  bottom: 266px;
+  right: 40px;
+}
+.fullPage main .mainSection #circleBlueMain {
+  position: absolute;
+  bottom: 180px;
+}
+.fullPage #designToolSection {
+  background-color: #27272E;
 }/*# sourceMappingURL=main.css.map */

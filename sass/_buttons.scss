@@ -8,6 +8,7 @@
   background-color: #5956e9;
   color: white;
   text-decoration: none;
+  font-size: 16px;
   cursor: pointer;
   @include btnActive();
 }
@@ -27,7 +28,7 @@
   @include btnActive();
 }
 
-@mixin btnBlue($paddingTop, $paddingBottom) {
+@mixin btnWhite($paddingTop, $paddingBottom) {
   text-decoration: none;
   border-radius: 20px;
   border: none;
