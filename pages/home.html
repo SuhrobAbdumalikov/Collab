@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css link -->
     <link rel="stylesheet" href="../sass/style/main.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome script -->
     <script
       src="https://kit.fontawesome.com/f35ca9bb4a.js"
@@ -259,13 +271,107 @@
       <!-- Powerful design tool section dark-->
       <section id="designToolSection">
         <div class="container">
-            <div class="designTool">
-                <div class="toolTopTexts">
-                    
+          <div class="designTool">
+            <div class="toolTopTexts">
+              <div class="rightContent">
+                <h4>Features</h4>
+                <div class="swiperButtons">
+                  <div class="prev-btn" id="swiperNextBtn">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                  </div>
+                  <div class="next-btn" id="swiperPrevBtn">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </div>
                 </div>
+              </div>
+              <div class="leftContentTool">
+                <div class="mainTextTool">
+                  <h2>The world’s most powerful design tool.</h2>
+                  <p>
+                    Simultaneously design, code and collaborate with your team
+                    all from one place.
+                  </p>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="../images/cameraImgBig.png"
+                        alt="cameraImg"
+                        loading="lazy"
+                      />
+                      <h4>Import Photos & Videos</h4>
+                      <p>
+                        Simply drag and drop photos and videos into your
+                        workspace to automatically add them to your Collab Cloud
+                        library.
+                      </p>
+                      <a href="#0">Find out more</a>
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="../images/calendarImgbig.png"
+                        alt="cameraImg"
+                        loading="lazy"
+                      />
+                      <h4>Calendar API Built-In</h4>
+                      <p>
+                        Kickstart your design process for a wide variety of apps
+                        such as calendar, analytics, virtual assistant, file
+                        manager.
+                      </p>
+                      <a href="#0">Find out more</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                          src="../images/cameraImgBig.png"
+                          alt="cameraImg"
+                          loading="lazy"
+                        />
+                        <h4>Import Photos & Videos</h4>
+                        <p>
+                          Simply drag and drop photos and videos into your
+                          workspace to automatically add them to your Collab Cloud
+                          library.
+                        </p>
+                        <a href="#0">Find out more</a>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="../images/calendarImgbig.png"
+                          alt="cameraImg"
+                          loading="lazy"
+                        />
+                        <h4>Calendar API Built-In</h4>
+                        <p>
+                          Kickstart your design process for a wide variety of apps
+                          such as calendar, analytics, virtual assistant, file
+                          manager.
+                        </p>
+                        <a href="#0">Find out more</a>
+                      </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
             </div>
+            <img
+              src="../images/circleGreyTollSec.png"
+              alt="circleGreyTollSec"
+              loading="lazy"
+              id="circleGrey"
+            />
+            <img
+              src="../images/circleGreyTollSecLittle.png"
+              alt="circleGreyTollSec"
+              loading="lazy"
+              id="circleGreyLittle"
+            />
+          </div>
         </div>
       </section>
+      <!--  -->
     </div>
     <script src="../js/index.js" type="module"></script>
   </body>

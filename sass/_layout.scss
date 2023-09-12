@@ -5,19 +5,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 //=============>>Desktop<<================//
 .container {
-    width: 1215px;
-    margin: 0 auto;
-  }
+  width: 1215px;
+  margin: 0 auto;
+}
 //=========>> full page section <<============//
 .fullPage {
   width: 1440px;
   margin: 0 auto;
 
-    //=======>> navbar section <<========//
+  //=======>> navbar section <<========//
   .navBarSection {
     position: relative;
     .navbar {
@@ -25,7 +25,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 48px 0 80px 0;
-  
+
       .leftNav {
         position: relative;
         @include d-flex(60px);
@@ -102,7 +102,7 @@
             opacity: 0.4;
             background: #999fae;
           }
-  
+
           .items {
             cursor: pointer;
             @include d-flex(23px);
@@ -119,7 +119,7 @@
                 font-size: 13px;
               }
             }
-  
+
             &:hover {
               .divH4 {
                 color: #5956e9;
@@ -131,7 +131,7 @@
           }
         }
       }
-  
+
       .rightNav {
         @include d-flex(40px);
         .searchDiv {
@@ -142,7 +142,7 @@
             border-radius: 20px;
             padding: 5px 10px;
             outline: none;
-            font-size: 16px;
+            font-size: 14px;
           }
           i {
             font-size: 20px;
@@ -165,7 +165,7 @@
       .leftContent {
         margin-left: 160px;
         h1 {
-          font-family: "DM Sans";
+        //   font-family: "DM Sans";
           // width: 443px;
           font-size: 96px;
           font-style: normal;
@@ -174,7 +174,7 @@
           letter-spacing: -2.4px;
           span {
             color: #5956e9;
-            font-weight: 900;
+            font-weight: 500;
             &:last-child {
               font-weight: normal;
             }
@@ -269,16 +269,138 @@
     }
   }
   //==========>> design tool section <<===========//
-  #designToolSection{
-    background-color: #27272E;
-    .designTool{
-        
+  #designToolSection {
+    position: relative;
+    background-color: #27272e;
+    margin-top: 93px;
+    color: white;
+    padding: 150px 0 105px 0;
+    z-index: 1;
+    .designTool {
+      .toolTopTexts {
+        @include d-flex(186px);
+        align-items: start;
+        h4 {
+          font-family: "Poppins", sans-serif;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 99.327%; /* 19.865px */
+          letter-spacing: -0.5px;
+        }
+        #swiperNextBtn {
+          position: absolute;
+          bottom: 120px;
+          left: 100px;
+          background-color: #27272e;
+          color: white;
+          width: 55px;
+          height: 55px;
+          border-radius: 50%;
+          transition: all 0.3s ease-in-out;
+          border: 1px solid #5956e9;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            background-color: #5956e9;
+          }
+        }
+
+        #swiperPrevBtn {
+          position: absolute;
+          bottom: 120px;
+          left: 165px;
+          background-color: #27272e;
+          color: white;
+          width: 55px;
+          height: 55px;
+          border-radius: 50%;
+          transition: all 0.3s ease-in-out;
+          border: 1px solid #5956e9;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            background-color: #5956e9;
+          }
+        }
+        .mainTextTool {
+          margin-bottom: 105px;
+          h2 {
+            font-size: 80px;
+            font-weight: 500;
+            line-height: 100%; /* 80px */
+            letter-spacing: -2px;
+            margin-bottom: 48px;
+          }
+          p {
+            font-size: 18px;
+            font-weight: 400;
+            color: #fff;
+            opacity: 0.5;
+            width: 502px;
+          }
+        }
+        .swiper {
+          width: 1000px;
+          height: 420px;
+          .swiper-slide {
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            h4 {
+              padding: 42px 0 33px 0;
+              font-size: 24px;
+              font-weight: 500;
+              line-height: 140%; /* 33.6px */
+              letter-spacing: -1.08px;
+            }
+
+            p {
+              width: 320px;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 24px; /* 150% */
+              letter-spacing: -0.4px;
+              opacity: 0.5;
+              padding-bottom: 40px;
+            }
+            a{
+                opacity: 0.5;
+                color: #fff;
+                text-decoration: none;
+            }
+            &:hover{
+                a{
+                    opacity: 1;
+                }
+            }
+          }
+          .swiper-pagination-bullet{
+            background-color: white;
+            width: 13px;
+            height: 13px;
+            margin-left: 10px;
+          }
+        }
+      }
+      #circleGrey{
+        position: absolute;
+        top: 100px;
+        right: 240px;
+        z-index: -1;
+      }
+      #circleGreyLittle{
+        position: absolute;
+        left: 20px;
+        bottom: 450px;
+      }
     }
   }
 }
-
-
-
 
 //============>> Tablet <<============//
 @media screen and (max-width: 1024px) {

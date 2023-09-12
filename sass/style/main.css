@@ -42,7 +42,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -191,7 +191,7 @@
   border-radius: 20px;
   padding: 5px 10px;
   outline: none;
-  font-size: 16px;
+  font-size: 14px;
 }
 .fullPage .navBarSection .navbar .rightNav .searchDiv i {
   font-size: 20px;
@@ -229,7 +229,6 @@
   margin-left: 160px;
 }
 .fullPage main .mainSection .leftContent h1 {
-  font-family: "DM Sans";
   font-size: 96px;
   font-style: normal;
   font-weight: 500;
@@ -238,7 +237,7 @@
 }
 .fullPage main .mainSection .leftContent h1 span {
   color: #5956e9;
-  font-weight: 900;
+  font-weight: 500;
 }
 .fullPage main .mainSection .leftContent h1 span:last-child {
   font-weight: normal;
@@ -350,5 +349,129 @@
   bottom: 180px;
 }
 .fullPage #designToolSection {
-  background-color: #27272E;
+  position: relative;
+  background-color: #27272e;
+  margin-top: 93px;
+  color: white;
+  padding: 150px 0 105px 0;
+  z-index: 1;
+}
+.fullPage #designToolSection .designTool .toolTopTexts {
+  display: flex;
+  align-items: center;
+  gap: 186px;
+  align-items: start;
+}
+.fullPage #designToolSection .designTool .toolTopTexts h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 99.327%; /* 19.865px */
+  letter-spacing: -0.5px;
+}
+.fullPage #designToolSection .designTool .toolTopTexts #swiperNextBtn {
+  position: absolute;
+  bottom: 120px;
+  left: 100px;
+  background-color: #27272e;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #5956e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fullPage #designToolSection .designTool .toolTopTexts #swiperNextBtn:hover {
+  background-color: #5956e9;
+}
+.fullPage #designToolSection .designTool .toolTopTexts #swiperPrevBtn {
+  position: absolute;
+  bottom: 120px;
+  left: 165px;
+  background-color: #27272e;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #5956e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fullPage #designToolSection .designTool .toolTopTexts #swiperPrevBtn:hover {
+  background-color: #5956e9;
+}
+.fullPage #designToolSection .designTool .toolTopTexts .mainTextTool {
+  margin-bottom: 105px;
+}
+.fullPage #designToolSection .designTool .toolTopTexts .mainTextTool h2 {
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 100%; /* 80px */
+  letter-spacing: -2px;
+  margin-bottom: 48px;
+}
+.fullPage #designToolSection .designTool .toolTopTexts .mainTextTool p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.5;
+  width: 502px;
+}
+.fullPage #designToolSection .designTool .toolTopTexts .swiper {
+  width: 1000px;
+  height: 420px;
+}
+.fullPage #designToolSection .designTool .toolTopTexts .swiper .swiper-slide {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.fullPage #designToolSection .designTool .toolTopTexts .swiper .swiper-slide h4 {
+  padding: 42px 0 33px 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: -1.08px;
+}
+.fullPage #designToolSection .designTool .toolTopTexts .swiper .swiper-slide p {
+  width: 320px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.4px;
+  opacity: 0.5;
+  padding-bottom: 40px;
+}
+.fullPage #designToolSection .designTool .toolTopTexts .swiper .swiper-slide a {
+  opacity: 0.5;
+  color: #fff;
+  text-decoration: none;
+}
+.fullPage #designToolSection .designTool .toolTopTexts .swiper .swiper-slide:hover a {
+  opacity: 1;
+}
+.fullPage #designToolSection .designTool .toolTopTexts .swiper .swiper-pagination-bullet {
+  background-color: white;
+  width: 13px;
+  height: 13px;
+  margin-left: 10px;
+}
+.fullPage #designToolSection .designTool #circleGrey {
+  position: absolute;
+  top: 100px;
+  right: 240px;
+  z-index: -1;
+}
+.fullPage #designToolSection .designTool #circleGreyLittle {
+  position: absolute;
+  left: 20px;
+  bottom: 450px;
 }/*# sourceMappingURL=main.css.map */
