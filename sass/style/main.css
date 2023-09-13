@@ -46,7 +46,7 @@
 }
 
 .container {
-  width: 1215px;
+  width: 1240px;
   margin: 0 auto;
 }
 
@@ -604,7 +604,7 @@
 .fullPage #featureListSsection .featureList .leftContentList .topContent p {
   font-size: 18px;
   font-weight: 400;
-  color: #999FAE;
+  color: #999fae;
   width: 408px;
 }
 .fullPage #featureListSsection .featureList .leftContentList .bottomContent {
@@ -622,4 +622,93 @@
 .fullPage #featureListSsection .featureList .leftContentList .bottomContent .items h4 {
   font-size: 18px;
   color: #292930;
+}
+.fullPage #prototypeSection {
+  padding: 45px 0 73px 0;
+}
+.fullPage #prototypeSection .prototype {
+  position: relative;
+  border-radius: 40px;
+  padding: 65px 0 40px 100px;
+  border: 1px solid rgba(255, 255, 255, 0.937254902);
+  background: var(--gradient-grey-bg, linear-gradient(90deg, #ecf2f6 0%, rgba(236, 242, 246, 0) 70.31%));
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  justify-content: space-between;
+}
+.fullPage #prototypeSection .prototype .protoLeftContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  align-items: start;
+}
+.fullPage #prototypeSection .prototype .protoLeftContent h2 {
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -2px;
+  width: 430px;
+}
+.fullPage #prototypeSection .prototype .protoLeftContent h2 span {
+  color: #5956e9;
+  font-size: 80px;
+}
+.fullPage #prototypeSection .prototype .protoLeftContent p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.4px;
+  opacity: 0.7;
+  width: 389px;
+}
+.fullPage #prototypeSection .prototype .protoLeftContent button {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 29px 25px;
+  background-color: #5956e9;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.fullPage #prototypeSection .prototype .protoLeftContent button:hover {
+  opacity: 0.8;
+}
+.fullPage #prototypeSection .prototype .protoLeftContent button:active {
+  transform: scale(0.95);
+}
+.fullPage #prototypeSection .prototype .protoRightContent img:first-child {
+  width: 500px;
+  height: 500px;
+}
+.fullPage #prototypeSection .prototype .protoRightContent img:nth-child(2) {
+  position: absolute;
+  right: 190px;
+  top: 110px;
+  z-index: -1;
+}
+.fullPage #prototypeSection .prototype .protoRightContent img:nth-child(3) {
+  position: absolute;
+  bottom: -70px;
+  left: 240px;
+  width: 120px;
+  height: 120px;
+}
+.fullPage #prototypeSection .prototype .protoRightContent img:nth-child(4) {
+  position: absolute;
+  top: -45px;
+  right: 100px;
+}
+.fullPage #prototypeSection .prototype .protoRightContent img:last-child {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 130px;
+  right: 620px;
 }/*# sourceMappingURL=main.css.map */
