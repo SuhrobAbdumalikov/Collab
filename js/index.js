@@ -23,3 +23,10 @@ selectors.dropDownMenuLi.addEventListener("mouseout", () => {
   selectors.dropDownMenu.style.display = "none";
 });
 // ==========================================================//
+
+//========>> toggle btn <<==============//
+selectors.togglebtn.addEventListener('click',() => {
+  selectors.togglebtn.classList.toggle('active');
+  selectors.monthlyBilled.classList.toggle('active');
+  selectors.yearlyBilled.classList.toggle('active');
+})

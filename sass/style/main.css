@@ -711,4 +711,298 @@
   height: 70px;
   top: 130px;
   right: 620px;
+}
+.fullPage #PricingSection {
+  padding-bottom: 112px;
+  border: 1px solid green;
+}
+.fullPage #PricingSection .Pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+}
+.fullPage #PricingSection .Pricing .topContentPrice {
+  text-align: center;
+}
+.fullPage #PricingSection .Pricing .topContentPrice h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 99.327%; /* 19.865px */
+  letter-spacing: -0.5px;
+}
+.fullPage #PricingSection .Pricing .topContentPrice h2 {
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 80px */
+  letter-spacing: -2px;
+  padding: 16px 0 31px 0;
+}
+.fullPage #PricingSection .Pricing .topContentPrice h2 span {
+  color: #5956e9;
+}
+.fullPage #PricingSection .Pricing .topContentPrice p {
+  color: var(--text-grey, #999fae);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.fullPage #PricingSection .Pricing .middleContentPrice {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.fullPage #PricingSection .Pricing .middleContentPrice span {
+  color: #99a1aa;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 80%; /* 12.8px */
+  letter-spacing: -0.64px;
+}
+.fullPage #PricingSection .Pricing .middleContentPrice span.active {
+  color: #5956e9;
+}
+.fullPage #PricingSection .Pricing .middleContentPrice .togglebtn {
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 25px;
+  background-color: #5956e9;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.fullPage #PricingSection .Pricing .middleContentPrice .togglebtn::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in-out;
+}
+.fullPage #PricingSection .Pricing .middleContentPrice .togglebtn.active::before {
+  left: calc(100% - 21px - 3px);
+  background-color: white;
+}
+.fullPage #PricingSection .Pricing .middleContentPrice .togglebtn.active {
+  background-color: #5956e9;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .professionalItem {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  position: relative;
+  padding: 42px 40px;
+  border-radius: 32px;
+  background-color: #5956e9;
+  color: white;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .professionalItem #StarIcon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .professionalItem .smile {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .professionalItem .smile span {
+  font-size: 14px;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .professionalItem h3 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 100%; /* 40px */
+  letter-spacing: -1.8px;
+  padding: 7px 0 20px 0;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .professionalItem p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 99.327%; /* 13.906px */
+  letter-spacing: -0.35px;
+  color: #ccc;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .professionalItem p span {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 110%; /* 22px */
+  letter-spacing: -0.5px;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .professionalItem .boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  align-items: start;
+  padding: 45px 0 42px 0;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .professionalItem .boxes .item1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  align-items: start;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .professionalItem .boxes .item1 span {
+  font-size: 16px;
+  letter-spacing: -0.4px;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .professionalItem button {
+  text-decoration: none;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 29px 25px;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 80%; /* 12.8px */
+  letter-spacing: -0.64px;
+  width: 100%;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .professionalItem button:hover {
+  opacity: 0.8;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .professionalItem button:active {
+  transform: scale(0.95);
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .StandartItem,
+.fullPage #PricingSection .Pricing .bottomContentPrice .ultimateItem {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  position: relative;
+  padding: 42px 40px;
+  border-radius: 32px;
+  background-color: #fff;
+  color: black;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .StandartItem .smile,
+.fullPage #PricingSection .Pricing .bottomContentPrice .ultimateItem .smile {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .StandartItem .smile span,
+.fullPage #PricingSection .Pricing .bottomContentPrice .ultimateItem .smile span {
+  font-size: 14px;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .StandartItem h3,
+.fullPage #PricingSection .Pricing .bottomContentPrice .ultimateItem h3 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 100%; /* 40px */
+  letter-spacing: -1.8px;
+  padding: 7px 0 20px 0;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .StandartItem p,
+.fullPage #PricingSection .Pricing .bottomContentPrice .ultimateItem p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 99.327%; /* 13.906px */
+  letter-spacing: -0.35px;
+  color: #ccc;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .StandartItem p span,
+.fullPage #PricingSection .Pricing .bottomContentPrice .ultimateItem p span {
+  color: #5956e9;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 110%; /* 22px */
+  letter-spacing: -0.5px;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .StandartItem .boxes,
+.fullPage #PricingSection .Pricing .bottomContentPrice .ultimateItem .boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  align-items: start;
+  padding: 45px 0 42px 0;
+  color: #999fae;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .StandartItem .boxes .item1,
+.fullPage #PricingSection .Pricing .bottomContentPrice .ultimateItem .boxes .item1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  align-items: start;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .StandartItem .boxes .item1 span,
+.fullPage #PricingSection .Pricing .bottomContentPrice .ultimateItem .boxes .item1 span {
+  font-size: 16px;
+  letter-spacing: -0.4px;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .StandartItem button,
+.fullPage #PricingSection .Pricing .bottomContentPrice .ultimateItem button {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 29px 25px;
+  background-color: #fab8c4;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.64px;
+  color: #2522ba;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 80%; /* 12.8px */
+  letter-spacing: -0.64px;
+  width: 100%;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .StandartItem button:hover,
+.fullPage #PricingSection .Pricing .bottomContentPrice .ultimateItem button:hover {
+  opacity: 0.8;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .StandartItem button:active,
+.fullPage #PricingSection .Pricing .bottomContentPrice .ultimateItem button:active {
+  transform: scale(0.95);
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .StandartItem .ultimateBtn,
+.fullPage #PricingSection .Pricing .bottomContentPrice .ultimateItem .ultimateBtn {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 29px 25px;
+  background-color: #5956e9;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 80%; /* 12.8px */
+  letter-spacing: -0.64px;
+  width: 100%;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .StandartItem .ultimateBtn:hover,
+.fullPage #PricingSection .Pricing .bottomContentPrice .ultimateItem .ultimateBtn:hover {
+  opacity: 0.8;
+}
+.fullPage #PricingSection .Pricing .bottomContentPrice .StandartItem .ultimateBtn:active,
+.fullPage #PricingSection .Pricing .bottomContentPrice .ultimateItem .ultimateBtn:active {
+  transform: scale(0.95);
 }/*# sourceMappingURL=main.css.map */

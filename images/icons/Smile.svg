@@ -1,0 +1,27 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#E5E5E5"/>
+<g id="Desktop" clip-path="url(#clip0_546_9631)">
+<g id="PRICING" clip-path="url(#clip1_546_9631)">
+<rect width="1440" height="875" transform="translate(-240 -371)" fill="white"/>
+<g id="Plans">
+<g id="Plan 3">
+<rect id="Rectangle 273" x="-40" y="-40" width="320" height="520" rx="32" fill="#5956E9"/>
+<g id="Team">
+<g id="Smile">
+<rect id="Combined Shape" opacity="0.5" x="2" y="2" width="20" height="20" rx="10" fill="white"/>
+<path id="Path 56" fill-rule="evenodd" clip-rule="evenodd" d="M6.16793 14.5548C5.86158 14.0953 5.98576 13.4744 6.44528 13.1681C6.90481 12.8617 7.52568 12.9859 7.83203 13.4454C8.98907 15.181 10.3543 16.0001 12 16.0001C13.6457 16.0001 15.0109 15.181 16.1679 13.4454C16.4743 12.9859 17.0952 12.8617 17.5547 13.1681C18.0142 13.4744 18.1384 14.0953 17.832 14.5548C16.3224 16.8193 14.3543 18.0001 12 18.0001C9.64565 18.0001 7.67757 16.8193 6.16793 14.5548Z" fill="#FFDC60"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_546_9631">
+<rect width="45626" height="2048" fill="white" transform="translate(-10506 -371)"/>
+</clipPath>
+<clipPath id="clip1_546_9631">
+<rect width="1440" height="875" fill="white" transform="translate(-240 -371)"/>
+</clipPath>
+</defs>
+</svg>
