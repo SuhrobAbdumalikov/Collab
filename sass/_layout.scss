@@ -413,10 +413,21 @@
 
   //============>>Sign up section <<==================//
   #signUpSection {
+    position: relative;
     background-color: #ecf2f6;
     padding-top: 80px;
+    z-index: 1;
     .signUp {
       @include d-column(74px);
+      .images{
+        #blueBackSign{
+            position: absolute;
+            margin-left: -510px;
+            margin-top: 30px;
+            z-index: -1;
+            padding-bottom: 198px;
+        }
+      }
 
       .bottomContent {
         h4 {
@@ -434,6 +445,8 @@
           position: relative;
           @include d-flex(0);
           justify-content: center;
+          //   position: absolute;
+          margin-bottom: -45px;
           img {
             width: 26px;
             height: 26px;
@@ -457,8 +470,65 @@
           button {
             position: absolute;
             right: 12px;
-            @include btnBlue(29px,46px);
+            @include btnBlue(29px, 46px);
           }
+        }
+      }
+    }
+  }
+
+  //==========>> Feature List section <<===============//
+  #featureListSsection {
+    padding: 90px 0 100px 0;
+    .featureList {
+        padding-top: 120px;
+      @include d-flex(20px);
+      .leftContentList {
+        @include d-column(40px);
+        align-items: start;
+        .topContent {
+          span {
+            // font-family: DM Sans;
+            color: rgba(89, 86, 233, 1);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 99.327%; /* 19.865px */
+            letter-spacing: -0.5px;
+          }
+          h2 {
+            color: #292930;
+            // font-family: DM Sans;
+            padding: 24px 0 47px 0;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%; /* 80px */
+            letter-spacing: -2px;
+            span {
+              color: #5956e9;
+              font-size: 80px;
+              font-weight: 500;
+              line-height: 100%;
+              letter-spacing: -2px;
+            }
+          }
+          p {
+            font-size: 18px;
+            font-weight: 400;
+            color:#999FAE;
+            width: 408px;
+          }
+        }
+        .bottomContent{
+            @include d-column(32px);
+            align-items: start;
+            .items{
+                @include d-flex(24px);
+                h4{
+                    font-size: 18px;
+                    color:#292930;
+                }
+            }
         }
       }
     }

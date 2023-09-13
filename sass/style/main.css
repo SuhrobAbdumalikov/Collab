@@ -488,14 +488,23 @@
   bottom: 450px;
 }
 .fullPage #signUpSection {
+  position: relative;
   background-color: #ecf2f6;
   padding-top: 80px;
+  z-index: 1;
 }
 .fullPage #signUpSection .signUp {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 74px;
+}
+.fullPage #signUpSection .signUp .images #blueBackSign {
+  position: absolute;
+  margin-left: -510px;
+  margin-top: 30px;
+  z-index: -1;
+  padding-bottom: 198px;
 }
 .fullPage #signUpSection .signUp .bottomContent h4 {
   text-align: center;
@@ -512,6 +521,7 @@
   align-items: center;
   gap: 0;
   justify-content: center;
+  margin-bottom: -45px;
 }
 .fullPage #signUpSection .signUp .bottomContent .inputEmailContents img {
   width: 26px;
@@ -551,4 +561,65 @@
 }
 .fullPage #signUpSection .signUp .bottomContent .inputEmailContents button:active {
   transform: scale(0.95);
+}
+.fullPage #featureListSsection {
+  padding: 90px 0 100px 0;
+}
+.fullPage #featureListSsection .featureList {
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.fullPage #featureListSsection .featureList .leftContentList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  align-items: start;
+}
+.fullPage #featureListSsection .featureList .leftContentList .topContent span {
+  color: rgb(89, 86, 233);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 99.327%; /* 19.865px */
+  letter-spacing: -0.5px;
+}
+.fullPage #featureListSsection .featureList .leftContentList .topContent h2 {
+  color: #292930;
+  padding: 24px 0 47px 0;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 80px */
+  letter-spacing: -2px;
+}
+.fullPage #featureListSsection .featureList .leftContentList .topContent h2 span {
+  color: #5956e9;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -2px;
+}
+.fullPage #featureListSsection .featureList .leftContentList .topContent p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #999FAE;
+  width: 408px;
+}
+.fullPage #featureListSsection .featureList .leftContentList .bottomContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  align-items: start;
+}
+.fullPage #featureListSsection .featureList .leftContentList .bottomContent .items {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.fullPage #featureListSsection .featureList .leftContentList .bottomContent .items h4 {
+  font-size: 18px;
+  color: #292930;
 }/*# sourceMappingURL=main.css.map */
