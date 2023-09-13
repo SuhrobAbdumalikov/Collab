@@ -30,3 +30,17 @@ selectors.togglebtn.addEventListener('click',() => {
   selectors.monthlyBilled.classList.toggle('active');
   selectors.yearlyBilled.classList.toggle('active');
 })
+
+//==========>> Testimonials swiper <<==================//
+var swiperTestimonial = new Swiper(".myTestimonialSwiper", {
+  slidesPerView: 2,
+  speed: 1000,
+  grid: {
+    rows: 2
+  },
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".nextBtn",
+    prevEl: ".prevBtn"
+  }
+});
