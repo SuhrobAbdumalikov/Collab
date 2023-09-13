@@ -1134,7 +1134,7 @@
   color: white;
 }
 .fullPage #TestimonialSection {
-  padding-top: 200px;
+  padding: 200px 0 112px 0;
 }
 .fullPage #TestimonialSection .testimonial {
   display: flex;
@@ -1281,20 +1281,101 @@
   letter-spacing: -0.35px;
 }
 .fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .slide1 {
-  border-top: 2px solid #5956E9;
+  border-top: 2px solid #5956e9;
 }
 .fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .slide2 {
-  border-top: 2px solid #FAB8C4;
+  border-top: 2px solid #fab8c4;
 }
 .fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .slide3 {
-  border-top: 2px solid #FAB8C4;
+  border-top: 2px solid #fab8c4;
 }
 .fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .slide3 span {
-  color: #5956E9;
+  color: #5956e9;
 }
 .fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .slide4 {
-  border-top: 2px solid #90D0B1;
+  border-top: 2px solid #90d0b1;
 }
 .fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .slide4 span {
-  color: #90D0B1;
+  color: #90d0b1;
+}
+.fullPage #speedSection {
+  position: relative;
+}
+.fullPage #speedSection .Speed {
+  width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  align-items: start;
+}
+.fullPage #speedSection .Speed .leftContentSpeed {
+  padding-top: 26px;
+}
+.fullPage #speedSection .Speed .leftContentSpeed span {
+  color: #a4b16e;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 99.327%; /* 19.865px */
+  letter-spacing: -0.5px;
+}
+.fullPage #speedSection .Speed .leftContentSpeed h2 {
+  width: 406px;
+  color: #292930;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 100%; /* 80px */
+  letter-spacing: -2px;
+  padding: 24px 0 56px 0;
+}
+.fullPage #speedSection .Speed .leftContentSpeed h2 span {
+  font-size: 80px;
+  color: #5956e9;
+}
+.fullPage #speedSection .Speed .leftContentSpeed p {
+  color: var(--color-dark, #27272e);
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.4px;
+  width: 323px;
+  padding-bottom: 79px;
+}
+.fullPage #speedSection .Speed .leftContentSpeed strong {
+  color: var(--color-dark, #27272e);
+  font-size: 288px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: -14.4px;
+}
+.fullPage #speedSection .Speed .leftContentSpeed strong span {
+  color: inherit;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -2px;
+}
+.fullPage #speedSection .Speed .rightContentSpeed img:nth-child(2) {
+  position: absolute;
+  left: 93px;
+  top: 265px;
+  width: 32px;
+  height: 32px;
+}
+.fullPage #speedSection .Speed .rightContentSpeed img:nth-child(3) {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 207px;
+  right: 97px;
+}
+.fullPage #speedSection .Speed .rightContentSpeed img:nth-child(4) {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 270px;
+  top: 135px;
+  z-index: -1;
 }/*# sourceMappingURL=main.css.map */
