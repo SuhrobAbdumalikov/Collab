@@ -714,7 +714,6 @@
 }
 .fullPage #PricingSection {
   padding-bottom: 112px;
-  border: 1px solid green;
 }
 .fullPage #PricingSection .Pricing {
   display: flex;
@@ -1005,4 +1004,131 @@
 .fullPage #PricingSection .Pricing .bottomContentPrice .StandartItem .ultimateBtn:active,
 .fullPage #PricingSection .Pricing .bottomContentPrice .ultimateItem .ultimateBtn:active {
   transform: scale(0.95);
+}
+.fullPage #getWorkDoneSection {
+  position: relative;
+  background-color: #fab8c4;
+  padding: 140px 0 0 0;
+  height: 923px;
+  z-index: 1;
+}
+.fullPage #getWorkDoneSection .imagesPosition img:first-child {
+  position: absolute;
+  top: 74px;
+  right: 157px;
+  z-index: -1;
+}
+.fullPage #getWorkDoneSection .imagesPosition img:nth-child(2) {
+  width: 204px;
+  height: 204px;
+  position: absolute;
+  z-index: -1;
+  top: 355px;
+  left: 510px;
+}
+.fullPage #getWorkDoneSection .imagesPosition img:nth-child(3) {
+  position: absolute;
+  z-index: 1;
+  top: 470px;
+  left: 570px;
+}
+.fullPage #getWorkDoneSection .imagesPosition img:nth-child(4) {
+  position: absolute;
+  left: 0;
+  bottom: -150px;
+}
+.fullPage #getWorkDoneSection .imagesPosition img:nth-child(5) {
+  position: absolute;
+  right: 0;
+  bottom: -150px;
+  z-index: 1;
+}
+.fullPage #getWorkDoneSection .imagesPosition img:nth-child(6) {
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  bottom: 220px;
+  left: 400px;
+  z-index: -1;
+}
+.fullPage #getWorkDoneSection .imagesPosition img:nth-child(7) {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  bottom: 76px;
+  left: 560px;
+}
+.fullPage #getWorkDoneSection .imagesPosition img:nth-child(8) {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 130px;
+  left: 70px;
+}
+.fullPage #getWorkDoneSection .workDone {
+  margin-left: 40px;
+}
+.fullPage #getWorkDoneSection .workDone span {
+  color: #c75c6f;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 99.327%; /* 19.865px */
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+}
+.fullPage #getWorkDoneSection .workDone h2 {
+  width: 1040px;
+  color: #2522ba;
+  font-size: 144px;
+  font-weight: 700;
+  line-height: 99.327%; /* 143.031px */
+  letter-spacing: -3.6px;
+  margin-bottom: 117px;
+}
+.fullPage #getWorkDoneSection .workDone h2 span {
+  color: white;
+  font-size: 144px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 99.327%;
+  letter-spacing: -3.6px;
+}
+.fullPage #getWorkDoneSection .workDone .bottomContent {
+  position: absolute;
+  right: 250px;
+  background-color: #5956e9;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+  align-items: start;
+  width: 505px;
+  height: 505px;
+  border-radius: 50%;
+  padding: 0 90px;
+}
+.fullPage #getWorkDoneSection .workDone .bottomContent img {
+  width: 50px;
+  height: 50px;
+}
+.fullPage #getWorkDoneSection .workDone .bottomContent p {
+  width: 320px;
+  font-size: 22px;
+  font-weight: 500;
+}
+.fullPage #getWorkDoneSection .workDone .bottomContent .lineAndA {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.fullPage #getWorkDoneSection .workDone .bottomContent .lineAndA .line {
+  width: 34px;
+  height: 2px;
+  background-color: #fff;
+}
+.fullPage #getWorkDoneSection .workDone .bottomContent .lineAndA a {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
