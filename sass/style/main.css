@@ -192,11 +192,13 @@
   padding: 5px 10px;
   outline: none;
   font-size: 14px;
+  z-index: 2;
 }
 .fullPage .navBarSection .navbar .rightNav .searchDiv i {
   font-size: 20px;
   cursor: pointer;
   color: white;
+  z-index: 2;
 }
 .fullPage .navBarSection .navbar .rightNav #getStart {
   border-radius: 20px;
@@ -211,6 +213,7 @@
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  z-index: 2;
 }
 .fullPage .navBarSection .navbar .rightNav #getStart:hover {
   opacity: 0.8;
@@ -307,23 +310,26 @@
 }
 .fullPage main .mainSection .rightContent img:first-child {
   margin-bottom: 220px;
-  z-index: 2;
+  z-index: 3;
 }
 .fullPage main .mainSection .rightContent img:nth-child(2) {
   position: absolute;
   margin-top: 220px;
   margin-left: 70px;
+  z-index: 2;
 }
 .fullPage main .mainSection .rightContent img:nth-child(3) {
   position: absolute;
   margin-bottom: 160px;
   margin-left: -70px;
   bottom: 0;
+  z-index: 2;
 }
 .fullPage main .mainSection .rightContent img:last-child {
   position: absolute;
   bottom: 163px;
   margin-left: 350px;
+  z-index: 2;
 }
 .fullPage main .mainSection #circlePinkLittle {
   position: absolute;
@@ -332,8 +338,9 @@
 }
 .fullPage main .mainSection #circleBottmPink {
   position: absolute;
-  bottom: -98px;
+  bottom: -170px;
   right: 360px;
+  z-index: 10;
 }
 .fullPage main .mainSection #circleYellowMain {
   position: absolute;
@@ -343,6 +350,7 @@
   position: absolute;
   bottom: 266px;
   right: 40px;
+  z-index: 2;
 }
 .fullPage main .mainSection #circleBlueMain {
   position: absolute;
@@ -432,6 +440,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  border: 2px solid #27272E;
 }
 .fullPage #designToolSection .designTool .toolTopTexts .swiper .swiper-slide h4 {
   padding: 42px 0 33px 0;
@@ -454,6 +463,9 @@
   opacity: 0.5;
   color: #fff;
   text-decoration: none;
+}
+.fullPage #designToolSection .designTool .toolTopTexts .swiper .swiper-slide:hover {
+  border-top: 2px solid #FFBABA;
 }
 .fullPage #designToolSection .designTool .toolTopTexts .swiper .swiper-slide:hover a {
   opacity: 1;

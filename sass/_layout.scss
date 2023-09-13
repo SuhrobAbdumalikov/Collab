@@ -143,15 +143,18 @@
             padding: 5px 10px;
             outline: none;
             font-size: 14px;
+            z-index: 2;
           }
           i {
             font-size: 20px;
             cursor: pointer;
             color: white;
+            z-index: 2;
           }
         }
         #getStart {
           @include btnPink(20px, 47px);
+          z-index: 2;
         }
       }
     }
@@ -223,23 +226,26 @@
           &:first-child {
             margin-bottom: 220px;
             // position: absolute;
-            z-index: 2;
+            z-index: 3;
           }
           &:nth-child(2) {
             position: absolute;
             margin-top: 220px;
             margin-left: 70px;
+            z-index: 2;
           }
           &:nth-child(3) {
             position: absolute;
             margin-bottom: 160px;
             margin-left: -70px;
             bottom: 0;
+            z-index: 2;
           }
           &:last-child {
             position: absolute;
             bottom: 163px;
             margin-left: 350px;
+            z-index: 2;
           }
         }
       }
@@ -250,8 +256,9 @@
       }
       #circleBottmPink {
         position: absolute;
-        bottom: -98px;
+        bottom: -170px;
         right: 360px;
+        z-index: 10;
       }
       #circleYellowMain {
         position: absolute;
@@ -261,6 +268,7 @@
         position: absolute;
         bottom: 266px;
         right: 40px;
+        z-index: 2;
       }
       #circleBlueMain {
         position: absolute;
@@ -350,6 +358,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: start;
+            border: 2px solid #27272E;
             h4 {
               padding: 42px 0 33px 0;
               font-size: 24px;
@@ -377,6 +386,7 @@
                 a{
                     opacity: 1;
                 }
+                border-top: 2px solid #FFBABA;
             }
           }
           .swiper-pagination-bullet{
