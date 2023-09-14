@@ -1548,16 +1548,16 @@
               }
             }
           }
-          .fSlide2{
-            background-color: #DBDEFF;
-            .topImg{
+          .fSlide2 {
+            background-color: #dbdeff;
+            .topImg {
               background-color: #5956e9;
             }
           }
-          .fSlide3{
-            background-color: #DBF8FF;
-            .topImg{
-              background-color: #90C8FC;
+          .fSlide3 {
+            background-color: #dbf8ff;
+            .topImg {
+              background-color: #90c8fc;
             }
           }
         }
@@ -1569,6 +1569,10 @@
 //============>> Tablet <<============//
 @media screen and (max-width: 1024px) {
   .container {
+    width: 879px;
+    margin: 0 auto;
+  }
+  .Navcontainer {
     width: 952px;
     margin: 0 auto;
   }
@@ -1650,31 +1654,75 @@
   }
 
   //=========>> sign up section <<============//
-  #signUpSection{}
-  #featureListSsection{}
-  #prototypeSection{}
-  #PricingSection{}
-  #getWorkDoneSection{}
-  #TestimonialSection{}
-  #speedSection{}
-  #FeatureBoxSection{}
-  #coreSection{}
-  #featureSlideSection{}
+  #signUpSection {
+  }
+  #featureListSsection {
+  }
+  #prototypeSection {
+  }
+  #PricingSection {
+  }
+  #getWorkDoneSection {
+  }
+  #TestimonialSection {
+  }
+  #speedSection {
+  }
+  #FeatureBoxSection {
+  }
+  #coreSection {
+  }
+  #featureSlideSection {
+    padding-bottom: 96px;
+    .featureSlide {
+      .topContent {
+        padding-bottom: 48px;
+      }
+      .bottomSlides {
+        .swiper {
+          width: 900px;
+          height: 613px;
+          .swiper-slide {
+            .bottomTexts {
+              padding: 40px 24px;
+              @include d-column(15px);
+              h3 {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 //============>> mobile <<============//
 @media screen and (max-width: 375px) {
-  #navBarSection{}
-  main{}
-  #designToolSection{}
-  #signUpSection{}
-  #featureListSsection{}
-  #prototypeSection{}
-  #PricingSection{}
-  #getWorkDoneSection{}
-  #TestimonialSection{}
-  #speedSection{}
-  #FeatureBoxSection{}
-  #coreSection{}
-  #featureSlideSection{}
+  #navBarSection {
+  }
+  main {
+  }
+  #designToolSection {
+  }
+  #signUpSection {
+  }
+  #featureListSsection {
+  }
+  #prototypeSection {
+  }
+  #PricingSection {
+  }
+  #getWorkDoneSection {
+  }
+  #TestimonialSection {
+  }
+  #speedSection {
+  }
+  #FeatureBoxSection {
+  }
+  #coreSection {
+  }
+  #featureSlideSection {
+  }
 }

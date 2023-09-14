@@ -1737,20 +1737,24 @@
   color: #5956e9;
 }
 .fullPage #featureSlideSection .featureSlide .bottomSlides .swiper .fSlide2 {
-  background-color: #DBDEFF;
+  background-color: #dbdeff;
 }
 .fullPage #featureSlideSection .featureSlide .bottomSlides .swiper .fSlide2 .topImg {
   background-color: #5956e9;
 }
 .fullPage #featureSlideSection .featureSlide .bottomSlides .swiper .fSlide3 {
-  background-color: #DBF8FF;
+  background-color: #dbf8ff;
 }
 .fullPage #featureSlideSection .featureSlide .bottomSlides .swiper .fSlide3 .topImg {
-  background-color: #90C8FC;
+  background-color: #90c8fc;
 }
 
 @media screen and (max-width: 1024px) {
   .container {
+    width: 879px;
+    margin: 0 auto;
+  }
+  .Navcontainer {
     width: 952px;
     margin: 0 auto;
   }
@@ -1795,5 +1799,25 @@
   }
   #designToolSection .designTool .toolTopTexts .swiper .swiper-slide p {
     font-size: 15px;
+  }
+  #featureSlideSection {
+    padding-bottom: 96px;
+  }
+  #featureSlideSection .featureSlide .topContent {
+    padding-bottom: 48px;
+  }
+  #featureSlideSection .featureSlide .bottomSlides .swiper {
+    width: 900px;
+    height: 613px;
+  }
+  #featureSlideSection .featureSlide .bottomSlides .swiper .swiper-slide .bottomTexts {
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  #featureSlideSection .featureSlide .bottomSlides .swiper .swiper-slide .bottomTexts h3 {
+    font-size: 24px;
   }
 }/*# sourceMappingURL=main.css.map */

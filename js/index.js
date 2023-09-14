@@ -62,7 +62,7 @@ var FeatureBoxSwiper = new Swiper(".FeatureboxSwiper", {
 //=============>> Feature slide Box swiper <<=============//
 var FeatureSlideSwiper = new Swiper(".FeatureSlideSwiper", {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 26,
   loop: true,
   speed: 1000,
   autoplay:{
