@@ -236,7 +236,7 @@
         img {
           &:first-child {
             margin-bottom: 220px;
-            // position: absolute; 
+            // position: absolute;
             z-index: 3;
           }
           &:nth-child(2) {
@@ -252,7 +252,7 @@
             bottom: 0;
             z-index: 2;
           }
-          &:nth-child(4){
+          &:nth-child(4) {
             position: absolute;
             bottom: 163px;
             margin-left: 350px;
@@ -1352,6 +1352,85 @@
       }
     }
   }
+
+  //=========>> core sections <<======================//
+  #coreSection {
+    padding: 112px 0;
+    .coreFeatures {
+      .topTexts {
+        padding-bottom: 72px;
+        h4 {
+          text-align: center;
+          // font-family: DM Sans;
+          font-size: 48px;
+          font-weight: 500;
+          letter-spacing: -1.2px;
+          padding-bottom: 32px;
+        }
+        p {
+          text-align: center;
+          width: 449px;
+          margin: 0 auto;
+          // font-family: DM Sans;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 140%; /* 33.6px */
+          letter-spacing: -1.08px;
+        }
+      }
+      .bottomContents {
+        @include d-flex(40px);
+        justify-content: center;
+        .rectangle {
+          padding: 80px;
+          border-radius: 40px;
+          h2 {
+            // font-family: DM Sans;
+            font-size: 64px;
+            width: 318px;
+            font-weight: 500;
+            line-height: 100%; /* 64px */
+            letter-spacing: -1.6px;
+          }
+          p {
+            // font-family: DM Sans;
+            width: 318px;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 140%; /* 33.6px */
+            letter-spacing: -1.08px;
+            padding: 45px 0 109px 0;
+          }
+        }
+        .leftCore {
+          border: 1px solid #e3e6e9;
+          p {
+            color: #999fae;
+          }
+          button {
+            @include btnBlue(29px, 103px);
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: -0.64px;
+          }
+        }
+        .rightCore {
+          border: 1px solid #5956e9;
+          background-color: #5956e9;
+          color: white;
+          button {
+            @include btnWhite(29px, 76px);
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 80%;
+            letter-spacing: -0.64px;
+          }
+        }
+      }
+    }
+  }
 }
 
 //============>> Tablet <<============//
@@ -1384,16 +1463,16 @@
   }
 
   //======>> MAin section Tablet ==========>>
-  main{
-    .mainSection{
+  main {
+    .mainSection {
       @include d-flex(10px);
       justify-content: center;
-      .rightContent{
-        img{
-          &:first-child{
+      .rightContent {
+        img {
+          &:first-child {
             // display: none;
           }
-          &:nth-child(2){
+          &:nth-child(2) {
             margin-left: 160px;
           }
           // &:last-child{
@@ -1408,10 +1487,10 @@
     #circlePinkLittle {
       display: none;
     }
-    #circleWhiteMain{
+    #circleWhiteMain {
       display: none;
     }
-    #circleBottmPink{
+    #circleBottmPink {
       margin-right: -150px;
       width: 140px;
       height: 140px;
@@ -1419,16 +1498,16 @@
   }
 
   //==========>> design tool section <<=========//
-  #designToolSection{
-    .designTool{
-      .toolTopTexts{
-        .swiper{
+  #designToolSection {
+    .designTool {
+      .toolTopTexts {
+        .swiper {
           max-width: 710px;
-          .swiper-slide{
-            h4{
+          .swiper-slide {
+            h4 {
               font-size: 20px;
             }
-            p{
+            p {
               font-size: 15px;
             }
           }

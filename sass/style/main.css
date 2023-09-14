@@ -1518,6 +1518,108 @@
   top: 90px;
   right: 370px;
 }
+.fullPage #coreSection {
+  padding: 112px 0;
+}
+.fullPage #coreSection .coreFeatures .topTexts {
+  padding-bottom: 72px;
+}
+.fullPage #coreSection .coreFeatures .topTexts h4 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: -1.2px;
+  padding-bottom: 32px;
+}
+.fullPage #coreSection .coreFeatures .topTexts p {
+  text-align: center;
+  width: 449px;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: -1.08px;
+}
+.fullPage #coreSection .coreFeatures .bottomContents {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+.fullPage #coreSection .coreFeatures .bottomContents .rectangle {
+  padding: 80px;
+  border-radius: 40px;
+}
+.fullPage #coreSection .coreFeatures .bottomContents .rectangle h2 {
+  font-size: 64px;
+  width: 318px;
+  font-weight: 500;
+  line-height: 100%; /* 64px */
+  letter-spacing: -1.6px;
+}
+.fullPage #coreSection .coreFeatures .bottomContents .rectangle p {
+  width: 318px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: -1.08px;
+  padding: 45px 0 109px 0;
+}
+.fullPage #coreSection .coreFeatures .bottomContents .leftCore {
+  border: 1px solid #e3e6e9;
+}
+.fullPage #coreSection .coreFeatures .bottomContents .leftCore p {
+  color: #999fae;
+}
+.fullPage #coreSection .coreFeatures .bottomContents .leftCore button {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 29px 103px;
+  background-color: #5956e9;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.64px;
+}
+.fullPage #coreSection .coreFeatures .bottomContents .leftCore button:hover {
+  opacity: 0.8;
+}
+.fullPage #coreSection .coreFeatures .bottomContents .leftCore button:active {
+  transform: scale(0.95);
+}
+.fullPage #coreSection .coreFeatures .bottomContents .rightCore {
+  border: 1px solid #5956e9;
+  background-color: #5956e9;
+  color: white;
+}
+.fullPage #coreSection .coreFeatures .bottomContents .rightCore button {
+  text-decoration: none;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 29px 76px;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 80%;
+  letter-spacing: -0.64px;
+}
+.fullPage #coreSection .coreFeatures .bottomContents .rightCore button:hover {
+  opacity: 0.8;
+}
+.fullPage #coreSection .coreFeatures .bottomContents .rightCore button:active {
+  transform: scale(0.95);
+}
 
 @media screen and (max-width: 1024px) {
   .container {
