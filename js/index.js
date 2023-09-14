@@ -44,3 +44,17 @@ var swiperTestimonial = new Swiper(".myTestimonialSwiper", {
     prevEl: ".prevBtn"
   }
 });
+
+//==========>> Feature Box swiper <<===============//
+var FeatureBoxSwiper = new Swiper(".FeatureboxSwiper", {
+  slidesPerView: 1,
+  speed:800,
+  grid: {
+    rows: 2
+  },
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".nextFeatureBtn",
+    prevEl: ".prevFeatureBtn"
+  }
+});

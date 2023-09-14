@@ -1,6 +1,7 @@
 @import "./buttons";
 @import "./mixins";
 @import "./fonts";
+
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +15,9 @@
 }
 //=========>> full page section <<============//
 .fullPage {
-  width: 1440px;
-  margin: 0 auto;
-  border: 1px solid red;
+  // width: 1440px;
+  // margin: 0 auto;
+  // border: 1px solid red;
 
   //=======>> navbar section <<========//
   .navBarSection {
@@ -1191,29 +1192,145 @@
           }
         }
       }
-      .rightContentSpeed{
-        img{
-          &:nth-child(2){
+      .rightContentSpeed {
+        img {
+          &:nth-child(2) {
             position: absolute;
             left: 93px;
             top: 265px;
             width: 32px;
             height: 32px;
           }
-          &:nth-child(3){
+          &:nth-child(3) {
             position: absolute;
             width: 70px;
             height: 70px;
             top: 207px;
             right: 97px;
           }
-          &:nth-child(4){
+          &:nth-child(4) {
             position: absolute;
             width: 120px;
             height: 120px;
             left: 270px;
             top: 135px;
             z-index: -1;
+          }
+        }
+      }
+    }
+  }
+
+  //===========>> Feature Section <<============//
+  #FeatureBoxSection {
+    padding: 117px 0 70px 0;
+    .featureBox {
+      position: relative;
+      background-color: #ffd3db;
+      padding: 100px 0 32px 100px;
+      border-radius: 40px;
+      @include d-flex(80px);
+      // z-index: ;
+      .leftContentBox {
+        background-color: #fff;
+        border-radius: 24px;
+        padding: 50px 47px 31px 47px;
+        z-index: 2;
+        .swiper {
+          width: 320px;
+          height: 180px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 60px;
+          .swiper-slide {
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            height: calc((100% - 30px) / 2) !important;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            &:hover{
+              color: #5956E9;
+            }
+          }
+        }
+        .smileSpan {
+          @include d-flex(5px);
+          span {
+            // font-family: DM Sans;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 99.327%; /* 13.906px */
+            letter-spacing: -0.35px;
+          }
+        }
+        h2 {
+          // font-family: DM Sans;
+          font-size: 40px;
+          font-weight: 500;
+          line-height: 100%; /* 40px */
+          letter-spacing: -1.8px;
+          margin-top: 11px;
+        }
+        p {
+          color: var(--text-grey, #999fae);
+          font-size: 16px;
+          width: 249px;
+          line-height: 24px; /* 150% */
+          letter-spacing: -0.4px;
+          padding: 36px 0 49px 0;
+        }
+        .bottomBtns{
+          @include d-flex(39px);
+          .swiperFeatureBtns{
+            @include d-flex(17px);
+            .nextFeatureBtn,.prevFeatureBtn{
+              color:white;
+              cursor: pointer;
+              width: 40px;
+              height: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+            }
+            .nextFeatureBtn{
+              background-color: #FAB8C4;
+            }
+            .prevFeatureBtn{
+              background-color: #5956E9;
+            }
+          }
+          button{
+            @include btnBlue(24px,46px);
+          }
+        }
+      }
+      .rightContentBox{
+        img{
+          &:nth-child(2){
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 40px;
+          }
+          &:nth-child(3){
+            position: absolute;
+            width: 205px;
+            height: 205px;
+            left: 400px;
+            bottom: -70px;
+          }
+          &:last-child{
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            top: 90px;
+            right: 370px;
           }
         }
       }

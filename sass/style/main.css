@@ -50,11 +50,6 @@
   margin: 0 auto;
 }
 
-.fullPage {
-  width: 1440px;
-  margin: 0 auto;
-  border: 1px solid red;
-}
 .fullPage .navBarSection {
   position: relative;
 }
@@ -1378,4 +1373,134 @@
   left: 270px;
   top: 135px;
   z-index: -1;
+}
+.fullPage #FeatureBoxSection {
+  padding: 117px 0 70px 0;
+}
+.fullPage #FeatureBoxSection .featureBox {
+  position: relative;
+  background-color: #ffd3db;
+  padding: 100px 0 32px 100px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.fullPage #FeatureBoxSection .featureBox .leftContentBox {
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 50px 47px 31px 47px;
+  z-index: 2;
+}
+.fullPage #FeatureBoxSection .featureBox .leftContentBox .swiper {
+  width: 320px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.fullPage #FeatureBoxSection .featureBox .leftContentBox .swiper .swiper-slide {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.fullPage #FeatureBoxSection .featureBox .leftContentBox .swiper .swiper-slide:hover {
+  color: #5956E9;
+}
+.fullPage #FeatureBoxSection .featureBox .leftContentBox .smileSpan {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.fullPage #FeatureBoxSection .featureBox .leftContentBox .smileSpan span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 99.327%; /* 13.906px */
+  letter-spacing: -0.35px;
+}
+.fullPage #FeatureBoxSection .featureBox .leftContentBox h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 100%; /* 40px */
+  letter-spacing: -1.8px;
+  margin-top: 11px;
+}
+.fullPage #FeatureBoxSection .featureBox .leftContentBox p {
+  color: var(--text-grey, #999fae);
+  font-size: 16px;
+  width: 249px;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.4px;
+  padding: 36px 0 49px 0;
+}
+.fullPage #FeatureBoxSection .featureBox .leftContentBox .bottomBtns {
+  display: flex;
+  align-items: center;
+  gap: 39px;
+}
+.fullPage #FeatureBoxSection .featureBox .leftContentBox .bottomBtns .swiperFeatureBtns {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.fullPage #FeatureBoxSection .featureBox .leftContentBox .bottomBtns .swiperFeatureBtns .nextFeatureBtn, .fullPage #FeatureBoxSection .featureBox .leftContentBox .bottomBtns .swiperFeatureBtns .prevFeatureBtn {
+  color: white;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.fullPage #FeatureBoxSection .featureBox .leftContentBox .bottomBtns .swiperFeatureBtns .nextFeatureBtn {
+  background-color: #FAB8C4;
+}
+.fullPage #FeatureBoxSection .featureBox .leftContentBox .bottomBtns .swiperFeatureBtns .prevFeatureBtn {
+  background-color: #5956E9;
+}
+.fullPage #FeatureBoxSection .featureBox .leftContentBox .bottomBtns button {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 24px 46px;
+  background-color: #5956e9;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.fullPage #FeatureBoxSection .featureBox .leftContentBox .bottomBtns button:hover {
+  opacity: 0.8;
+}
+.fullPage #FeatureBoxSection .featureBox .leftContentBox .bottomBtns button:active {
+  transform: scale(0.95);
+}
+.fullPage #FeatureBoxSection .featureBox .rightContentBox img:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 40px;
+}
+.fullPage #FeatureBoxSection .featureBox .rightContentBox img:nth-child(3) {
+  position: absolute;
+  width: 205px;
+  height: 205px;
+  left: 400px;
+  bottom: -70px;
+}
+.fullPage #FeatureBoxSection .featureBox .rightContentBox img:last-child {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 90px;
+  right: 370px;
 }/*# sourceMappingURL=main.css.map */
