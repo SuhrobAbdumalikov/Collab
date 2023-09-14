@@ -17,11 +17,21 @@
 .fullPage {
   // width: 1440px;
   // margin: 0 auto;
-  // border: 1px solid red;
+  border: 1px solid red;
 
   //=======>> navbar section <<========//
   .navBarSection {
     position: relative;
+    #HeaderBackImgBlue {
+      position: absolute;
+      z-index: 2;
+      right: 0;
+    }
+    #tabletBluImg {
+      position: absolute;
+      z-index: 2;
+      right: 0;
+    }
     .navbar {
       display: flex;
       align-items: center;
@@ -79,13 +89,13 @@
           box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
           background-color: #fff;
           position: absolute;
-          @include d-flex(100px);
+          @include d-flex(10px);
           justify-content: space-between;
           align-items: start;
-          padding: 50px 101px;
+          padding: 50px 100px;
           border-radius: 32px;
           margin-top: 440px;
-          margin-left: -40px;
+          margin-left: -25px;
           width: 1240px;
           z-index: 5;
           display: none;
@@ -150,7 +160,7 @@
           i {
             font-size: 20px;
             cursor: pointer;
-            color: white;
+            // color: blue;
             z-index: 2;
           }
         }
@@ -165,13 +175,12 @@
   main {
     .mainSection {
       position: relative;
-      @include d-flex(73px);
+      @include d-flex(80px);
       justify-content: center;
       .leftContent {
         margin-left: 160px;
         h1 {
           //   font-family: "DM Sans";
-          // width: 443px;
           font-size: 96px;
           font-style: normal;
           font-weight: 500;
@@ -227,13 +236,13 @@
         img {
           &:first-child {
             margin-bottom: 220px;
-            // position: absolute;
+            // position: absolute; 
             z-index: 3;
           }
           &:nth-child(2) {
             position: absolute;
             margin-top: 220px;
-            margin-left: 70px;
+            margin-left: 160px;
             z-index: 2;
           }
           &:nth-child(3) {
@@ -243,12 +252,17 @@
             bottom: 0;
             z-index: 2;
           }
-          &:last-child {
+          &:nth-child(4){
             position: absolute;
             bottom: 163px;
             margin-left: 350px;
             z-index: 2;
           }
+          // &:last-child{
+          //   position: absolute;
+          //   // z-index: 2;
+          //   // display: none;
+          // }
         }
       }
       #circlePinkLittle {
@@ -265,11 +279,12 @@
       #circleYellowMain {
         position: absolute;
         top: 40px;
+        margin-right: -110px;
       }
       #circleWhiteMain {
         position: absolute;
         bottom: 266px;
-        right: 40px;
+        right: 0;
         z-index: 2;
       }
       #circleBlueMain {
@@ -1253,8 +1268,8 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
-            &:hover{
-              color: #5956E9;
+            &:hover {
+              color: #5956e9;
             }
           }
         }
@@ -1284,12 +1299,13 @@
           letter-spacing: -0.4px;
           padding: 36px 0 49px 0;
         }
-        .bottomBtns{
+        .bottomBtns {
           @include d-flex(39px);
-          .swiperFeatureBtns{
+          .swiperFeatureBtns {
             @include d-flex(17px);
-            .nextFeatureBtn,.prevFeatureBtn{
-              color:white;
+            .nextFeatureBtn,
+            .prevFeatureBtn {
+              color: white;
               cursor: pointer;
               width: 40px;
               height: 40px;
@@ -1298,34 +1314,34 @@
               justify-content: center;
               border-radius: 50%;
             }
-            .nextFeatureBtn{
-              background-color: #FAB8C4;
+            .nextFeatureBtn {
+              background-color: #fab8c4;
             }
-            .prevFeatureBtn{
-              background-color: #5956E9;
+            .prevFeatureBtn {
+              background-color: #5956e9;
             }
           }
-          button{
-            @include btnBlue(24px,46px);
+          button {
+            @include btnBlue(24px, 46px);
           }
         }
       }
-      .rightContentBox{
-        img{
-          &:nth-child(2){
+      .rightContentBox {
+        img {
+          &:nth-child(2) {
             position: absolute;
             left: 0;
             top: 0;
             border-radius: 40px;
           }
-          &:nth-child(3){
+          &:nth-child(3) {
             position: absolute;
             width: 205px;
             height: 205px;
             left: 400px;
             bottom: -70px;
           }
-          &:last-child{
+          &:last-child {
             position: absolute;
             width: 48px;
             height: 48px;
@@ -1340,6 +1356,86 @@
 
 //============>> Tablet <<============//
 @media screen and (max-width: 1024px) {
+  .container {
+    width: 952px;
+    margin: 0 auto;
+  }
+  //========>> NAvBar section Tablet
+  .navBarSection {
+    #HeaderBackImgBlue {
+      display: none;
+    }
+    .leftNav {
+      .dropDownMenu {
+        max-width: 1000px;
+        margin-left: -25px;
+      }
+    }
+    .rightNav {
+      .searchDiv {
+        input {
+          display: none;
+        }
+        i {
+          color: black;
+        }
+      }
+    }
+  }
+
+  //======>> MAin section Tablet ==========>>
+  main{
+    .mainSection{
+      @include d-flex(10px);
+      justify-content: center;
+      .rightContent{
+        img{
+          &:first-child{
+            // display: none;
+          }
+          &:nth-child(2){
+            margin-left: 160px;
+          }
+          // &:last-child{
+          //   z-index: 5;
+          //   // position: absolute;
+          //   // display: block;
+          //   margin-bottom: 220px;
+          // }
+        }
+      }
+    }
+    #circlePinkLittle {
+      display: none;
+    }
+    #circleWhiteMain{
+      display: none;
+    }
+    #circleBottmPink{
+      margin-right: -150px;
+      width: 140px;
+      height: 140px;
+    }
+  }
+
+  //==========>> design tool section <<=========//
+  #designToolSection{
+    .designTool{
+      .toolTopTexts{
+        .swiper{
+          max-width: 710px;
+          .swiper-slide{
+            h4{
+              font-size: 20px;
+            }
+            p{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 //============>> mobile <<============//

@@ -50,8 +50,21 @@
   margin: 0 auto;
 }
 
+.fullPage {
+  border: 1px solid red;
+}
 .fullPage .navBarSection {
   position: relative;
+}
+.fullPage .navBarSection #HeaderBackImgBlue {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+}
+.fullPage .navBarSection #tabletBluImg {
+  position: absolute;
+  z-index: 2;
+  right: 0;
 }
 .fullPage .navBarSection .navbar {
   display: flex;
@@ -120,13 +133,13 @@
   position: absolute;
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 10px;
   justify-content: space-between;
   align-items: start;
-  padding: 50px 101px;
+  padding: 50px 100px;
   border-radius: 32px;
   margin-top: 440px;
-  margin-left: -40px;
+  margin-left: -25px;
   width: 1240px;
   z-index: 5;
   display: none;
@@ -193,7 +206,6 @@
 .fullPage .navBarSection .navbar .rightNav .searchDiv i {
   font-size: 20px;
   cursor: pointer;
-  color: white;
   z-index: 2;
 }
 .fullPage .navBarSection .navbar .rightNav #getStart {
@@ -221,7 +233,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 73px;
+  gap: 80px;
   justify-content: center;
 }
 .fullPage main .mainSection .leftContent {
@@ -311,7 +323,7 @@
 .fullPage main .mainSection .rightContent img:nth-child(2) {
   position: absolute;
   margin-top: 220px;
-  margin-left: 70px;
+  margin-left: 160px;
   z-index: 2;
 }
 .fullPage main .mainSection .rightContent img:nth-child(3) {
@@ -321,7 +333,7 @@
   bottom: 0;
   z-index: 2;
 }
-.fullPage main .mainSection .rightContent img:last-child {
+.fullPage main .mainSection .rightContent img:nth-child(4) {
   position: absolute;
   bottom: 163px;
   margin-left: 350px;
@@ -341,11 +353,12 @@
 .fullPage main .mainSection #circleYellowMain {
   position: absolute;
   top: 40px;
+  margin-right: -110px;
 }
 .fullPage main .mainSection #circleWhiteMain {
   position: absolute;
   bottom: 266px;
-  right: 40px;
+  right: 0;
   z-index: 2;
 }
 .fullPage main .mainSection #circleBlueMain {
@@ -1412,7 +1425,7 @@
   justify-content: space-around;
 }
 .fullPage #FeatureBoxSection .featureBox .leftContentBox .swiper .swiper-slide:hover {
-  color: #5956E9;
+  color: #5956e9;
 }
 .fullPage #FeatureBoxSection .featureBox .leftContentBox .smileSpan {
   display: flex;
@@ -1450,7 +1463,8 @@
   align-items: center;
   gap: 17px;
 }
-.fullPage #FeatureBoxSection .featureBox .leftContentBox .bottomBtns .swiperFeatureBtns .nextFeatureBtn, .fullPage #FeatureBoxSection .featureBox .leftContentBox .bottomBtns .swiperFeatureBtns .prevFeatureBtn {
+.fullPage #FeatureBoxSection .featureBox .leftContentBox .bottomBtns .swiperFeatureBtns .nextFeatureBtn,
+.fullPage #FeatureBoxSection .featureBox .leftContentBox .bottomBtns .swiperFeatureBtns .prevFeatureBtn {
   color: white;
   cursor: pointer;
   width: 40px;
@@ -1461,10 +1475,10 @@
   border-radius: 50%;
 }
 .fullPage #FeatureBoxSection .featureBox .leftContentBox .bottomBtns .swiperFeatureBtns .nextFeatureBtn {
-  background-color: #FAB8C4;
+  background-color: #fab8c4;
 }
 .fullPage #FeatureBoxSection .featureBox .leftContentBox .bottomBtns .swiperFeatureBtns .prevFeatureBtn {
-  background-color: #5956E9;
+  background-color: #5956e9;
 }
 .fullPage #FeatureBoxSection .featureBox .leftContentBox .bottomBtns button {
   border-radius: 20px;
@@ -1503,4 +1517,53 @@
   height: 48px;
   top: 90px;
   right: 370px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 952px;
+    margin: 0 auto;
+  }
+  .navBarSection #HeaderBackImgBlue {
+    display: none;
+  }
+  .navBarSection .leftNav .dropDownMenu {
+    max-width: 1000px;
+    margin-left: -25px;
+  }
+  .navBarSection .rightNav .searchDiv input {
+    display: none;
+  }
+  .navBarSection .rightNav .searchDiv i {
+    color: black;
+  }
+  main .mainSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
+  main .mainSection .rightContent img:nth-child(2) {
+    margin-left: 160px;
+  }
+  main #circlePinkLittle {
+    display: none;
+  }
+  main #circleWhiteMain {
+    display: none;
+  }
+  main #circleBottmPink {
+    margin-right: -150px;
+    width: 140px;
+    height: 140px;
+  }
+  #designToolSection .designTool .toolTopTexts .swiper {
+    max-width: 710px;
+  }
+  #designToolSection .designTool .toolTopTexts .swiper .swiper-slide h4 {
+    font-size: 20px;
+  }
+  #designToolSection .designTool .toolTopTexts .swiper .swiper-slide p {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=main.css.map */
