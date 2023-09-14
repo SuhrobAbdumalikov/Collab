@@ -58,3 +58,19 @@ var FeatureBoxSwiper = new Swiper(".FeatureboxSwiper", {
     prevEl: ".prevFeatureBtn"
   }
 });
+
+//=============>> Feature slide Box swiper <<=============//
+var FeatureSlideSwiper = new Swiper(".FeatureSlideSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  speed: 1000,
+  autoplay:{
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".nextSlideBtn",
+    prevEl: ".prevSlideBtn",
+  },
+});

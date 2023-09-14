@@ -7,9 +7,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 //=============>>Desktop<<================//
 .container {
+  width: 1040px;
+  margin: 0 auto;
+  // border: 1px solid red;
+}
+.Navcontainer {
   width: 1240px;
   margin: 0 auto;
 }
@@ -17,10 +24,10 @@
 .fullPage {
   // width: 1440px;
   // margin: 0 auto;
-  border: 1px solid red;
+  // border: 1px solid red;
 
   //=======>> navbar section <<========//
-  .navBarSection {
+  #navBarSection {
     position: relative;
     #HeaderBackImgBlue {
       position: absolute;
@@ -1431,7 +1438,132 @@
       }
     }
   }
-  
+
+  //==============>> Feature slide section <<============//
+  #featureSlideSection {
+    padding-bottom: 112px;
+    .featureSlide {
+      .topContent {
+        padding-bottom: 82px;
+        @include d-flex(1px);
+        justify-content: space-between;
+        .scrollCollabse {
+          @include d-flex(16px);
+          a {
+            color: var(--text-grey, #999fae);
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: -0.64px;
+          }
+        }
+        .slideBtns {
+          @include d-flex(17px);
+          .prevSlideBtn {
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+          }
+          .nextSlideBtn {
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #5956e9;
+            color: white;
+            border-radius: 50%;
+          }
+        }
+      }
+      .bottomSlides {
+        .swiper {
+          width: 1010px;
+          height: 613px;
+
+          .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            gap: 40px;
+            border-radius: 24px;
+            background: #ffeddc;
+            padding: 10px;
+
+            .topImg {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #fab8c4;
+              width: 220px;
+              height: 220px;
+              border-radius: 50%;
+            }
+            .bottomTexts {
+              box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+                rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+              border-radius: 24px;
+              background-color: #fff;
+              padding: 40px 30px;
+              @include d-column(23px);
+              align-items: start;
+              span {
+                // font-family: DM Sans;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 99.327%;
+                letter-spacing: -0.35px;
+              }
+              h3 {
+                // ont-family: DM Sans;
+                font-size: 32px;
+                font-weight: 500;
+                line-height: 110%; /* 35.2px */
+                letter-spacing: -1.44px;
+              }
+              p {
+                color: var(--text-grey, #999fae);
+                font-size: 16px;
+                line-height: 24px; /* 150% */
+                letter-spacing: -0.4px;
+              }
+              a {
+                p {
+                  color: #333333;
+                }
+                @include d-flex(16px);
+                &:hover {
+                  p,
+                  i {
+                    color: #5956e9;
+                  }
+                }
+              }
+            }
+          }
+          .fSlide2{
+            background-color: #DBDEFF;
+            .topImg{
+              background-color: #5956e9;
+            }
+          }
+          .fSlide3{
+            background-color: #DBF8FF;
+            .topImg{
+              background-color: #90C8FC;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 //============>> Tablet <<============//
@@ -1441,7 +1573,7 @@
     margin: 0 auto;
   }
   //========>> NAvBar section Tablet
-  .navBarSection {
+  #navBarSection {
     #HeaderBackImgBlue {
       display: none;
     }
@@ -1516,8 +1648,33 @@
       }
     }
   }
+
+  //=========>> sign up section <<============//
+  #signUpSection{}
+  #featureListSsection{}
+  #prototypeSection{}
+  #PricingSection{}
+  #getWorkDoneSection{}
+  #TestimonialSection{}
+  #speedSection{}
+  #FeatureBoxSection{}
+  #coreSection{}
+  #featureSlideSection{}
 }
 
 //============>> mobile <<============//
 @media screen and (max-width: 375px) {
+  #navBarSection{}
+  main{}
+  #designToolSection{}
+  #signUpSection{}
+  #featureListSsection{}
+  #prototypeSection{}
+  #PricingSection{}
+  #getWorkDoneSection{}
+  #TestimonialSection{}
+  #speedSection{}
+  #FeatureBoxSection{}
+  #coreSection{}
+  #featureSlideSection{}
 }
