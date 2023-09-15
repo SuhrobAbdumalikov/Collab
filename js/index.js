@@ -1,7 +1,7 @@
 import Swiper from "../node_modules/swiper/swiper-bundle.min.mjs";
 import * as selectors from "./selectors.js";
 //===========>> Swiper in tool section <<============//
-var swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
   spaceBetween: 25,
   loop: true,
@@ -32,7 +32,7 @@ selectors.togglebtn.addEventListener('click',() => {
 })
 
 //==========>> Testimonials swiper <<==================//
-var swiperTestimonial = new Swiper(".myTestimonialSwiper", {
+const swiperTestimonial = new Swiper(".myTestimonialSwiper", {
   slidesPerView: 2,
   speed: 1000,
   grid: {
@@ -46,7 +46,7 @@ var swiperTestimonial = new Swiper(".myTestimonialSwiper", {
 });
 
 //==========>> Feature Box swiper <<===============//
-var FeatureBoxSwiper = new Swiper(".FeatureboxSwiper", {
+const FeatureBoxSwiper = new Swiper(".FeatureboxSwiper", {
   slidesPerView: 1,
   speed:800,
   grid: {
@@ -60,7 +60,7 @@ var FeatureBoxSwiper = new Swiper(".FeatureboxSwiper", {
 });
 
 //=============>> Feature slide Box swiper <<=============//
-var FeatureSlideSwiper = new Swiper(".FeatureSlideSwiper", {
+const FeatureSlideSwiper = new Swiper(".FeatureSlideSwiper", {
   slidesPerView: 3,
   spaceBetween: 26,
   loop: true,
@@ -73,4 +73,19 @@ var FeatureSlideSwiper = new Swiper(".FeatureSlideSwiper", {
     nextEl: ".nextSlideBtn",
     prevEl: ".prevSlideBtn",
   },
+});
+
+//==========>> Vertical Swiper <<===================//
+const verticalSwiper = new Swiper(".VerticalSwiper", {
+  direction: "vertical",
+  speed: 2000,
+  loop: true,
+  autoplay:{
+    delay:2000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  }
 });

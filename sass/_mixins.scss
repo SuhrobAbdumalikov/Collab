@@ -20,3 +20,9 @@
         transform: scale(0.95);
     }
 }
+
+@mixin d-flex-sb(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -444,7 +444,7 @@
     .signUp {
       @include d-column(74px);
       .images {
-        #mainSignImg{
+        #mainSignImg {
           z-index: 2;
           padding-bottom: 190px;
         }
@@ -1568,6 +1568,92 @@
       }
     }
   }
+
+  //==============>> Research Section <<==============//
+  #researchSection {
+    padding-bottom: 100px;
+    .research {
+      @include d-column(50px);
+      align-items: start;
+      .resTopTexts {
+        h2 {
+          // font-family: DM Sans;
+          font-size: 80px;
+          font-weight: 500;
+          line-height: 100%; /* 80px */
+          letter-spacing: -2px;
+        }
+        p {
+          font-size: 18px;
+          padding-top: 39px;
+        }
+      }
+      .resBottom {
+        @include d-flex(170px);
+        align-items: start;
+        position: relative;
+        .leftSwiper {
+          .swiper {
+            width: 100%;
+            height: 700px;
+            .swiper-slide {
+              font-size: 18px;
+              background: #fff;
+              padding: 0 30px 0 120px;
+              p:first-child {
+                font-size: 288px;
+                span {
+                  font-size: 80px;
+                }
+              }
+              p:nth-child(2) {
+                width: 229px;
+                font-size: 16px;
+                line-height: 24px; 
+                letter-spacing: -0.4px;
+              }
+              .btns{
+                padding-top: 66px;
+                @include d-flex(40px);
+                .play{
+                  cursor: pointer;
+                  width: 96px;
+                  height: 96px;
+                  background-color: #5956e9;
+                  color:white;
+                  @include d-flex-sb();
+                  border-radius: 50%;
+                }
+                a{
+                  color:black;
+                  font-size: 16px;
+                  @include d-flex(16px);
+                  .line{
+                    width: 35px;
+                    height: 1px;
+                    background-color: black;
+                  }
+                }
+              }
+            }
+            .swiper-pagination-bullets .swiper-pagination-bullet{
+              background-color: black;
+            }
+          }
+        }
+        .rightImage{
+          img{
+            &:nth-child(2){
+              position: absolute;
+              bottom: -18px;
+              right: 295px;
+              z-index: -1;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 //============>> Tablet <<============//
@@ -1608,8 +1694,8 @@
     .mainSection {
       @include d-flex(1px!important);
       justify-content: center;
-      .leftContent{
-        margin-left: 195px!important;
+      .leftContent {
+        margin-left: 195px !important;
       }
       .rightContent {
         img {
@@ -1658,21 +1744,21 @@
           }
         }
       }
-      #circleGrey{
-        right: 0!important;
+      #circleGrey {
+        right: 0 !important;
       }
-      #circleGreyLittle{
-        left: 0!important;
+      #circleGreyLittle {
+        left: 0 !important;
       }
     }
   }
 
   //=========>> sign up section <<============//
   #signUpSection {
-    .signUp{
-      .images{
-        #mainSignImg{
-          padding-bottom: 130px!important;
+    .signUp {
+      .images {
+        #mainSignImg {
+          padding-bottom: 130px !important;
         }
       }
     }
@@ -1680,13 +1766,13 @@
 
   // ==========>> Feature list section <<===============//
   #featureListSsection {
-    .featureList{
+    .featureList {
       @include d-flex(30px!important);
-      .leftContentList{
-        .topContent{
-          h2{
-            font-size: 68px!important;
-            padding: 23px 0 32px 0!important;
+      .leftContentList {
+        .topContent {
+          h2 {
+            font-size: 68px !important;
+            padding: 23px 0 32px 0 !important;
           }
         }
       }
@@ -1711,10 +1797,10 @@
   #coreSection {
   }
   #featureSlideSection {
-    padding-bottom: 96px!important;
+    padding-bottom: 96px !important;
     .featureSlide {
       .topContent {
-        padding-bottom: 48px!important;
+        padding-bottom: 48px !important;
       }
       .bottomSlides {
         .swiper {
@@ -1725,8 +1811,30 @@
               padding: 40px 24px !important;
               @include d-column(15px);
               h3 {
-                font-size: 24px!important;
+                font-size: 24px !important;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //==========>> research section <<===============//
+  #researchSection{
+    .research{
+      .resTopTexts{
+        h2{
+          font-size: 68px!important;
+        }
+      }
+
+      .resBottom{
+        @include d-flex(90px!important);
+        .leftSwiper{
+          .swiper{
+            .swiper-slide{
+              padding: 0 19px 0 50px!important;
             }
           }
         }

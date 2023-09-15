@@ -1753,6 +1753,92 @@
 .fullPage #featureSlideSection .featureSlide .bottomSlides .swiper .fSlide3 .topImg {
   background-color: #90c8fc;
 }
+.fullPage #researchSection {
+  padding-bottom: 100px;
+}
+.fullPage #researchSection .research {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  align-items: start;
+}
+.fullPage #researchSection .research .resTopTexts h2 {
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 100%; /* 80px */
+  letter-spacing: -2px;
+}
+.fullPage #researchSection .research .resTopTexts p {
+  font-size: 18px;
+  padding-top: 39px;
+}
+.fullPage #researchSection .research .resBottom {
+  display: flex;
+  align-items: center;
+  gap: 170px;
+  align-items: start;
+  position: relative;
+}
+.fullPage #researchSection .research .resBottom .leftSwiper .swiper {
+  width: 100%;
+  height: 700px;
+}
+.fullPage #researchSection .research .resBottom .leftSwiper .swiper .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  padding: 0 30px 0 120px;
+}
+.fullPage #researchSection .research .resBottom .leftSwiper .swiper .swiper-slide p:first-child {
+  font-size: 288px;
+}
+.fullPage #researchSection .research .resBottom .leftSwiper .swiper .swiper-slide p:first-child span {
+  font-size: 80px;
+}
+.fullPage #researchSection .research .resBottom .leftSwiper .swiper .swiper-slide p:nth-child(2) {
+  width: 229px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+}
+.fullPage #researchSection .research .resBottom .leftSwiper .swiper .swiper-slide .btns {
+  padding-top: 66px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.fullPage #researchSection .research .resBottom .leftSwiper .swiper .swiper-slide .btns .play {
+  cursor: pointer;
+  width: 96px;
+  height: 96px;
+  background-color: #5956e9;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.fullPage #researchSection .research .resBottom .leftSwiper .swiper .swiper-slide .btns a {
+  color: black;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.fullPage #researchSection .research .resBottom .leftSwiper .swiper .swiper-slide .btns a .line {
+  width: 35px;
+  height: 1px;
+  background-color: black;
+}
+.fullPage #researchSection .research .resBottom .leftSwiper .swiper .swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: black;
+}
+.fullPage #researchSection .research .resBottom .rightImage img:nth-child(2) {
+  position: absolute;
+  bottom: -18px;
+  right: 295px;
+  z-index: -1;
+}
 
 @media screen and (max-width: 1024px) {
   .container {
@@ -1850,5 +1936,16 @@
   }
   #featureSlideSection .featureSlide .bottomSlides .swiper .swiper-slide .bottomTexts h3 {
     font-size: 24px !important;
+  }
+  #researchSection .research .resTopTexts h2 {
+    font-size: 68px !important;
+  }
+  #researchSection .research .resBottom {
+    display: flex;
+    align-items: center;
+    gap: 90px !important;
+  }
+  #researchSection .research .resBottom .leftSwiper .swiper .swiper-slide {
+    padding: 0 19px 0 50px !important;
   }
 }/*# sourceMappingURL=main.css.map */
