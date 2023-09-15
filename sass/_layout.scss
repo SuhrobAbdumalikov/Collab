@@ -1663,6 +1663,7 @@
 
   //============>> Simple call section <<==============//
   #simpleCallSection {
+    position: relative;
     .simpleCall {
       background-color: #5956e9;
       color: white;
@@ -1685,6 +1686,17 @@
       button {
         @include btnWhite(29px, 40px);
       }
+    }
+    #callHand {
+      position: absolute;
+      right: 0;
+      top: -140px;
+    }
+    #callHandTablet{
+      position: absolute;
+      right: 0;
+      top: -140px;
+      display: none;
     }
   }
 }
@@ -1846,8 +1858,8 @@
               h3 {
                 font-size: 24px !important;
               }
-              p{
-                font-size: 17px!important;
+              p {
+                font-size: 17px !important;
               }
             }
           }
@@ -1883,11 +1895,16 @@
     background-color: #5956e9 !important;
     padding-bottom: 0 !important;
     .simpleCall {
-      // background-color: transparent!important;
       padding: 120px 50px !important;
       h2 {
         font-size: 68px !important;
       }
+    }
+    #callHand{
+      display: none;
+    }
+    #callHandTablet{
+      display: initial!important;
     }
   }
 }

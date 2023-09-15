@@ -1845,6 +1845,9 @@
   right: -50px;
   top: -50px;
 }
+.fullPage #simpleCallSection {
+  position: relative;
+}
 .fullPage #simpleCallSection .simpleCall {
   background-color: #5956e9;
   color: white;
@@ -1878,6 +1881,17 @@
 }
 .fullPage #simpleCallSection .simpleCall button:active {
   transform: scale(0.95);
+}
+.fullPage #simpleCallSection #callHand {
+  position: absolute;
+  right: 0;
+  top: -140px;
+}
+.fullPage #simpleCallSection #callHandTablet {
+  position: absolute;
+  right: 0;
+  top: -140px;
+  display: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -2000,5 +2014,11 @@
   }
   #simpleCallSection .simpleCall h2 {
     font-size: 68px !important;
+  }
+  #simpleCallSection #callHand {
+    display: none;
+  }
+  #simpleCallSection #callHandTablet {
+    display: initial !important;
   }
 }/*# sourceMappingURL=main.css.map */
