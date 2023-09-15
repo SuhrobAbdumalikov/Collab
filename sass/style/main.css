@@ -50,6 +50,7 @@
 .container {
   width: 1040px;
   margin: 0 auto;
+  border: 1px solid red;
 }
 
 .Navcontainer {
@@ -241,7 +242,7 @@
   justify-content: center;
 }
 .fullPage main .mainSection .leftContent {
-  margin-left: 160px;
+  margin-left: 100px;
 }
 .fullPage main .mainSection .leftContent h1 {
   font-size: 96px;
@@ -345,7 +346,7 @@
 }
 .fullPage main .mainSection #circlePinkLittle {
   position: absolute;
-  left: 0;
+  left: -160px;
   top: 260px;
 }
 .fullPage main .mainSection #circleBottmPink {
@@ -362,7 +363,7 @@
 .fullPage main .mainSection #circleWhiteMain {
   position: absolute;
   bottom: 266px;
-  right: 0;
+  right: -70px;
   z-index: 2;
 }
 .fullPage main .mainSection #circleBlueMain {
@@ -511,6 +512,10 @@
   flex-direction: column;
   align-items: center;
   gap: 74px;
+}
+.fullPage #signUpSection .signUp .images #mainSignImg {
+  z-index: 2;
+  padding-bottom: 190px;
 }
 .fullPage #signUpSection .signUp .images #blueBackSign {
   position: absolute;
@@ -1774,8 +1779,11 @@
   main .mainSection {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1px !important;
     justify-content: center;
+  }
+  main .mainSection .leftContent {
+    margin-left: 195px !important;
   }
   main .mainSection .rightContent img:nth-child(2) {
     margin-left: 160px;
@@ -1791,6 +1799,11 @@
     width: 140px;
     height: 140px;
   }
+  #designToolSection .designTool .toolTopTexts {
+    display: flex;
+    align-items: center;
+    gap: 129px !important;
+  }
   #designToolSection .designTool .toolTopTexts .swiper {
     max-width: 710px;
   }
@@ -1800,24 +1813,42 @@
   #designToolSection .designTool .toolTopTexts .swiper .swiper-slide p {
     font-size: 15px;
   }
+  #designToolSection .designTool #circleGrey {
+    right: 0 !important;
+  }
+  #designToolSection .designTool #circleGreyLittle {
+    left: 0 !important;
+  }
+  #signUpSection .signUp .images #mainSignImg {
+    padding-bottom: 130px !important;
+  }
+  #featureListSsection .featureList {
+    display: flex;
+    align-items: center;
+    gap: 30px !important;
+  }
+  #featureListSsection .featureList .leftContentList .topContent h2 {
+    font-size: 68px !important;
+    padding: 23px 0 32px 0 !important;
+  }
   #featureSlideSection {
-    padding-bottom: 96px;
+    padding-bottom: 96px !important;
   }
   #featureSlideSection .featureSlide .topContent {
-    padding-bottom: 48px;
+    padding-bottom: 48px !important;
   }
   #featureSlideSection .featureSlide .bottomSlides .swiper {
-    width: 900px;
+    width: 900px !important;
     height: 613px;
   }
   #featureSlideSection .featureSlide .bottomSlides .swiper .swiper-slide .bottomTexts {
-    padding: 40px 24px;
+    padding: 40px 24px !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
   #featureSlideSection .featureSlide .bottomSlides .swiper .swiper-slide .bottomTexts h3 {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 }/*# sourceMappingURL=main.css.map */

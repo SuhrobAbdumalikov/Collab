@@ -14,7 +14,7 @@
 .container {
   width: 1040px;
   margin: 0 auto;
-  // border: 1px solid red;
+  border: 1px solid red;
 }
 .Navcontainer {
   width: 1240px;
@@ -185,7 +185,7 @@
       @include d-flex(80px);
       justify-content: center;
       .leftContent {
-        margin-left: 160px;
+        margin-left: 100px;
         h1 {
           //   font-family: "DM Sans";
           font-size: 96px;
@@ -274,7 +274,7 @@
       }
       #circlePinkLittle {
         position: absolute;
-        left: 0;
+        left: -160px;
         top: 260px;
       }
       #circleBottmPink {
@@ -291,7 +291,7 @@
       #circleWhiteMain {
         position: absolute;
         bottom: 266px;
-        right: 0;
+        right: -70px;
         z-index: 2;
       }
       #circleBlueMain {
@@ -444,6 +444,10 @@
     .signUp {
       @include d-column(74px);
       .images {
+        #mainSignImg{
+          z-index: 2;
+          padding-bottom: 190px;
+        }
         #blueBackSign {
           position: absolute;
           margin-left: -510px;
@@ -1602,8 +1606,11 @@
   //======>> MAin section Tablet ==========>>
   main {
     .mainSection {
-      @include d-flex(10px);
+      @include d-flex(1px!important);
       justify-content: center;
+      .leftContent{
+        margin-left: 195px!important;
+      }
       .rightContent {
         img {
           &:first-child {
@@ -1638,6 +1645,7 @@
   #designToolSection {
     .designTool {
       .toolTopTexts {
+        @include d-flex(129px!important);
         .swiper {
           max-width: 710px;
           .swiper-slide {
@@ -1650,16 +1658,46 @@
           }
         }
       }
+      #circleGrey{
+        right: 0!important;
+      }
+      #circleGreyLittle{
+        left: 0!important;
+      }
     }
   }
 
   //=========>> sign up section <<============//
   #signUpSection {
+    .signUp{
+      .images{
+        #mainSignImg{
+          padding-bottom: 130px!important;
+        }
+      }
+    }
   }
+
+  // ==========>> Feature list section <<===============//
   #featureListSsection {
+    .featureList{
+      @include d-flex(30px!important);
+      .leftContentList{
+        .topContent{
+          h2{
+            font-size: 68px!important;
+            padding: 23px 0 32px 0!important;
+          }
+        }
+      }
+    }
   }
+
+  //===========>> ptototpe section <<============//
   #prototypeSection {
   }
+
+  //=========>> Pricing Section <<==============//
   #PricingSection {
   }
   #getWorkDoneSection {
@@ -1673,21 +1711,21 @@
   #coreSection {
   }
   #featureSlideSection {
-    padding-bottom: 96px;
+    padding-bottom: 96px!important;
     .featureSlide {
       .topContent {
-        padding-bottom: 48px;
+        padding-bottom: 48px!important;
       }
       .bottomSlides {
         .swiper {
-          width: 900px;
+          width: 900px !important;
           height: 613px;
           .swiper-slide {
             .bottomTexts {
-              padding: 40px 24px;
+              padding: 40px 24px !important;
               @include d-column(15px);
               h3 {
-                font-size: 24px;
+                font-size: 24px!important;
               }
             }
           }

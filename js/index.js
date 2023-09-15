@@ -3,7 +3,7 @@ import * as selectors from "./selectors.js";
 //===========>> Swiper in tool section <<============//
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
-  spaceBetween: 30,
+  spaceBetween: 25,
   loop: true,
   pagination: {
     el: ".swiper-pagination",
