@@ -1609,26 +1609,26 @@
               p:nth-child(2) {
                 width: 229px;
                 font-size: 16px;
-                line-height: 24px; 
+                line-height: 24px;
                 letter-spacing: -0.4px;
               }
-              .btns{
+              .btns {
                 padding-top: 66px;
                 @include d-flex(40px);
-                .play{
+                .play {
                   cursor: pointer;
                   width: 96px;
                   height: 96px;
                   background-color: #5956e9;
-                  color:white;
+                  color: white;
                   @include d-flex-sb();
                   border-radius: 50%;
                 }
-                a{
-                  color:black;
+                a {
+                  color: black;
                   font-size: 16px;
                   @include d-flex(16px);
-                  .line{
+                  .line {
                     width: 35px;
                     height: 1px;
                     background-color: black;
@@ -1636,20 +1636,20 @@
                 }
               }
             }
-            .swiper-pagination-bullets .swiper-pagination-bullet{
+            .swiper-pagination-bullets .swiper-pagination-bullet {
               background-color: black;
             }
           }
         }
-        .rightImage{
-          img{
-            &:nth-child(2){
+        .rightImage {
+          img {
+            &:nth-child(2) {
               position: absolute;
               bottom: -18px;
               right: 295px;
               z-index: -1;
             }
-            &:last-child{
+            &:last-child {
               position: absolute;
               z-index: -1;
               right: -50px;
@@ -1657,6 +1657,33 @@
             }
           }
         }
+      }
+    }
+  }
+
+  //============>> Simple call section <<==============//
+  #simpleCallSection {
+    .simpleCall {
+      background-color: #5956e9;
+      color: white;
+      border-radius: 40px;
+      padding: 120px 100px;
+      h2 {
+        // font-family: DM Sans;
+        width: 832px;
+        font-size: 80px;
+        font-weight: 500;
+        line-height: 100%; /* 80px */
+        letter-spacing: -2px;
+      }
+
+      p {
+        padding: 24px 0 40px 0;
+        font-size: 18px;
+      }
+
+      button {
+        @include btnWhite(29px, 40px);
       }
     }
   }
@@ -1810,14 +1837,17 @@
       }
       .bottomSlides {
         .swiper {
-          width: 900px !important;
+          width: 872px !important;
           height: 613px;
           .swiper-slide {
             .bottomTexts {
-              padding: 40px 24px !important;
+              padding: 40px 25px !important;
               @include d-column(15px);
               h3 {
                 font-size: 24px !important;
+              }
+              p{
+                font-size: 17px!important;
               }
             }
           }
@@ -1827,23 +1857,36 @@
   }
 
   //==========>> research section <<===============//
-  #researchSection{
-    .research{
-      .resTopTexts{
-        h2{
-          font-size: 68px!important;
+  #researchSection {
+    .research {
+      .resTopTexts {
+        h2 {
+          font-size: 68px !important;
         }
       }
 
-      .resBottom{
+      .resBottom {
         @include d-flex(90px!important);
-        .leftSwiper{
-          .swiper{
-            .swiper-slide{
-              padding: 0 19px 0 50px!important;
+        .leftSwiper {
+          .swiper {
+            .swiper-slide {
+              padding: 0 19px 0 50px !important;
             }
           }
         }
+      }
+    }
+  }
+
+  //===========>> simple call section <<===============//
+  #simpleCallSection {
+    background-color: #5956e9 !important;
+    padding-bottom: 0 !important;
+    .simpleCall {
+      // background-color: transparent!important;
+      padding: 120px 50px !important;
+      h2 {
+        font-size: 68px !important;
       }
     }
   }
