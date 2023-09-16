@@ -1838,7 +1838,7 @@
           @include d-flex-sb();
           justify-content: space-between;
           transition: 0.4s;
-          div{
+          div {
             @include d-flex(24px);
           }
           &::after {
@@ -1863,7 +1863,7 @@
           }
           &.active {
             background-color: #5956e9;
-            color:white;
+            color: white;
             &::after {
               content: "\2212";
               background-color: #fff;
@@ -1887,10 +1887,10 @@
             rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
             rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
-          .imgs{
+          .imgs {
             padding: 10px 0;
-            img{
-              &:nth-child(2){
+            img {
+              &:nth-child(2) {
                 width: 60px;
                 height: 60px;
                 position: absolute;
@@ -1899,19 +1899,99 @@
               }
             }
           }
-          .texts{
+          .texts {
             padding-top: 50px;
             @include d-column(24px);
             align-items: start;
-            .items{
+            .items {
               @include d-flex(3px);
               align-items: start;
-              p{
+              p {
                 width: 204px;
-                color:#999FAE;
+                color: #999fae;
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  //============>> clients section <<==============//
+  #clientsSection {
+    background-color: #27272e;
+    color: white;
+    padding: 112px 0 62px 0;
+    .clients {
+      position: relative;
+      @include d-column(78px);
+      align-items: start;
+      .clientsTop {
+        @include d-flex(140px);
+        align-items: start;
+        span {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 99.327%; /* 19.865px */
+          letter-spacing: -0.5px;
+        }
+        .clientsRightTexts {
+          z-index: 2;
+          h2 {
+            border: 1px solid red;
+            // font-family: DM Sans;
+            font-size: 80px;
+            width: 830px;
+            font-weight: 500;
+            line-height: 100%; /* 80px */
+            letter-spacing: -2px;
+            padding-bottom: 50px;
+          }
+          p {
+            font-size: 18px;
+            font-weight: 400;
+            opacity: 0.7;
+            width: 502px;
+          }
+        }
+        img {
+          position: absolute;
+          right: -10px;
+          top: -60px;
+        }
+        #littleGreyImg {
+          position: absolute;
+          width: 90px;
+          height: 90px;
+          left: -100px;
+          top: 420px;
+        }
+      }
+      .clientsBottom {
+        .img {
+          width: 230px;
+          height: 133px;
+          // border: 1px solid white;
+          @include d-flex-sb();
+        }
+        img {
+          cursor: pointer;
+          filter: grayscale(100%) brightness(72%) opacity(63%);
+          -webkit-filter: grayscale(100%) brightness(72%) opacity(63%);
+          -moz-filter: grayscale(100%) brightness(72%) opacity(63%);
+          &:hover {
+            filter: grayscale(2%);
+            -webkit-filter: grayscale(2%);
+            -moz-filter: grayscale(2%);
+          }
+        }
+        .firstStep {
+          @include d-flex(40px);
+          align-items: start;
+        }
+        .secondStep {
+          @include d-flex(40px);
+          align-items: start;
         }
       }
     }
@@ -2154,22 +2234,51 @@
   }
 
   //===========>> list toggle section <<==============//
-  #listToggleSection{
-    .listToggle{
+  #listToggleSection {
+    .listToggle {
       @include d-flex(20px!important);
-      .rightToggle{
-        width: 445px!important;
-        .panel{
+      .rightToggle {
+        width: 445px !important;
+        .panel {
           @include d-flex(0px!important);
-          justify-content: start!important;
-          .imgs{
-            img{
+          justify-content: start !important;
+          .imgs {
+            img {
               display: none;
             }
           }
-          .texts{
-            padding: 20px 0!important;
+          .texts {
+            padding: 20px 0 !important;
           }
+        }
+      }
+    }
+  }
+
+  //==========>> Clients section <<================//
+  #clientsSection {
+    .clients {
+      @include d-column(100px!important);
+      .clientsTop{
+        @include d-flex(80px);
+        .clientsRightTexts{
+          h2{
+            font-size: 65px!important;
+            width: 670px!important;
+          }
+        }
+        img{
+          right: -100px!important;
+          top: -20px!important;
+        }
+        #littleGreyImg{
+          left: -110px!important;
+          top: 420px!important;
+        }
+      }
+      .clientsBottom{
+        .img{
+          width: 195px!important;
         }
       }
     }
