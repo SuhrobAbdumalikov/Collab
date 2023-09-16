@@ -1,5 +1,6 @@
 import Swiper from "../node_modules/swiper/swiper-bundle.min.mjs";
 import * as selectors from "./selectors.js";
+
 //===========>> Swiper in tool section <<============//
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
@@ -89,3 +90,17 @@ const verticalSwiper = new Swiper(".VerticalSwiper", {
     clickable: true,
   },
 });
+
+//==========
+const acc = document.getElementsByClassName("accordion");
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+  });
+}

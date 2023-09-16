@@ -1702,6 +1702,7 @@
 
   //==========>> timeline section <<====================//
   #timelineSection {
+    padding-bottom: 80px;
     .timeline {
       .timeTopContent {
         @include d-flex(5px);
@@ -1746,12 +1747,12 @@
           }
         }
         .timeRight {
-          img:first-child{
+          img:first-child {
             position: absolute;
             right: 0;
             top: -70px;
           }
-          img:nth-child(2){
+          img:nth-child(2) {
             position: absolute;
             display: none;
           }
@@ -1772,8 +1773,144 @@
             width: 90px;
             height: 90px;
             position: absolute;
-            left: 0;
+            left: -40px;
             top: 150px;
+          }
+        }
+      }
+    }
+  }
+
+  //============>> list toggle section <<================//
+  #listToggleSection {
+    padding-bottom: 112px;
+    .listToggle {
+      @include d-flex(40px);
+      align-items: start;
+      .leftToggle {
+        h2 {
+          // font-family: DM Sans;
+          font-size: 48px;
+          font-weight: 500;
+          width: 409px;
+          line-height: 100%; /* 48px */
+          letter-spacing: -2.16px;
+        }
+        p {
+          color: var(--text-grey, #999fae);
+          width: 320px;
+          padding: 40px 0 56px 0;
+          font-size: 16px;
+          line-height: 24px; /* 150% */
+          letter-spacing: -0.4px;
+        }
+        .bottomItems {
+          @include d-column(10px);
+          align-items: start;
+          .item {
+            @include d-flex(24px);
+          }
+          .pinkItem {
+            i {
+              color: #f7cdbb;
+            }
+          }
+          .blueItem {
+            i {
+              color: #5956e9;
+            }
+          }
+        }
+      }
+      .rightToggle {
+        width: 598px;
+        .accordion {
+          background-color: #fff;
+          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 18px;
+          border-radius: 16px;
+          @include d-flex-sb();
+          justify-content: space-between;
+          transition: 0.4s;
+          div{
+            @include d-flex(24px);
+          }
+          &::after {
+            content: "\002B";
+            color: white;
+            background-color: #5956e9;
+            float: right;
+            margin-left: 1px;
+            font-size: 28px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            @include d-flex-sb();
+          }
+          &:hover {
+            background-color: #5956e9;
+            color: white;
+            &::after {
+              background-color: #fff;
+              color: #5956e9;
+            }
+          }
+          &.active {
+            background-color: #5956e9;
+            color:white;
+            &::after {
+              content: "\2212";
+              background-color: #fff;
+              color: #5956e9;
+            }
+          }
+        }
+        .panel {
+          border-bottom-left-radius: 24px;
+          border-bottom-right-radius: 24px;
+          @include d-flex(70px);
+          justify-content: space-around;
+          align-items: start;
+          position: relative;
+          padding: 0 18px;
+          background-color: white;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+          box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+            rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+          .imgs{
+            padding: 10px 0;
+            img{
+              &:nth-child(2){
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                bottom: 60px;
+                left: 100px;
+              }
+            }
+          }
+          .texts{
+            padding-top: 50px;
+            @include d-column(24px);
+            align-items: start;
+            .items{
+              @include d-flex(3px);
+              align-items: start;
+              p{
+                width: 204px;
+                color:#999FAE;
+              }
+            }
           }
         }
       }
@@ -1989,24 +2126,49 @@
   }
 
   //==========>> timeline section <<====================//
-  #timelineSection{
-    .timeline{
-      .timeTopContent{
-        margin-bottom: 120px!important;
-        .timeRight{
-          img:first-child{
+  #timelineSection {
+    .timeline {
+      .timeTopContent {
+        margin-bottom: 120px !important;
+        .timeRight {
+          img:first-child {
             display: none;
           }
-          img:nth-child(2){
-            display: block!important;
+          img:nth-child(2) {
+            display: block !important;
             top: -70px;
           }
         }
       }
-      .timeBottomDiagram{
-        img{
-          &:nth-child(2){
-            right: 170px!important;
+      .timeBottomDiagram {
+        img {
+          &:nth-child(2) {
+            right: 170px !important;
+          }
+          &:nth-child(3) {
+            left: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  //===========>> list toggle section <<==============//
+  #listToggleSection{
+    .listToggle{
+      @include d-flex(20px!important);
+      .rightToggle{
+        width: 445px!important;
+        .panel{
+          @include d-flex(0px!important);
+          justify-content: start!important;
+          .imgs{
+            img{
+              display: none;
+            }
+          }
+          .texts{
+            padding: 20px 0!important;
           }
         }
       }

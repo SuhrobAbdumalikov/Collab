@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "DM Sans";
   src: url("../fonts/DM_Sans/static/DMSans-Black.ttf");
@@ -1893,6 +1894,9 @@
   top: -140px;
   display: none;
 }
+.fullPage #timelineSection {
+  padding-bottom: 80px;
+}
 .fullPage #timelineSection .timeline .timeTopContent {
   display: flex;
   align-items: center;
@@ -1960,8 +1964,150 @@
   width: 90px;
   height: 90px;
   position: absolute;
-  left: 0;
+  left: -40px;
   top: 150px;
+}
+.fullPage #listToggleSection {
+  padding-bottom: 112px;
+}
+.fullPage #listToggleSection .listToggle {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  align-items: start;
+}
+.fullPage #listToggleSection .listToggle .leftToggle h2 {
+  font-size: 48px;
+  font-weight: 500;
+  width: 409px;
+  line-height: 100%; /* 48px */
+  letter-spacing: -2.16px;
+}
+.fullPage #listToggleSection .listToggle .leftToggle p {
+  color: var(--text-grey, #999fae);
+  width: 320px;
+  padding: 40px 0 56px 0;
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.4px;
+}
+.fullPage #listToggleSection .listToggle .leftToggle .bottomItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-items: start;
+}
+.fullPage #listToggleSection .listToggle .leftToggle .bottomItems .item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.fullPage #listToggleSection .listToggle .leftToggle .bottomItems .pinkItem i {
+  color: #f7cdbb;
+}
+.fullPage #listToggleSection .listToggle .leftToggle .bottomItems .blueItem i {
+  color: #5956e9;
+}
+.fullPage #listToggleSection .listToggle .rightToggle {
+  width: 598px;
+}
+.fullPage #listToggleSection .listToggle .rightToggle .accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  transition: 0.4s;
+}
+.fullPage #listToggleSection .listToggle .rightToggle .accordion div {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.fullPage #listToggleSection .listToggle .rightToggle .accordion::after {
+  content: "+";
+  color: white;
+  background-color: #5956e9;
+  float: right;
+  margin-left: 1px;
+  font-size: 28px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fullPage #listToggleSection .listToggle .rightToggle .accordion:hover {
+  background-color: #5956e9;
+  color: white;
+}
+.fullPage #listToggleSection .listToggle .rightToggle .accordion:hover::after {
+  background-color: #fff;
+  color: #5956e9;
+}
+.fullPage #listToggleSection .listToggle .rightToggle .accordion.active {
+  background-color: #5956e9;
+  color: white;
+}
+.fullPage #listToggleSection .listToggle .rightToggle .accordion.active::after {
+  content: "−";
+  background-color: #fff;
+  color: #5956e9;
+}
+.fullPage #listToggleSection .listToggle .rightToggle .panel {
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  justify-content: space-around;
+  align-items: start;
+  position: relative;
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.fullPage #listToggleSection .listToggle .rightToggle .panel .imgs {
+  padding: 10px 0;
+}
+.fullPage #listToggleSection .listToggle .rightToggle .panel .imgs img:nth-child(2) {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 60px;
+  left: 100px;
+}
+.fullPage #listToggleSection .listToggle .rightToggle .panel .texts {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  align-items: start;
+}
+.fullPage #listToggleSection .listToggle .rightToggle .panel .texts .items {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  align-items: start;
+}
+.fullPage #listToggleSection .listToggle .rightToggle .panel .texts .items p {
+  width: 204px;
+  color: #999FAE;
 }
 
 @media screen and (max-width: 1024px) {
@@ -2103,5 +2249,28 @@
   }
   #timelineSection .timeline .timeBottomDiagram img:nth-child(2) {
     right: 170px !important;
+  }
+  #timelineSection .timeline .timeBottomDiagram img:nth-child(3) {
+    left: 0 !important;
+  }
+  #listToggleSection .listToggle {
+    display: flex;
+    align-items: center;
+    gap: 20px !important;
+  }
+  #listToggleSection .listToggle .rightToggle {
+    width: 445px !important;
+  }
+  #listToggleSection .listToggle .rightToggle .panel {
+    display: flex;
+    align-items: center;
+    gap: 0px !important;
+    justify-content: start !important;
+  }
+  #listToggleSection .listToggle .rightToggle .panel .imgs img {
+    display: none;
+  }
+  #listToggleSection .listToggle .rightToggle .panel .texts {
+    padding: 20px 0 !important;
   }
 }/*# sourceMappingURL=main.css.map */
