@@ -1893,6 +1893,76 @@
   top: -140px;
   display: none;
 }
+.fullPage #timelineSection .timeline .timeTopContent {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 200px;
+  position: relative;
+}
+.fullPage #timelineSection .timeline .timeTopContent .timeLeft {
+  margin-top: 120px;
+}
+.fullPage #timelineSection .timeline .timeTopContent .timeLeft span {
+  color: var(--color-accent-02, #fab8c4);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 99.327%; /* 19.865px */
+  letter-spacing: -0.5px;
+}
+.fullPage #timelineSection .timeline .timeTopContent .timeLeft h2 {
+  padding: 24px 0 48px 0;
+  width: 440px;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 80px */
+  letter-spacing: -2px;
+}
+.fullPage #timelineSection .timeline .timeTopContent .timeLeft h2 span {
+  font-size: 80px;
+  color: #5956e9;
+}
+.fullPage #timelineSection .timeline .timeTopContent .timeLeft p {
+  color: var(--text-grey, #999fae);
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.4px;
+  width: 320px;
+}
+.fullPage #timelineSection .timeline .timeTopContent .timeLeft img {
+  position: absolute;
+  top: 170px;
+  left: 376px;
+  z-index: -1;
+}
+.fullPage #timelineSection .timeline .timeTopContent .timeRight img:first-child {
+  position: absolute;
+  right: 0;
+  top: -70px;
+}
+.fullPage #timelineSection .timeline .timeTopContent .timeRight img:nth-child(2) {
+  position: absolute;
+  display: none;
+}
+.fullPage #timelineSection .timeline .timeBottomDiagram {
+  padding-bottom: 150px;
+  position: relative;
+}
+.fullPage #timelineSection .timeline .timeBottomDiagram img:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  right: 330px;
+  width: 90px;
+  height: 90px;
+}
+.fullPage #timelineSection .timeline .timeBottomDiagram img:nth-child(3) {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  left: 0;
+  top: 150px;
+}
 
 @media screen and (max-width: 1024px) {
   .container {
@@ -2020,5 +2090,18 @@
   }
   #simpleCallSection #callHandTablet {
     display: initial !important;
+  }
+  #timelineSection .timeline .timeTopContent {
+    margin-bottom: 120px !important;
+  }
+  #timelineSection .timeline .timeTopContent .timeRight img:first-child {
+    display: none;
+  }
+  #timelineSection .timeline .timeTopContent .timeRight img:nth-child(2) {
+    display: block !important;
+    top: -70px;
+  }
+  #timelineSection .timeline .timeBottomDiagram img:nth-child(2) {
+    right: 170px !important;
   }
 }/*# sourceMappingURL=main.css.map */

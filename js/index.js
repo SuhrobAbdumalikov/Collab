@@ -19,7 +19,7 @@ const swiper = new Swiper(".mySwiper", {
 selectors.dropDownMenuLi.addEventListener("mouseover", () => {
   selectors.dropDownMenu.style.display = "flex";
 });
-selectors.dropDownMenuLi.addEventListener("mouseout", () => {
+selectors.dropDownMenu.addEventListener("mouseleave", () => {
   selectors.dropDownMenu.style.display = "none";
 });
 // ==========================================================//

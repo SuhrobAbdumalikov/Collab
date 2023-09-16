@@ -1692,11 +1692,91 @@
       right: 0;
       top: -140px;
     }
-    #callHandTablet{
+    #callHandTablet {
       position: absolute;
       right: 0;
       top: -140px;
       display: none;
+    }
+  }
+
+  //==========>> timeline section <<====================//
+  #timelineSection {
+    .timeline {
+      .timeTopContent {
+        @include d-flex(5px);
+        margin-bottom: 200px;
+        position: relative;
+        .timeLeft {
+          margin-top: 120px;
+          span {
+            color: var(--color-accent-02, #fab8c4);
+            // font-family: DM Sans;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 99.327%; /* 19.865px */
+            letter-spacing: -0.5px;
+          }
+          h2 {
+            // font-family: DM Sans;
+            padding: 24px 0 48px 0;
+            width: 440px;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%; /* 80px */
+            letter-spacing: -2px;
+            span {
+              font-size: 80px;
+              color: #5956e9;
+            }
+          }
+          p {
+            color: var(--text-grey, #999fae);
+            font-size: 16px;
+            line-height: 24px; /* 150% */
+            letter-spacing: -0.4px;
+            width: 320px;
+          }
+          img {
+            position: absolute;
+            top: 170px;
+            left: 376px;
+            z-index: -1;
+          }
+        }
+        .timeRight {
+          img:first-child{
+            position: absolute;
+            right: 0;
+            top: -70px;
+          }
+          img:nth-child(2){
+            position: absolute;
+            display: none;
+          }
+        }
+      }
+      .timeBottomDiagram {
+        padding-bottom: 150px;
+        position: relative;
+        img {
+          &:nth-child(2) {
+            position: absolute;
+            bottom: 0;
+            right: 330px;
+            width: 90px;
+            height: 90px;
+          }
+          &:nth-child(3) {
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            left: 0;
+            top: 150px;
+          }
+        }
+      }
     }
   }
 }
@@ -1900,11 +1980,36 @@
         font-size: 68px !important;
       }
     }
-    #callHand{
+    #callHand {
       display: none;
     }
-    #callHandTablet{
-      display: initial!important;
+    #callHandTablet {
+      display: initial !important;
+    }
+  }
+
+  //==========>> timeline section <<====================//
+  #timelineSection{
+    .timeline{
+      .timeTopContent{
+        margin-bottom: 120px!important;
+        .timeRight{
+          img:first-child{
+            display: none;
+          }
+          img:nth-child(2){
+            display: block!important;
+            top: -70px;
+          }
+        }
+      }
+      .timeBottomDiagram{
+        img{
+          &:nth-child(2){
+            right: 170px!important;
+          }
+        }
+      }
     }
   }
 }
