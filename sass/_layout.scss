@@ -1938,7 +1938,6 @@
         .clientsRightTexts {
           z-index: 2;
           h2 {
-            border: 1px solid red;
             // font-family: DM Sans;
             font-size: 80px;
             width: 830px;
@@ -1992,6 +1991,152 @@
         .secondStep {
           @include d-flex(40px);
           align-items: start;
+        }
+      }
+    }
+  }
+
+  //==========>> feature table section <<============//
+  #featureTableSection {
+    padding: 120px 0 10px 0;
+    .featureTable {
+      .tableTopContent {
+        @include d-flex(10px);
+        align-items: end;
+        padding-bottom: 90px;
+        .leftStep {
+          span {
+            color: var(--head-title-red, #c75c6f);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 99.327%; /* 19.865px */
+            letter-spacing: -0.5px;
+          }
+          h2 {
+            // font-family: DM Sans;
+            font-size: 80px;
+            width: 810px;
+            font-weight: 500;
+            line-height: 100%; /* 80px */
+            letter-spacing: -2px;
+            padding: 24px 0 48px 0;
+          }
+          p {
+            color: #999fae;
+            font-size: 18px;
+            font-weight: 400;
+            width: 410px;
+          }
+        }
+      }
+      .lineTable {
+        // width: 768px;
+        height: 1px;
+        background-color: #e3e6e9;
+        margin-left: -240px;
+      }
+      .tableBottomContent {
+        @include d-flex(0px);
+        .leftContent {
+          @include d-column(0px);
+          align-items: start;
+          .tableItem {
+            padding: 120px 110px 120px 0;
+            // border: 1
+            @include d-flex(64px);
+            align-items: start;
+            .contentTexts {
+              h4 {
+                // font-family: DM Sans;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 140%; /* 33.6px */
+                letter-spacing: -1.08px;
+              }
+              p {
+                color: var(--text-grey, #999fae);
+                font-size: 16px;
+                width: 230px;
+                padding: 24px 0 46px 0;
+                line-height: 24px; /* 150% */
+                letter-spacing: -0.4px;
+              }
+              .contentBtns {
+                @include d-flex(20px);
+                a {
+                  font-size: 16px;
+                  font-weight: 500;
+                  letter-spacing: -0.64px;
+                }
+                &:hover {
+                  a,
+                  i {
+                    color: #5956e9;
+                  }
+                }
+              }
+            }
+            &:hover{
+              a,i{
+                color:#5956e9;
+              }
+            }
+          }
+          .lineTable {
+            width: 768px;
+            height: 1px;
+            background-color: #e3e6e9;
+            margin-left: -240px;
+          }
+        }
+        .rightContent {
+          @include d-column(0px);
+          align-items: start;
+          .tableItem {
+            padding: 120px 225px 120px 110px;
+            border-top: 1px solid #e3e6e9;
+            border-left: 1px solid #e3e6e9;
+            @include d-flex(64px);
+            align-items: start;
+            .contentTexts {
+              h4 {
+                // font-family: DM Sans;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 140%; /* 33.6px */
+                letter-spacing: -1.08px;
+              }
+              p {
+                color: var(--text-grey, #999fae);
+                font-size: 16px;
+                width: 230px;
+                padding: 24px 0 46px 0;
+                line-height: 24px; /* 150% */
+                letter-spacing: -0.4px;
+              }
+              .contentBtns {
+                @include d-flex(20px);
+                a {
+                  font-size: 16px;
+                  font-weight: 500;
+                  letter-spacing: -0.64px;
+                }
+                &:hover {
+                  a,
+                  i {
+                    color: #5956e9;
+                  }
+                }
+              }
+            }
+            &:hover {
+              border-top: 1px solid #5956e9;
+              a,
+              i {
+                color: #5956e9;
+              }
+            }
+          }
         }
       }
     }
@@ -2259,26 +2404,66 @@
   #clientsSection {
     .clients {
       @include d-column(100px!important);
-      .clientsTop{
+      .clientsTop {
         @include d-flex(80px);
-        .clientsRightTexts{
-          h2{
-            font-size: 65px!important;
-            width: 670px!important;
+        .clientsRightTexts {
+          h2 {
+            font-size: 65px !important;
+            width: 670px !important;
           }
         }
-        img{
-          right: -100px!important;
-          top: -20px!important;
+        img {
+          right: -100px !important;
+          top: -20px !important;
         }
-        #littleGreyImg{
-          left: -110px!important;
-          top: 420px!important;
+        #littleGreyImg {
+          left: -110px !important;
+          top: 420px !important;
         }
       }
-      .clientsBottom{
-        .img{
-          width: 195px!important;
+      .clientsBottom {
+        .img {
+          width: 195px !important;
+        }
+      }
+    }
+  }
+
+  //=============>> feature table section <<=============//
+  #featureTableSection{
+    .featureTable{
+      .tableTopContent{
+        @include d-flex(1px!important);
+        .leftStep{
+          h2{
+            font-size: 68px!important;
+            width: 627px!important;
+          }
+        }
+      }
+      .lineTable{
+        // width: 500px;
+      }
+      .tableBottomContent{
+        .leftContent{
+          .tableItem{
+            padding: 112px 0px 112px 0px!important;
+            .contentTexts{
+              p{
+                width: 190px!important;
+              }
+            }
+          }
+        }
+        .rightContent{
+          .tableItem{
+            padding: 112px 80px 112px 0px!important;
+            .contentTexts{
+              p{
+                width: 160px!important;
+              }
+            }
+          }
         }
       }
     }

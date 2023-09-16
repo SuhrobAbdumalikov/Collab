@@ -2138,7 +2138,6 @@
   z-index: 2;
 }
 .fullPage #clientsSection .clients .clientsTop .clientsRightTexts h2 {
-  border: 1px solid red;
   font-size: 80px;
   width: 830px;
   font-weight: 500;
@@ -2193,6 +2192,149 @@
   align-items: center;
   gap: 40px;
   align-items: start;
+}
+.fullPage #featureTableSection {
+  padding: 120px 0 10px 0;
+}
+.fullPage #featureTableSection .featureTable .tableTopContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-items: end;
+  padding-bottom: 90px;
+}
+.fullPage #featureTableSection .featureTable .tableTopContent .leftStep span {
+  color: var(--head-title-red, #c75c6f);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 99.327%; /* 19.865px */
+  letter-spacing: -0.5px;
+}
+.fullPage #featureTableSection .featureTable .tableTopContent .leftStep h2 {
+  font-size: 80px;
+  width: 810px;
+  font-weight: 500;
+  line-height: 100%; /* 80px */
+  letter-spacing: -2px;
+  padding: 24px 0 48px 0;
+}
+.fullPage #featureTableSection .featureTable .tableTopContent .leftStep p {
+  color: #999fae;
+  font-size: 18px;
+  font-weight: 400;
+  width: 410px;
+}
+.fullPage #featureTableSection .featureTable .lineTable {
+  height: 1px;
+  background-color: #e3e6e9;
+  margin-left: -240px;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .leftContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  align-items: start;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .leftContent .tableItem {
+  padding: 120px 110px 120px 0;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  align-items: start;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .leftContent .tableItem .contentTexts h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: -1.08px;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .leftContent .tableItem .contentTexts p {
+  color: var(--text-grey, #999fae);
+  font-size: 16px;
+  width: 230px;
+  padding: 24px 0 46px 0;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.4px;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .leftContent .tableItem .contentTexts .contentBtns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .leftContent .tableItem .contentTexts .contentBtns a {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.64px;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .leftContent .tableItem .contentTexts .contentBtns:hover a,
+.fullPage #featureTableSection .featureTable .tableBottomContent .leftContent .tableItem .contentTexts .contentBtns:hover i {
+  color: #5956e9;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .leftContent .tableItem:hover a, .fullPage #featureTableSection .featureTable .tableBottomContent .leftContent .tableItem:hover i {
+  color: #5956e9;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .leftContent .lineTable {
+  width: 768px;
+  height: 1px;
+  background-color: #e3e6e9;
+  margin-left: -240px;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .rightContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  align-items: start;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .rightContent .tableItem {
+  padding: 120px 225px 120px 110px;
+  border-top: 1px solid #e3e6e9;
+  border-left: 1px solid #e3e6e9;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  align-items: start;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .rightContent .tableItem .contentTexts h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: -1.08px;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .rightContent .tableItem .contentTexts p {
+  color: var(--text-grey, #999fae);
+  font-size: 16px;
+  width: 230px;
+  padding: 24px 0 46px 0;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.4px;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .rightContent .tableItem .contentTexts .contentBtns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .rightContent .tableItem .contentTexts .contentBtns a {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.64px;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .rightContent .tableItem .contentTexts .contentBtns:hover a,
+.fullPage #featureTableSection .featureTable .tableBottomContent .rightContent .tableItem .contentTexts .contentBtns:hover i {
+  color: #5956e9;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .rightContent .tableItem:hover {
+  border-top: 1px solid #5956e9;
+}
+.fullPage #featureTableSection .featureTable .tableBottomContent .rightContent .tableItem:hover a,
+.fullPage #featureTableSection .featureTable .tableBottomContent .rightContent .tableItem:hover i {
+  color: #5956e9;
 }
 
 @media screen and (max-width: 1024px) {
@@ -2383,5 +2525,26 @@
   }
   #clientsSection .clients .clientsBottom .img {
     width: 195px !important;
+  }
+  #featureTableSection .featureTable .tableTopContent {
+    display: flex;
+    align-items: center;
+    gap: 1px !important;
+  }
+  #featureTableSection .featureTable .tableTopContent .leftStep h2 {
+    font-size: 68px !important;
+    width: 627px !important;
+  }
+  #featureTableSection .featureTable .tableBottomContent .leftContent .tableItem {
+    padding: 112px 0px 112px 0px !important;
+  }
+  #featureTableSection .featureTable .tableBottomContent .leftContent .tableItem .contentTexts p {
+    width: 190px !important;
+  }
+  #featureTableSection .featureTable .tableBottomContent .rightContent .tableItem {
+    padding: 112px 80px 112px 0px !important;
+  }
+  #featureTableSection .featureTable .tableBottomContent .rightContent .tableItem .contentTexts p {
+    width: 160px !important;
   }
 }/*# sourceMappingURL=main.css.map */
