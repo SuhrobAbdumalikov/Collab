@@ -20,6 +20,7 @@
   width: 1240px;
   margin: 0 auto;
 }
+//=============>> home page <<====================//
 //=========>> full page section <<============//
 .fullPage {
   // width: 1440px;
@@ -1084,14 +1085,14 @@
           }
         }
         .rightContentTes {
-          .swiperDesktop{
+          .swiperDesktop {
             .swiper {
               width: 800px;
               height: 700px;
               display: flex;
               align-items: center;
               justify-content: center;
-  
+
               .swiper-slide {
                 font-size: 18px;
                 background: #fff;
@@ -1158,10 +1159,10 @@
           .myTestimonialSwiperTablet {
             display: none;
           }
-          .swiperTAblet{
+          .swiperTAblet {
             display: none;
             .swiper {
-              width: 500px!important;
+              width: 500px !important;
               height: 400px;
               display: flex;
               align-items: center;
@@ -2348,8 +2349,8 @@
             align-items: start;
             a {
               color: black;
-              &:hover{
-                color:#6956e9;
+              &:hover {
+                color: #6956e9;
               }
             }
           }
@@ -2380,10 +2381,166 @@
   }
 }
 
+//==============>> login page <<==================//
+
+//===============>> contact page <<================//
+#contactPage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 70px;
+  background: linear-gradient(180deg, #f3f6f8 0%, #ecf2f6 100%);
+  @include d-column(60px);
+  .contactBox {
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 40px 180px;
+    text-align: center;
+
+    h2 {
+      // font-family: DM Sans;
+      font-size: 64px;
+      font-weight: 600;
+      line-height: 100%; /* 64px */
+      letter-spacing: -2.88px;
+      span {
+        font-size: 64px;
+        color: #5956e9;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: -2.88px;
+      }
+    }
+
+    p {
+      padding: 12px 0 25px 0;
+      color: #999fae;
+      line-height: 24px; /* 150% */
+      letter-spacing: -0.4px;
+    }
+
+    .inputDetails {
+      @include d-column(14px);
+      align-items: start;
+      .nameDiv,
+      .emailDiv {
+        width: 387px;
+        @include d-column(10px);
+        align-items: start;
+        label {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 24px; /* 171.429% */
+          letter-spacing: -0.35px;
+        }
+        .input {
+          position: relative;
+          img {
+            position: absolute;
+            top: -50%;
+            transform: translateY(53px);
+            left: 32px;
+          }
+        }
+        input {
+          padding: 24px 0 24px 72px;
+          border-radius: 16px;
+          width: 387px;
+          border: 1px solid var(--stroke-super-light, #e3e6e9);
+          &::placeholder {
+            font-size: 16px;
+            line-height: 24px; /* 150% */
+            letter-spacing: -0.4px;
+          }
+          &:focus {
+            outline: none;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+              rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          }
+        }
+      }
+      .messageDiv {
+        width: 387px;
+        @include d-column(12px);
+        align-items: start;
+        label {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 24px; /* 171.429% */
+          letter-spacing: -0.35px;
+        }
+        .input {
+          position: relative;
+          img {
+            position: absolute;
+            top: 24px;
+            left: 32px;
+          }
+        }
+        textarea {
+          padding: 24px 0 24px 72px;
+          border-radius: 16px;
+          width: 387px;
+          border: 1px solid var(--stroke-super-light, #e3e6e9);
+          &::placeholder {
+            font-size: 16px;
+            line-height: 24px; /* 150% */
+            letter-spacing: -0.4px;
+          }
+          &:focus {
+            outline: none;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+              rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          }
+        }
+      }
+      button {
+        @include btnBlue(20px, 50px);
+      }
+    }
+  }
+  .imagesBc{
+    img{
+      &:first-child{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &:nth-child(2){
+        position: absolute;
+        z-index: 2;
+        margin-top: 500px;
+        margin-left: -520px;
+      }
+      &:nth-child(3){
+        position: absolute;
+        z-index: 2;
+        margin-top:260px;
+        margin-left: 240px;
+      }
+      &:nth-child(4){
+        position: absolute;
+        bottom: 0;
+        right: 270px;
+      }
+      &:nth-child(5){
+        position: absolute;
+        width: 67px;
+        height: 67px;
+        bottom: 265px;
+        right: 100px;
+      }
+    }
+  }
+}
+
 //============>> Tablet <<============//
 @media screen and (max-width: 1024px) {
-  .fullPage{
-    overflow-X: hidden;
+  .fullPage {
+    overflow-x: hidden;
   }
   .container {
     width: 879px;
@@ -2629,8 +2786,8 @@
           .myTestimonialSwiperTablet {
             display: black !important;
           }
-          .swiperTAblet{
-            display: block!important;
+          .swiperTAblet {
+            display: block !important;
           }
         }
       }
@@ -2639,27 +2796,27 @@
 
   //==========>> speed section <<============//
   #speedSection {
-    .Speed{
-      width: 0px!important;
+    .Speed {
+      width: 0px !important;
       @include d-flex(0px!important);
-      .leftContentSpeed{
+      .leftContentSpeed {
         margin-left: 70px;
-        padding-top: 60px!important;
-        h2{
-          font-size: 66px!important;
-          width: 370px!important;
+        padding-top: 60px !important;
+        h2 {
+          font-size: 66px !important;
+          width: 370px !important;
         }
-        p{
-          font-size: 15px!important;
-          width: 275px!important;
+        p {
+          font-size: 15px !important;
+          width: 275px !important;
         }
       }
-      .rightContentSpeed{
-        img{
-          &:first-child{
+      .rightContentSpeed {
+        img {
+          &:first-child {
             margin-left: -40px;
           }
-          &:nth-child(2){
+          &:nth-child(2) {
             display: none;
           }
         }
@@ -2669,26 +2826,26 @@
 
   //=========>> feature section <<=============//
   #FeatureBoxSection {
-    .featureBox{
-      padding: 36px 0 32px 36px!important;
+    .featureBox {
+      padding: 36px 0 32px 36px !important;
       @include d-flex(20px!important);
-      .rightContentBox{
-        img{
-          &:nth-child(3){
-            left: 340px!important;
+      .rightContentBox {
+        img {
+          &:nth-child(3) {
+            left: 340px !important;
           }
         }
       }
-    } 
+    }
   }
 
   //=========>> core section <<============//
   #coreSection {
-    .coreFeatures{
-      .bottomContents{
+    .coreFeatures {
+      .bottomContents {
         @include d-flex(25px!important);
-        .rectangle{
-          padding:80px 25px 80px 80px!important;
+        .rectangle {
+          padding: 80px 25px 80px 80px !important;
         }
       }
     }
@@ -2935,6 +3092,37 @@
           }
         }
       }
+    }
+  }
+
+
+  //================>> contact Page <<=============//
+  #contactPage{
+    .imagesBc{
+      img{
+        &:first-child{
+          width: 500px!important;
+          height: 500px!important;
+        }
+        &:nth-child(2){
+          position: absolute;
+          width: 150px;
+          height: 150px;
+          margin-top: 600px!important;
+          left: 600px;
+        }
+        &:nth-child(3){
+          width: 180px;
+          height: 200px;
+          margin-top: 370px!important;
+        }
+        &:nth-child(4){
+          right: 20px!important;
+        }
+      }
+    }
+    #logoContact{
+      z-index: 1;
     }
   }
 }

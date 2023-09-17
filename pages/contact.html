@@ -14,6 +14,81 @@
     <title>Collab | Contact</title>
   </head>
   <body>
+    <div id="contactPage">
+      <div class="imagesBc">
+        <img
+          src="../images/blueContactImg.png"
+          alt="blueContactImg"
+          loading="lazy"
+        />
+        <img
+          src="../images/cursorContact.png"
+          alt="cursorContact"
+          loading="lazy"
+        />
+        <img
+          src="../images/FrameContact.png"
+          alt="FrameContact"
+          loading="lazy"
+        />
+        <img src="../images/pinkContact.png" alt="pinkContact" loading="lazy" />
+        <img src="../images/signUpBlueBack.png" alt="blueimg" loading="lazy" />
+      </div>
+      <img
+        src="../images/icons/LogoContact.svg"
+        alt="LogoContact"
+        loading="lazy"
+        id="logoContact"
+      />
+      <div class="contactBox">
+        <h2>Get in Touch<span>.</span></h2>
+        <p>Enter your detail below</p>
+        <div class="inputDetails">
+          <div class="nameDiv">
+            <label for="name">Name</label>
+            <div class="input">
+              <img src="../images/icons/user.svg" alt="user" loading="lazy" />
+              <input type="text" id="name" placeholder="John Doe" required />
+            </div>
+          </div>
+          <div class="emailDiv">
+            <label for="email">Email</label>
+            <div class="input">
+              <img
+                src="../images/icons/email.svg"
+                alt="emailInput"
+                loading="lazy"
+              />
+              <input
+                type="email"
+                id="email"
+                placeholder="Email address"
+                required
+              />
+            </div>
+          </div>
+          <div class="messageDiv">
+            <label for="message">Message</label>
+            <div class="input">
+              <img
+                src="../images/icons/message.svg"
+                alt="message"
+                loading="lazy"
+              />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="5"
+                required
+                placeholder="Message"
+              ></textarea>
+            </div>
+          </div>
+          <button>Send now</button>
+        </div>
+      </div>
+    </div>
     <script src="../js/contact.js" type="module"></script>
   </body>
 </html>
