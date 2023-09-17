@@ -2076,9 +2076,10 @@
                 }
               }
             }
-            &:hover{
-              a,i{
-                color:#5956e9;
+            &:hover {
+              a,
+              i {
+                color: #5956e9;
               }
             }
           }
@@ -2138,6 +2139,67 @@
             }
           }
         }
+      }
+    }
+  }
+
+  //==============>> showcase section <<===================//
+  #showcaseSection {
+    position: relative;
+    background-color: #ecf2f6;
+    z-index: 1;
+    .showcase {
+      .showTopContent {
+        position: absolute;
+        padding-top: 112px;
+        z-index: 1;
+        span {
+          color: var(--color-primary, #5956e9);
+          // font-family: DM Sans;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 99.327%; /* 19.865px */
+          letter-spacing: -0.5px;
+        }
+        h2 {
+          // font-family: DM Sans;
+          font-size: 80px;
+          font-weight: 500;
+          line-height: 100%; /* 80px */
+          letter-spacing: -2px;
+          width: 500px;
+          padding: 24px 0 48px 0;
+          span {
+            font-size: 80px;
+            color: #5956e9;
+          }
+        }
+        p {
+          color: #999fae;
+          font-size: 18px;
+          width: 410px;
+          padding-bottom: 45px;
+        }
+        button {
+          @include btnBlue(29px, 46px);
+        }
+      }
+      img {
+          position: absolute;
+          z-index: -1;
+          right: 0;
+          top: 100px;
+      }
+      img:last-child{
+        display: none;
+      }
+    }
+    .showBottomContent {
+      width: 1440px;
+      margin: 0 auto;
+      margin-top: 300px;
+      img:last-child {
+        display: none;
       }
     }
   }
@@ -2430,41 +2492,73 @@
   }
 
   //=============>> feature table section <<=============//
-  #featureTableSection{
-    .featureTable{
-      .tableTopContent{
+  #featureTableSection {
+    .featureTable {
+      .tableTopContent {
         @include d-flex(1px!important);
-        .leftStep{
-          h2{
-            font-size: 68px!important;
-            width: 627px!important;
+        .leftStep {
+          h2 {
+            font-size: 68px !important;
+            width: 627px !important;
           }
         }
       }
-      .lineTable{
+      .lineTable {
         // width: 500px;
       }
-      .tableBottomContent{
-        .leftContent{
-          .tableItem{
-            padding: 112px 0px 112px 0px!important;
-            .contentTexts{
-              p{
-                width: 190px!important;
+      .tableBottomContent {
+        .leftContent {
+          .tableItem {
+            padding: 112px 0px 112px 0px !important;
+            .contentTexts {
+              p {
+                width: 190px !important;
               }
             }
           }
         }
-        .rightContent{
-          .tableItem{
-            padding: 112px 80px 112px 0px!important;
-            .contentTexts{
-              p{
-                width: 160px!important;
+        .rightContent {
+          .tableItem {
+            padding: 112px 80px 112px 0px !important;
+            .contentTexts {
+              p {
+                width: 160px !important;
               }
             }
           }
         }
+      }
+    }
+  }
+
+  //==========>> showcase section <<=================//
+  #showcaseSection{
+    .showcase{
+      .showTopContent{
+        h2{
+          font-size: 67px!important;
+          padding: 24px 0 32px 0!important;
+        }
+      }
+      img{
+        display: none;
+      }
+      img:last-child{
+        display: block!important;
+        position: absolute;
+        z-index: -1;
+        right: 0;
+      }
+    }
+    .showBottomContent{
+      width: 1024px!important;
+      margin: 0 auto;
+      margin-top: 10px!important;
+      img{
+        display: none;
+      }
+      img:last-child{
+        display: block!important;
       }
     }
   }
