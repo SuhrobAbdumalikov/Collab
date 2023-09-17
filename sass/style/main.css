@@ -2194,7 +2194,7 @@
   align-items: start;
 }
 .fullPage #featureTableSection {
-  padding: 120px 0 10px 0;
+  padding-top: 120px;
 }
 .fullPage #featureTableSection .featureTable .tableTopContent {
   display: flex;
@@ -2405,6 +2405,63 @@
   margin-top: 300px;
 }
 .fullPage #showcaseSection .showBottomContent img:last-child {
+  display: none;
+}
+.fullPage #ctaSection {
+  padding: 100px 0 400px 0;
+  position: relative;
+}
+.fullPage #ctaSection .Navcontainer .cta {
+  background-color: #5956e9;
+  color: white;
+  border-radius: 40px;
+  padding: 72px 70px 320px 70px;
+}
+.fullPage #ctaSection .Navcontainer .cta .topCta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+.fullPage #ctaSection .Navcontainer .cta .topCta h2 {
+  font-size: 80px;
+  width: 832px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+  line-height: 100%; /* 80px */
+  letter-spacing: -2px;
+}
+.fullPage #ctaSection .Navcontainer .cta .topCta p {
+  font-size: 18px;
+  text-align: center;
+  padding: 24px 0 48px 0;
+}
+.fullPage #ctaSection .Navcontainer .cta .topCta button {
+  text-decoration: none;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 29px 45px;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  font-weight: 500;
+}
+.fullPage #ctaSection .Navcontainer .cta .topCta button:hover {
+  opacity: 0.8;
+}
+.fullPage #ctaSection .Navcontainer .cta .topCta button:active {
+  transform: scale(0.95);
+}
+.fullPage #ctaSection .Navcontainer .cta .bottomCta img {
+  position: absolute;
+  top: 570px;
+  left: 240px;
+}
+.fullPage #ctaSection .Navcontainer .cta .bottomCta img:last-child {
   display: none;
 }
 
@@ -2641,5 +2698,20 @@
   }
   #showcaseSection .showBottomContent img:last-child {
     display: block !important;
+  }
+  #ctaSection {
+    padding: 110px 0 350px 0 !important;
+  }
+  #ctaSection .Navcontainer .cta .topCta h2 {
+    font-size: 68px !important;
+  }
+  #ctaSection .Navcontainer .cta .bottomCta img {
+    display: none;
+  }
+  #ctaSection .Navcontainer .cta .bottomCta img:last-child {
+    display: block !important;
+    position: absolute !important;
+    left: 55px;
+    top: 540px;
   }
 }/*# sourceMappingURL=main.css.map */
