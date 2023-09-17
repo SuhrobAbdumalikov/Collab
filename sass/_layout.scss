@@ -2348,6 +2348,9 @@
             align-items: start;
             a {
               color: black;
+              &:hover{
+                color:#6956e9;
+              }
             }
           }
         }

@@ -2571,6 +2571,11 @@
 .fullPage footer .footerSection .topFooterSection .communityItems ul a {
   color: black;
 }
+.fullPage footer .footerSection .topFooterSection .companyItems ul a:hover,
+.fullPage footer .footerSection .topFooterSection .supportItems ul a:hover,
+.fullPage footer .footerSection .topFooterSection .communityItems ul a:hover {
+  color: #6956e9;
+}
 .fullPage footer .footerSection .bottomFooterSection {
   border-top: 1.5px solid #e3e6e9;
   padding-top: 26px;
