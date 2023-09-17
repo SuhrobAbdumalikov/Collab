@@ -26,3 +26,9 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin df-sb(){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

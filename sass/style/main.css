@@ -1185,8 +1185,6 @@
   font-size: 80px;
 }
 .fullPage #TestimonialSection .testimonial .testimonialBottomContent {
-  width: 1040px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 130px;
@@ -1248,14 +1246,14 @@
 .fullPage #TestimonialSection .testimonial .testimonialBottomContent .leftContentTes .swiperBtns .nextBtn:active {
   transform: scale(0.95);
 }
-.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper {
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperDesktop .swiper {
   width: 800px;
   height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .swiper-slide {
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperDesktop .swiper .swiper-slide {
   font-size: 18px;
   background: #fff;
   display: flex;
@@ -1266,14 +1264,14 @@
   justify-content: end;
   height: calc((100% - 30px) / 2) !important;
 }
-.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .swiper-slide span {
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperDesktop .swiper .swiper-slide span {
   color: #c75c6f;
   font-size: 20px;
   font-weight: 700;
   line-height: 99.327%; /* 19.865px */
   letter-spacing: -0.5px;
 }
-.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .swiper-slide p {
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperDesktop .swiper .swiper-slide p {
   color: var(--text-dark, #292930);
   font-size: 24px;
   line-height: 123%; /* 29.52px */
@@ -1281,16 +1279,16 @@
   width: 291px;
   padding: 32px 0 40px 0;
 }
-.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .swiper-slide .bottomCont {
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperDesktop .swiper .swiper-slide .bottomCont {
   display: flex;
   align-items: center;
   gap: 24px;
 }
-.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .swiper-slide .bottomCont .texts h4 {
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperDesktop .swiper .swiper-slide .bottomCont .texts h4 {
   font-size: 16px;
   font-weight: 600;
 }
-.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .swiper-slide .bottomCont .texts span {
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperDesktop .swiper .swiper-slide .bottomCont .texts span {
   color: var(--text-grey, #999fae);
   font-size: 14px;
   font-style: normal;
@@ -1298,22 +1296,95 @@
   line-height: 99.327%; /* 13.906px */
   letter-spacing: -0.35px;
 }
-.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .slide1 {
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperDesktop .swiper .slide1 {
   border-top: 2px solid #5956e9;
 }
-.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .slide2 {
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperDesktop .swiper .slide2 {
   border-top: 2px solid #fab8c4;
 }
-.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .slide3 {
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperDesktop .swiper .slide3 {
   border-top: 2px solid #fab8c4;
 }
-.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .slide3 span {
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperDesktop .swiper .slide3 span {
   color: #5956e9;
 }
-.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .slide4 {
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperDesktop .swiper .slide4 {
   border-top: 2px solid #90d0b1;
 }
-.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiper .slide4 span {
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperDesktop .swiper .slide4 span {
+  color: #90d0b1;
+}
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .myTestimonialSwiperTablet {
+  display: none;
+}
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperTAblet {
+  display: none;
+}
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperTAblet .swiper {
+  width: 500px !important;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperTAblet .swiper .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  align-items: start;
+  height: calc(100% - 1px) !important;
+}
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperTAblet .swiper .swiper-slide span {
+  color: #c75c6f;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 99.327%; /* 19.865px */
+  letter-spacing: -0.5px;
+}
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperTAblet .swiper .swiper-slide p {
+  color: var(--text-dark, #292930);
+  font-size: 24px;
+  line-height: 123%; /* 29.52px */
+  letter-spacing: -0.6px;
+  width: 291px;
+  padding: 32px 0 40px 0;
+}
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperTAblet .swiper .swiper-slide .bottomCont {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperTAblet .swiper .swiper-slide .bottomCont .texts h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperTAblet .swiper .swiper-slide .bottomCont .texts span {
+  color: var(--text-grey, #999fae);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 99.327%; /* 13.906px */
+  letter-spacing: -0.35px;
+}
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperTAblet .swiper .slide1 {
+  border-top: 2px solid #5956e9;
+}
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperTAblet .swiper .slide2 {
+  border-top: 2px solid #fab8c4;
+}
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperTAblet .swiper .slide3 {
+  border-top: 2px solid #fab8c4;
+}
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperTAblet .swiper .slide3 span {
+  color: #5956e9;
+}
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperTAblet .swiper .slide4 {
+  border-top: 2px solid #90d0b1;
+}
+.fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperTAblet .swiper .slide4 span {
   color: #90d0b1;
 }
 .fullPage #speedSection {
@@ -2464,8 +2535,74 @@
 .fullPage #ctaSection .Navcontainer .cta .bottomCta img:last-child {
   display: none;
 }
+.fullPage footer {
+  padding-bottom: 48px;
+}
+.fullPage footer .footerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 67px;
+  align-items: start;
+}
+.fullPage footer .footerSection .topFooterSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+.fullPage footer .footerSection .topFooterSection .nameLink {
+  padding-bottom: 37px;
+  color: #999fae;
+  font-size: 17px;
+}
+.fullPage footer .footerSection .topFooterSection .companyItems ul,
+.fullPage footer .footerSection .topFooterSection .supportItems ul,
+.fullPage footer .footerSection .topFooterSection .communityItems ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  align-items: start;
+}
+.fullPage footer .footerSection .topFooterSection .companyItems ul a,
+.fullPage footer .footerSection .topFooterSection .supportItems ul a,
+.fullPage footer .footerSection .topFooterSection .communityItems ul a {
+  color: black;
+}
+.fullPage footer .footerSection .bottomFooterSection {
+  border-top: 1.5px solid #e3e6e9;
+  padding-top: 26px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fullPage footer .footerSection .bottomFooterSection .leftBy {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.fullPage footer .footerSection .bottomFooterSection .leftBy a {
+  font-size: 14px;
+  color: #999fae;
+}
+.fullPage footer .footerSection .bottomFooterSection .rightBy {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  align-items: start;
+}
+.fullPage footer .footerSection .bottomFooterSection .rightBy a {
+  font-size: 14px;
+  color: #999fae;
+}
 
 @media screen and (max-width: 1024px) {
+  .fullPage {
+    overflow-X: hidden;
+  }
   .container {
     width: 879px;
     margin: 0 auto;
@@ -2541,6 +2678,135 @@
   #featureListSsection .featureList .leftContentList .topContent h2 {
     font-size: 68px !important;
     padding: 23px 0 32px 0 !important;
+  }
+  #prototypeSection .prototype {
+    padding: 65px 0 33px 35px !important;
+  }
+  #prototypeSection .prototype .protoLeftContent h2 {
+    font-size: 65px !important;
+  }
+  #prototypeSection .prototype .protoRightContent img:first-child {
+    width: 560px !important;
+    height: 540px !important;
+  }
+  #prototypeSection .prototype .protoRightContent img:nth-child(2) {
+    right: 150px !important;
+  }
+  #prototypeSection .prototype .protoRightContent img:last-child {
+    display: none;
+  }
+  #PricingSection .Pricing .topContentPrice h2 {
+    font-size: 67px !important;
+  }
+  #PricingSection .Pricing .bottomContentPrice .professionalItem {
+    padding: 33px 30px !important;
+  }
+  #PricingSection .Pricing .bottomContentPrice .professionalItem #StarIcon {
+    width: 32px !important;
+    height: 32px !important;
+  }
+  #PricingSection .Pricing .bottomContentPrice .professionalItem h3 {
+    font-size: 32px !important;
+  }
+  #PricingSection .Pricing .bottomContentPrice .professionalItem .boxes .item1 span {
+    font-size: 15px !important;
+  }
+  #PricingSection .Pricing .bottomContentPrice .StandartItem,
+  #PricingSection .Pricing .bottomContentPrice .ultimateItem {
+    padding: 33px 30px !important;
+  }
+  #PricingSection .Pricing .bottomContentPrice .StandartItem h3,
+  #PricingSection .Pricing .bottomContentPrice .ultimateItem h3 {
+    font-size: 32px !important;
+  }
+  #getWorkDoneSection .imagesPosition img:first-child {
+    right: 0 !important;
+    width: 300px;
+    top: 10px !important;
+  }
+  #getWorkDoneSection .imagesPosition img:nth-child(2) {
+    left: 300px !important;
+  }
+  #getWorkDoneSection .imagesPosition img:nth-child(3) {
+    left: 370px !important;
+  }
+  #getWorkDoneSection .imagesPosition img:nth-child(4) {
+    width: 370px;
+    left: -30px !important;
+    bottom: 70px !important;
+  }
+  #getWorkDoneSection .imagesPosition img:nth-child(5) {
+    right: 0 !important;
+    bottom: 30px !important;
+    width: 320px;
+  }
+  #getWorkDoneSection .imagesPosition img:nth-child(8) {
+    left: 10px !important;
+  }
+  #getWorkDoneSection .workDone {
+    margin-left: 0px !important;
+  }
+  #getWorkDoneSection .workDone h2 {
+    font-size: 120px !important;
+    width: 865px !important;
+  }
+  #getWorkDoneSection .workDone .bottomContent {
+    width: 490px;
+    height: 490px;
+    right: 0 !important;
+  }
+  #TestimonialSection .testimonial .testimonialTopContent h2 {
+    font-size: 65px !important;
+  }
+  #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .myTestimonialSwiper {
+    display: none !important;
+  }
+  #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .myTestimonialSwiperTablet {
+    display: black !important;
+  }
+  #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperTAblet {
+    display: block !important;
+  }
+  #speedSection .Speed {
+    width: 0px !important;
+    display: flex;
+    align-items: center;
+    gap: 0px !important;
+  }
+  #speedSection .Speed .leftContentSpeed {
+    margin-left: 70px;
+    padding-top: 60px !important;
+  }
+  #speedSection .Speed .leftContentSpeed h2 {
+    font-size: 66px !important;
+    width: 370px !important;
+  }
+  #speedSection .Speed .leftContentSpeed p {
+    font-size: 15px !important;
+    width: 275px !important;
+  }
+  #speedSection .Speed .rightContentSpeed img:first-child {
+    margin-left: -40px;
+  }
+  #speedSection .Speed .rightContentSpeed img:nth-child(2) {
+    display: none;
+  }
+  #FeatureBoxSection .featureBox {
+    padding: 36px 0 32px 36px !important;
+    display: flex;
+    align-items: center;
+    gap: 20px !important;
+  }
+  #FeatureBoxSection .featureBox .rightContentBox img:nth-child(3) {
+    left: 340px !important;
+  }
+  #coreSection .coreFeatures .bottomContents {
+    display: flex;
+    align-items: center;
+    gap: 25px !important;
+  }
+  #coreSection .coreFeatures .bottomContents .rectangle {
+    padding: 80px 25px 80px 80px !important;
   }
   #featureSlideSection {
     padding-bottom: 96px !important;

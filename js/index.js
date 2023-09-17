@@ -46,6 +46,16 @@ const swiperTestimonial = new Swiper(".myTestimonialSwiper", {
   },
 });
 
+const swiperTestimonialTablet = new Swiper(".myTestimonialSwiperTablet", {
+  slidesPerView: 1,
+  speed: 1000,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".nextBtn",
+    prevEl: ".prevBtn",
+  },
+});
+
 //==========>> Feature Box swiper <<===============//
 const FeatureBoxSwiper = new Swiper(".FeatureboxSwiper", {
   slidesPerView: 1,
@@ -91,7 +101,7 @@ const verticalSwiper = new Swiper(".VerticalSwiper", {
   },
 });
 
-//==========
+//==========>> accordion <<===========//
 const acc = document.getElementsByClassName("accordion");
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
