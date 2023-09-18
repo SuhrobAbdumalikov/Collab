@@ -10,11 +10,16 @@
   text-decoration: none;
   list-style: none;
 }
+// font-family: 'DM Sans',sans-serif;
+
+html {
+  scroll-behavior: smooth;
+}
 //=============>>Desktop<<================//
 .container {
   width: 1040px;
   margin: 0 auto;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 .Navcontainer {
   width: 1240px;
@@ -2272,7 +2277,9 @@
     .showBottomContent {
       width: 1440px;
       margin: 0 auto;
-      margin-top: 300px;
+      img:first-child {
+        margin-top: 400px;
+      }
       img:last-child {
         display: none;
       }
@@ -2382,6 +2389,261 @@
 }
 
 //==============>> login page <<==================//
+//======>> step 1
+#loginFullPage {
+  min-height: 1024px;
+  background-image: url("../../images/loginStep1Bc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .navBar {
+    padding: 48px 0 100px 0;
+    @include d-flex(0px);
+    justify-content: space-between;
+    .leftNav {
+      @include d-flex(33px);
+      a {
+        color: black;
+      }
+      button {
+        @include btnPink(24px, 40px);
+      }
+    }
+  }
+  #login_1Page {
+    position: relative;
+    .loginPageContent {
+      @include d-flex(304px);
+      align-items: start;
+      .leftLogin {
+        h2 {
+          font-family: "DM Sans", sans-serif;
+          font-size: 55px;
+          color: white;
+          width: 443px;
+          font-weight: 500;
+          line-height: 100%; /* 48px */
+          letter-spacing: -2.16px;
+        }
+        p {
+          color: var(--color-white, #fff);
+          font-size: 16px;
+          line-height: 24px; /* 150% */
+          letter-spacing: -0.4px;
+          opacity: 0.7;
+          width: 279px;
+          padding: 16px 0 71px 0;
+        }
+        #laptopImg {
+          position: absolute;
+          left: 100px;
+          top: 300px;
+        }
+        #handLogin {
+          position: absolute;
+          left: 0;
+          top: 250px;
+        }
+        .byproduct {
+          position: absolute;
+          // left: 0;
+          bottom: -380px;
+          // top: 0;
+          @include d-flex(10px);
+          a {
+            color: #999fae;
+          }
+        }
+      }
+      .rightLogin {
+        h2 {
+          font-family: "DM Sans", sans-serif;
+          font-size: 48px;
+          width: 386px;
+          font-weight: 500;
+          line-height: 100%; /* 48px */
+          letter-spacing: -2.16px;
+          span {
+            font-size: 40px;
+            color: #5956e9;
+          }
+        }
+        p {
+          color: var(--text-grey, #999fae);
+          font-size: 16px;
+          line-height: 24px; /* 150% */
+          letter-spacing: -0.4px;
+          margin: 16px 0 64px 0;
+        }
+        #gogleBtn {
+          @include btnWhite(19px, 100px);
+          border: 1px solid #e3e6e9;
+          @include d-flex(5px);
+          color: #5956e9;
+          margin-bottom: 35px;
+        }
+        #emailBtn {
+          @include btnBlue(24px, 93px);
+        }
+        .forgerPassword {
+          margin-top: 40px;
+          margin-left: 120px;
+        }
+      }
+    }
+  }
+}
+
+//======>> step 2
+#loginStep2FullPage {
+  height: 1024px;
+  background-image: url("../../images/loginStep1Bc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .navBarStp2 {
+    @include d-flex(0px);
+    justify-content: space-between;
+    padding: 48px 0 100px 0;
+    .leftNavS2 {
+      @include d-flex(32px);
+      a {
+        color: black;
+      }
+      button {
+        @include btnPink(24px, 40px);
+      }
+    }
+  }
+  #formcontent {
+    .loginForm {
+      @include d-flex(300px);
+      align-items: start;
+      .leftSide {
+        h2 {
+          font-family: "DM Sans", sans-serif;
+          font-size: 48px;
+          width: 443px;
+          color: white;
+          font-weight: 500;
+          line-height: 100%; /* 48px */
+          letter-spacing: -2.16px;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px; /* 150% */
+          letter-spacing: -0.4px;
+          opacity: 0.7;
+          color: white;
+          width: 279px;
+          margin: 16px 0 25px 0;
+        }
+        #loginStep2Img {
+          width: 540px;
+        }
+        .productBy {
+          @include d-flex(10px);
+          a {
+            color: var(--text-grey, #999fae);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.8px;
+            transition: 0.3s ease-in-out;
+            &:hover {
+              color: black;
+            }
+          }
+        }
+      }
+      .rightSide {
+        padding-top:40px;
+        h2 {
+          font-family: "DM Sans", sans-serif;
+          font-size: 48px;
+
+          font-style: normal;
+          font-weight: 500;
+          line-height: 100%; /* 48px */
+          letter-spacing: -2.16px;
+          span {
+            font-size: 48px;
+            color: #5956e9;
+          }
+        }
+        p {
+          color: var(--text-grey, #999fae);
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px; /* 150% */
+          letter-spacing: -0.4px;
+          padding: 10px 0 48px 0;
+        }
+        .formSide {
+          @include d-column(38px);
+          align-items: start;
+          .emailDv,
+          .passDv {
+            @include d-column(16px);
+            align-items: start;
+            label {
+              font-family: "DM Sans", sans-serif;
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 99.327%; /* 13.906px */
+              letter-spacing: -0.35px;
+            }
+            .passName {
+              width: 387px;
+              @include d-flex(1px);
+              justify-content: space-between;
+              a {
+                color: var(--color-primary, #5956e9);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px; /* 171.429% */
+                letter-spacing: -0.35px;
+              }
+            }
+            .inputDv {
+              position: relative;
+              img {
+                position: absolute;
+                top: -50%;
+                transform: translateY(57px);
+                left: 32px;
+              }
+              input {
+                padding: 24px 0 24px 72px;
+                border-radius: 16px;
+                width: 387px;
+                border: 1px solid var(--stroke-super-light, #e3e6e9);
+                font-size: 16px;
+                line-height: 24px; /* 150% */
+                letter-spacing: -0.4px;
+                &::placeholder {
+                  font-size: 16px;
+                  line-height: 24px; /* 150% */
+                  letter-spacing: -0.4px;
+                }
+                &:focus {
+                  outline: none;
+                  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+                    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                }
+              }
+            }
+          }
+          button{
+            @include btnBlue(24px,80px)
+          }
+        }
+      }
+    }
+  }
+}
 
 //===============>> contact page <<================//
 #contactPage {
@@ -2502,31 +2764,31 @@
       }
     }
   }
-  .imagesBc{
-    img{
-      &:first-child{
+  .imagesBc {
+    img {
+      &:first-child {
         position: absolute;
         top: 0;
         left: 0;
       }
-      &:nth-child(2){
+      &:nth-child(2) {
         position: absolute;
         z-index: 2;
         margin-top: 500px;
         margin-left: -520px;
       }
-      &:nth-child(3){
+      &:nth-child(3) {
         position: absolute;
         z-index: 2;
-        margin-top:260px;
+        margin-top: 260px;
         margin-left: 240px;
       }
-      &:nth-child(4){
+      &:nth-child(4) {
         position: absolute;
         bottom: 0;
         right: 270px;
       }
-      &:nth-child(5){
+      &:nth-child(5) {
         position: absolute;
         width: 67px;
         height: 67px;
@@ -3095,34 +3357,126 @@
     }
   }
 
-
   //================>> contact Page <<=============//
-  #contactPage{
-    .imagesBc{
-      img{
-        &:first-child{
-          width: 500px!important;
-          height: 500px!important;
+  #contactPage {
+    .imagesBc {
+      img {
+        &:first-child {
+          width: 500px !important;
+          height: 500px !important;
         }
-        &:nth-child(2){
+        &:nth-child(2) {
           position: absolute;
           width: 150px;
           height: 150px;
-          margin-top: 600px!important;
+          margin-top: 600px !important;
           left: 600px;
         }
-        &:nth-child(3){
+        &:nth-child(3) {
           width: 180px;
           height: 200px;
-          margin-top: 370px!important;
+          margin-top: 370px !important;
         }
-        &:nth-child(4){
-          right: 20px!important;
+        &:nth-child(4) {
+          right: 20px !important;
         }
       }
     }
-    #logoContact{
+    #logoContact {
       z-index: 1;
+    }
+  }
+
+  //==============>> login page <<==================//
+  #loginFullPage {
+    min-height: 767px;
+    background-image: url("../../images/loginStep1tabletBc.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .navBar {
+      padding: 40px 0 60px 0;
+    }
+    #login_1Page {
+      .loginPageContent {
+        @include d-flex(220px);
+        align-items: start;
+        .leftLogin {
+          h2 {
+            font-size: 32px!important;
+            width: 301px!important;
+          }
+          p {
+            font-size: 15px;
+          }
+          #laptopImg {
+            left: -50px;
+            top: 200px;
+          }
+          #handLogin {
+            left: -80px;
+            top: 150px;
+            width: 400px;
+          }
+          .byproduct {
+            display: none;
+          }
+        }
+        .rightLogin{
+          h2{
+            font-size: 32px;
+            width: 300px;
+          }
+          p{
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  //================>> login step 2 full page <<==============//
+  #loginStep2FullPage{
+    height: 767px!important;
+    background-image: url("../../images/loginStep1tabletBc.png")!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .navBarStp2{
+      padding: 40px 0 72px 0!important;
+    }
+    #formcontent{
+      .loginForm{
+        @include d-flex(100px!important);
+        align-items: start;
+        .leftSide{
+          margin-left: 30px;
+          h2{
+            font-size: 32px;
+            width: 300px;
+          }
+          p{
+            font-size: 15px;
+          }
+          #loginStep2Img{
+            width: 430px;
+          }
+          .productBy{
+            display: none;
+          }
+        }
+        .rightSide{
+          padding-top: 0px;
+          h2{
+            font-size: 32px;
+            width: 353px;
+          }
+          p{
+            font-size: 15px;
+            padding: 10px 0 35px 0;
+          }
+        }
+      }
     }
   }
 }

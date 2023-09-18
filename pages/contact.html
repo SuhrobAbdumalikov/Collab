@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css link -->
     <link rel="stylesheet" href="../sass/style/main.css" />
+    <!-- fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome script -->
     <script
       src="https://kit.fontawesome.com/f35ca9bb4a.js"
@@ -43,7 +50,7 @@
       <div class="contactBox">
         <h2>Get in Touch<span>.</span></h2>
         <p>Enter your detail below</p>
-        <div class="inputDetails">
+        <form class="inputDetails">
           <div class="nameDiv">
             <label for="name">Name</label>
             <div class="input">
@@ -85,8 +92,8 @@
               ></textarea>
             </div>
           </div>
-          <button>Send now</button>
-        </div>
+          <button id="sendContactBtn">Send now</button>
+        </form>
       </div>
     </div>
     <script src="../js/contact.js" type="module"></script>

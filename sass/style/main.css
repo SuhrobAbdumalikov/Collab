@@ -48,10 +48,13 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 1040px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .Navcontainer {
@@ -2473,7 +2476,9 @@
 .fullPage #showcaseSection .showBottomContent {
   width: 1440px;
   margin: 0 auto;
-  margin-top: 300px;
+}
+.fullPage #showcaseSection .showBottomContent img:first-child {
+  margin-top: 400px;
 }
 .fullPage #showcaseSection .showBottomContent img:last-child {
   display: none;
@@ -2602,6 +2607,365 @@
 .fullPage footer .footerSection .bottomFooterSection .rightBy a {
   font-size: 14px;
   color: #999fae;
+}
+
+#loginFullPage {
+  min-height: 1024px;
+  background-image: url("../../images/loginStep1Bc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#loginFullPage .navBar {
+  padding: 48px 0 100px 0;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  justify-content: space-between;
+}
+#loginFullPage .navBar .leftNav {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+#loginFullPage .navBar .leftNav a {
+  color: black;
+}
+#loginFullPage .navBar .leftNav button {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 24px 40px;
+  background-color: #fab8c4;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.64px;
+  color: #2522ba;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+#loginFullPage .navBar .leftNav button:hover {
+  opacity: 0.8;
+}
+#loginFullPage .navBar .leftNav button:active {
+  transform: scale(0.95);
+}
+#loginFullPage #login_1Page {
+  position: relative;
+}
+#loginFullPage #login_1Page .loginPageContent {
+  display: flex;
+  align-items: center;
+  gap: 304px;
+  align-items: start;
+}
+#loginFullPage #login_1Page .loginPageContent .leftLogin h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 55px;
+  color: white;
+  width: 443px;
+  font-weight: 500;
+  line-height: 100%; /* 48px */
+  letter-spacing: -2.16px;
+}
+#loginFullPage #login_1Page .loginPageContent .leftLogin p {
+  color: var(--color-white, #fff);
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.4px;
+  opacity: 0.7;
+  width: 279px;
+  padding: 16px 0 71px 0;
+}
+#loginFullPage #login_1Page .loginPageContent .leftLogin #laptopImg {
+  position: absolute;
+  left: 100px;
+  top: 300px;
+}
+#loginFullPage #login_1Page .loginPageContent .leftLogin #handLogin {
+  position: absolute;
+  left: 0;
+  top: 250px;
+}
+#loginFullPage #login_1Page .loginPageContent .leftLogin .byproduct {
+  position: absolute;
+  bottom: -380px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#loginFullPage #login_1Page .loginPageContent .leftLogin .byproduct a {
+  color: #999fae;
+}
+#loginFullPage #login_1Page .loginPageContent .rightLogin h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 48px;
+  width: 386px;
+  font-weight: 500;
+  line-height: 100%; /* 48px */
+  letter-spacing: -2.16px;
+}
+#loginFullPage #login_1Page .loginPageContent .rightLogin h2 span {
+  font-size: 40px;
+  color: #5956e9;
+}
+#loginFullPage #login_1Page .loginPageContent .rightLogin p {
+  color: var(--text-grey, #999fae);
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.4px;
+  margin: 16px 0 64px 0;
+}
+#loginFullPage #login_1Page .loginPageContent .rightLogin #gogleBtn {
+  text-decoration: none;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 19px 100px;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #e3e6e9;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #5956e9;
+  margin-bottom: 35px;
+}
+#loginFullPage #login_1Page .loginPageContent .rightLogin #gogleBtn:hover {
+  opacity: 0.8;
+}
+#loginFullPage #login_1Page .loginPageContent .rightLogin #gogleBtn:active {
+  transform: scale(0.95);
+}
+#loginFullPage #login_1Page .loginPageContent .rightLogin #emailBtn {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 24px 93px;
+  background-color: #5956e9;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#loginFullPage #login_1Page .loginPageContent .rightLogin #emailBtn:hover {
+  opacity: 0.8;
+}
+#loginFullPage #login_1Page .loginPageContent .rightLogin #emailBtn:active {
+  transform: scale(0.95);
+}
+#loginFullPage #login_1Page .loginPageContent .rightLogin .forgerPassword {
+  margin-top: 40px;
+  margin-left: 120px;
+}
+
+#loginStep2FullPage {
+  height: 1024px;
+  background-image: url("../../images/loginStep1Bc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#loginStep2FullPage .navBarStp2 {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  justify-content: space-between;
+  padding: 48px 0 100px 0;
+}
+#loginStep2FullPage .navBarStp2 .leftNavS2 {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+#loginStep2FullPage .navBarStp2 .leftNavS2 a {
+  color: black;
+}
+#loginStep2FullPage .navBarStp2 .leftNavS2 button {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 24px 40px;
+  background-color: #fab8c4;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.64px;
+  color: #2522ba;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+#loginStep2FullPage .navBarStp2 .leftNavS2 button:hover {
+  opacity: 0.8;
+}
+#loginStep2FullPage .navBarStp2 .leftNavS2 button:active {
+  transform: scale(0.95);
+}
+#loginStep2FullPage #formcontent .loginForm {
+  display: flex;
+  align-items: center;
+  gap: 300px;
+  align-items: start;
+}
+#loginStep2FullPage #formcontent .loginForm .leftSide h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 48px;
+  width: 443px;
+  color: white;
+  font-weight: 500;
+  line-height: 100%; /* 48px */
+  letter-spacing: -2.16px;
+}
+#loginStep2FullPage #formcontent .loginForm .leftSide p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.4px;
+  opacity: 0.7;
+  color: white;
+  width: 279px;
+  margin: 16px 0 25px 0;
+}
+#loginStep2FullPage #formcontent .loginForm .leftSide #loginStep2Img {
+  width: 540px;
+}
+#loginStep2FullPage #formcontent .loginForm .leftSide .productBy {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#loginStep2FullPage #formcontent .loginForm .leftSide .productBy a {
+  color: var(--text-grey, #999fae);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  transition: 0.3s ease-in-out;
+}
+#loginStep2FullPage #formcontent .loginForm .leftSide .productBy a:hover {
+  color: black;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide {
+  padding-top: 40px;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 48px */
+  letter-spacing: -2.16px;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide h2 span {
+  font-size: 48px;
+  color: #5956e9;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide p {
+  color: var(--text-grey, #999fae);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.4px;
+  padding: 10px 0 48px 0;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 38px;
+  align-items: start;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .emailDv,
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .passDv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-items: start;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .emailDv label,
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .passDv label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 99.327%; /* 13.906px */
+  letter-spacing: -0.35px;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .emailDv .passName,
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .passDv .passName {
+  width: 387px;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  justify-content: space-between;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .emailDv .passName a,
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .passDv .passName a {
+  color: var(--color-primary, #5956e9);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: -0.35px;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .emailDv .inputDv,
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .passDv .inputDv {
+  position: relative;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .emailDv .inputDv img,
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .passDv .inputDv img {
+  position: absolute;
+  top: -50%;
+  transform: translateY(57px);
+  left: 32px;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .emailDv .inputDv input,
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .passDv .inputDv input {
+  padding: 24px 0 24px 72px;
+  border-radius: 16px;
+  width: 387px;
+  border: 1px solid var(--stroke-super-light, #e3e6e9);
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.4px;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .emailDv .inputDv input::-moz-placeholder, #loginStep2FullPage #formcontent .loginForm .rightSide .formSide .passDv .inputDv input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.4px;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .emailDv .inputDv input::placeholder,
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .passDv .inputDv input::placeholder {
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.4px;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .emailDv .inputDv input:focus,
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide .passDv .inputDv input:focus {
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide button {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 24px 80px;
+  background-color: #5956e9;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide button:hover {
+  opacity: 0.8;
+}
+#loginStep2FullPage #formcontent .loginForm .rightSide .formSide button:active {
+  transform: scale(0.95);
 }
 
 #contactPage {
@@ -3191,5 +3555,90 @@
   }
   #contactPage #logoContact {
     z-index: 1;
+  }
+  #loginFullPage {
+    min-height: 767px;
+    background-image: url("../../images/loginStep1tabletBc.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #loginFullPage .navBar {
+    padding: 40px 0 60px 0;
+  }
+  #loginFullPage #login_1Page .loginPageContent {
+    display: flex;
+    align-items: center;
+    gap: 220px;
+    align-items: start;
+  }
+  #loginFullPage #login_1Page .loginPageContent .leftLogin h2 {
+    font-size: 32px !important;
+    width: 301px !important;
+  }
+  #loginFullPage #login_1Page .loginPageContent .leftLogin p {
+    font-size: 15px;
+  }
+  #loginFullPage #login_1Page .loginPageContent .leftLogin #laptopImg {
+    left: -50px;
+    top: 200px;
+  }
+  #loginFullPage #login_1Page .loginPageContent .leftLogin #handLogin {
+    left: -80px;
+    top: 150px;
+    width: 400px;
+  }
+  #loginFullPage #login_1Page .loginPageContent .leftLogin .byproduct {
+    display: none;
+  }
+  #loginFullPage #login_1Page .loginPageContent .rightLogin h2 {
+    font-size: 32px;
+    width: 300px;
+  }
+  #loginFullPage #login_1Page .loginPageContent .rightLogin p {
+    font-size: 15px;
+  }
+  #loginStep2FullPage {
+    height: 767px !important;
+    background-image: url("../../images/loginStep1tabletBc.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #loginStep2FullPage .navBarStp2 {
+    padding: 40px 0 72px 0 !important;
+  }
+  #loginStep2FullPage #formcontent .loginForm {
+    display: flex;
+    align-items: center;
+    gap: 100px !important;
+    align-items: start;
+  }
+  #loginStep2FullPage #formcontent .loginForm .leftSide {
+    margin-left: 30px;
+  }
+  #loginStep2FullPage #formcontent .loginForm .leftSide h2 {
+    font-size: 32px;
+    width: 300px;
+  }
+  #loginStep2FullPage #formcontent .loginForm .leftSide p {
+    font-size: 15px;
+  }
+  #loginStep2FullPage #formcontent .loginForm .leftSide #loginStep2Img {
+    width: 430px;
+  }
+  #loginStep2FullPage #formcontent .loginForm .leftSide .productBy {
+    display: none;
+  }
+  #loginStep2FullPage #formcontent .loginForm .rightSide {
+    padding-top: 0px;
+  }
+  #loginStep2FullPage #formcontent .loginForm .rightSide h2 {
+    font-size: 32px;
+    width: 353px;
+  }
+  #loginStep2FullPage #formcontent .loginForm .rightSide p {
+    font-size: 15px;
+    padding: 10px 0 35px 0;
   }
 }/*# sourceMappingURL=main.css.map */

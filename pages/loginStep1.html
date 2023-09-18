@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css link -->
     <link rel="stylesheet" href="../sass/style/main.css" />
+    <!-- fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome script -->
     <script
       src="https://kit.fontawesome.com/f35ca9bb4a.js"
@@ -14,6 +21,73 @@
     <title>Collab | Login_1</title>
   </head>
   <body>
+    <div id="loginFullPage">
+      <nav>
+        <div class="Navcontainer">
+          <div class="navBar">
+            <div class="logo">
+              <a href="#0">
+                <img
+                  src="../images/icons/logoWhite.svg"
+                  alt="login_1Page"
+                  loading="lazy"
+              /></a>
+            </div>
+            <div class="leftNav">
+              <a href="#0">Not a member?</a>
+              <button>Sign up now</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section id="login_1Page">
+        <div class="Navcontainer">
+          <div class="loginPageContent">
+            <div class="leftLogin">
+              <h2>The world most powerful design tool.</h2>
+              <p>
+                Create your own website with the Fastest Page Building Platform.
+              </p>
+              <img
+                src="../images/labtopLogin.png"
+                alt="labtopLogin"
+                loading="lazy"
+                id="laptopImg"
+              />
+              <img
+                src="../images/handlogin.png"
+                alt="handlogin"
+                loading="lazy"
+                id="handLogin"
+              />
+              <div class="byproduct">
+                <a href="https://ui8.net/">A product by</a>
+                <a href="https://ui8.net/">
+                  <img src="../images/icons/ui8.svg" alt="ui8" loading="lazy"
+                /></a>
+              </div>
+            </div>
+            <div class="rightLogin">
+              <h2>Let the team work in same place<span>.</span></h2>
+              <p>Most powerful design tool.</p>
+              <button id="gogleBtn">
+                <img
+                  src="../images/icons/google.svg"
+                  alt="google"
+                  loading="lazy"
+                />Sign in with Google
+              </button>
+              <a href="./loginStep2.html" id="emailBtn"
+                >Sign in with your email</a
+              >
+              <div class="forgerPassword">
+                <a href="#0" id="forgetPassword">Forget password?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <script src="../js/login.js" type="module"></script>
   </body>
 </html>

@@ -9,6 +9,7 @@
   "license": "ISC",
   "dependencies": {
     "accordion-js": "^3.3.4",
+    "aos": "^3.0.0-beta.6",
     "swiper": "^10.2.0"
   }
 }

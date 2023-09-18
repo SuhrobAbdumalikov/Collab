@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css link -->
     <link rel="stylesheet" href="../sass/style/main.css" />
+    <!-- fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome script -->
     <script
       src="https://kit.fontawesome.com/f35ca9bb4a.js"
@@ -14,6 +21,87 @@
     <title>Collab | Login_2</title>
   </head>
   <body>
+    <div id="loginStep2FullPage">
+      <nav>
+        <div class="Navcontainer">
+          <div class="navBarStp2">
+            <div class="logoS2">
+              <a href="#0">
+                <img
+                  src="../images/icons/logoWhite.svg"
+                  alt="login_1Page"
+                  loading="lazy"
+              /></a>
+            </div>
+            <div class="leftNavS2">
+              <a href="#0">Not a member?</a>
+              <button>Sign up now</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section id="formcontent">
+        <div class="Navcontainer">
+          <div class="loginForm">
+            <div class="leftSide">
+              <h2>The world most powerful design tool.</h2>
+              <p>
+                Create your own website with the Fastest Page Building Platform.
+              </p>
+              <img
+                src="../images/loginStep2Img.png"
+                alt="loginStep2"
+                loading="lazy"
+                id="loginStep2Img"
+              />
+              <div class="productBy">
+                <a href="https://ui8.net">A product by</a>
+                <a href="https://ui8.net"
+                  ><img src="../images/icons/ui8.svg" alt="ui8" loading="lazy"
+                /></a>
+              </div>
+            </div>
+            <div class="rightSide">
+              <h2>Sign in to Collab<span>.</span></h2>
+              <p>Enter your detail below</p>
+              <form class="formSide">
+                <div class="emailDv">
+                  <label for="email">Username or Email</label>
+                  <div class="inputDv">
+                    <img
+                      src="../images/icons/email.svg"
+                      alt="email"
+                      loading="lazy"
+                    />
+                    <input type="email" id="email" placeholder="dash@ui8.net" />
+                  </div>
+                </div>
+                <div class="passDv">
+                  <div class="passName">
+                    <label for="passWord">Password</label>
+                    <a href="#0">Forget password?</a>
+                  </div>
+                  <div class="inputDv">
+                    <img
+                      src="../images/icons/Lock.svg"
+                      alt="Lock"
+                      loading="lazy"
+                      id="lock"
+                    />
+                    <input
+                      type="password"
+                      id="passWord"
+                      placeholder="Password"
+                    />
+                  </div>
+                </div>
+                <button id="loginBtn">Sign in</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <script src="../js/login.js" type="module"></script>
   </body>
 </html>
