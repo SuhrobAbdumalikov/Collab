@@ -2400,6 +2400,11 @@ html {
     padding: 48px 0 100px 0;
     @include d-flex(0px);
     justify-content: space-between;
+    .logo {
+      a:last-child {
+        display: none;
+      }
+    }
     .leftNav {
       @include d-flex(33px);
       a {
@@ -2559,7 +2564,7 @@ html {
         }
       }
       .rightSide {
-        padding-top:40px;
+        padding-top: 40px;
         h2 {
           font-family: "DM Sans", sans-serif;
           font-size: 48px;
@@ -2636,8 +2641,8 @@ html {
               }
             }
           }
-          button{
-            @include btnBlue(24px,80px)
+          button {
+            @include btnBlue(24px, 80px);
           }
         }
       }
@@ -3396,6 +3401,11 @@ html {
     background-position: center;
     .navBar {
       padding: 40px 0 60px 0;
+      .logo {
+        a:last-child {
+          display: none;
+        }
+      }
     }
     #login_1Page {
       .loginPageContent {
@@ -3403,8 +3413,8 @@ html {
         align-items: start;
         .leftLogin {
           h2 {
-            font-size: 32px!important;
-            width: 301px!important;
+            font-size: 32px !important;
+            width: 301px !important;
           }
           p {
             font-size: 15px;
@@ -3422,12 +3432,12 @@ html {
             display: none;
           }
         }
-        .rightLogin{
-          h2{
+        .rightLogin {
+          h2 {
             font-size: 32px;
             width: 300px;
           }
-          p{
+          p {
             font-size: 15px;
           }
         }
@@ -3436,42 +3446,42 @@ html {
   }
 
   //================>> login step 2 full page <<==============//
-  #loginStep2FullPage{
-    height: 767px!important;
-    background-image: url("../../images/loginStep1tabletBc.png")!important;
+  #loginStep2FullPage {
+    height: 767px !important;
+    background-image: url("../../images/loginStep1tabletBc.png") !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    .navBarStp2{
-      padding: 40px 0 72px 0!important;
+    .navBarStp2 {
+      padding: 40px 0 72px 0 !important;
     }
-    #formcontent{
-      .loginForm{
+    #formcontent {
+      .loginForm {
         @include d-flex(100px!important);
         align-items: start;
-        .leftSide{
+        .leftSide {
           margin-left: 30px;
-          h2{
+          h2 {
             font-size: 32px;
             width: 300px;
           }
-          p{
+          p {
             font-size: 15px;
           }
-          #loginStep2Img{
+          #loginStep2Img {
             width: 430px;
           }
-          .productBy{
+          .productBy {
             display: none;
           }
         }
-        .rightSide{
+        .rightSide {
           padding-top: 0px;
-          h2{
+          h2 {
             font-size: 32px;
             width: 353px;
           }
-          p{
+          p {
             font-size: 15px;
             padding: 10px 0 35px 0;
           }
@@ -3482,7 +3492,19 @@ html {
 }
 
 //============>> mobile <<============//
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
+  // .fullPage {
+  //   overflow-x: hidden;
+  // }
+  .container {
+    width: 311px;
+    margin: 0 auto;
+  }
+  .Navcontainer {
+    width: 311px;
+    margin: 0 auto;
+  }
+  //===========>> navBar  section <<================//
   #navBarSection {
   }
   main {
@@ -3508,5 +3530,68 @@ html {
   #coreSection {
   }
   #featureSlideSection {
+  }
+
+  //===========>> login step 1 mobile <<=============//
+  #loginFullPage {
+    height: 813px;
+    background-image: url("../../images/loginStep1_mobile.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .navBar {
+      @include d-flex(0px);
+      justify-content: center;
+      margin-bottom: 120px;
+      .logo {
+        a:first-child {
+          display: none;
+        }
+        a:last-child {
+          display: block;
+        }
+      }
+      .leftNav {
+        display: none;
+      }
+    }
+    #login_1Page {
+      .loginPageContent {
+        @include d-column(40px);
+        .leftLogin {
+          display: none;
+          #laptopImg,
+          #handLogin {
+            display: none;
+          }
+        }
+        .rightLogin {
+          text-align: center;
+          h2 {
+            font-size: 40px;
+            width: 269px;
+            margin: 0 auto;
+            text-align: center;
+          }
+          #gogleBtn {
+            width: 311px;
+            @include btnWhite(19px, 59px);
+            border: 1px solid #e3e6e9;
+          }
+          #emailBtn {
+            @include btnBlue(23px, 65px!important);
+          }
+          .forgerPassword{
+            margin-top: 81px;
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  //============>> login step 2 mobile <<==============//
+  #loginStep2FullPage{
+    
   }
 }

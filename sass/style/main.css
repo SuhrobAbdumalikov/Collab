@@ -2623,6 +2623,9 @@ html {
   gap: 0px;
   justify-content: space-between;
 }
+#loginFullPage .navBar .logo a:last-child {
+  display: none;
+}
 #loginFullPage .navBar .leftNav {
   display: flex;
   align-items: center;
@@ -3566,6 +3569,9 @@ html {
   #loginFullPage .navBar {
     padding: 40px 0 60px 0;
   }
+  #loginFullPage .navBar .logo a:last-child {
+    display: none;
+  }
   #loginFullPage #login_1Page .loginPageContent {
     display: flex;
     align-items: center;
@@ -3640,5 +3646,101 @@ html {
   #loginStep2FullPage #formcontent .loginForm .rightSide p {
     font-size: 15px;
     padding: 10px 0 35px 0;
+  }
+}
+@media screen and (max-width: 376px) {
+  .container {
+    width: 311px;
+    margin: 0 auto;
+  }
+  .Navcontainer {
+    width: 311px;
+    margin: 0 auto;
+  }
+  #loginFullPage {
+    height: 813px;
+    background-image: url("../../images/loginStep1_mobile.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #loginFullPage .navBar {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    justify-content: center;
+    margin-bottom: 120px;
+  }
+  #loginFullPage .navBar .logo a:first-child {
+    display: none;
+  }
+  #loginFullPage .navBar .logo a:last-child {
+    display: block;
+  }
+  #loginFullPage .navBar .leftNav {
+    display: none;
+  }
+  #loginFullPage #login_1Page .loginPageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  #loginFullPage #login_1Page .loginPageContent .leftLogin {
+    display: none;
+  }
+  #loginFullPage #login_1Page .loginPageContent .leftLogin #laptopImg,
+  #loginFullPage #login_1Page .loginPageContent .leftLogin #handLogin {
+    display: none;
+  }
+  #loginFullPage #login_1Page .loginPageContent .rightLogin {
+    text-align: center;
+  }
+  #loginFullPage #login_1Page .loginPageContent .rightLogin h2 {
+    font-size: 40px;
+    width: 269px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #loginFullPage #login_1Page .loginPageContent .rightLogin #gogleBtn {
+    width: 311px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 19px 59px;
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #e3e6e9;
+  }
+  #loginFullPage #login_1Page .loginPageContent .rightLogin #gogleBtn:hover {
+    opacity: 0.8;
+  }
+  #loginFullPage #login_1Page .loginPageContent .rightLogin #gogleBtn:active {
+    transform: scale(0.95);
+  }
+  #loginFullPage #login_1Page .loginPageContent .rightLogin #emailBtn {
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 23px 65px !important;
+    background-color: #5956e9;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  #loginFullPage #login_1Page .loginPageContent .rightLogin #emailBtn:hover {
+    opacity: 0.8;
+  }
+  #loginFullPage #login_1Page .loginPageContent .rightLogin #emailBtn:active {
+    transform: scale(0.95);
+  }
+  #loginFullPage #login_1Page .loginPageContent .rightLogin .forgerPassword {
+    margin-top: 81px;
+    margin-left: 0px;
   }
 }/*# sourceMappingURL=main.css.map */
