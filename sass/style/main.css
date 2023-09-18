@@ -2780,6 +2780,9 @@ html {
   justify-content: space-between;
   padding: 48px 0 100px 0;
 }
+#loginStep2FullPage .navBarStp2 .logoS2 a:last-child {
+  display: none;
+}
 #loginStep2FullPage .navBarStp2 .leftNavS2 {
   display: flex;
   align-items: center;
@@ -2969,6 +2972,9 @@ html {
 }
 #loginStep2FullPage #formcontent .loginForm .rightSide .formSide button:active {
   transform: scale(0.95);
+}
+#loginStep2FullPage #formcontent .loginForm #notANumberTxt {
+  display: none;
 }
 
 #contactPage {
@@ -3605,14 +3611,17 @@ html {
     font-size: 15px;
   }
   #loginStep2FullPage {
-    height: 767px !important;
-    background-image: url("../../images/loginStep1tabletBc.png") !important;
+    height: 767px;
+    background-image: url("../../images/loginStep1tabletBc.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   #loginStep2FullPage .navBarStp2 {
     padding: 40px 0 72px 0 !important;
+  }
+  #loginStep2FullPage .navBarStp2 .logoS2 a:last-child {
+    display: none;
   }
   #loginStep2FullPage #formcontent .loginForm {
     display: flex;
@@ -3742,5 +3751,91 @@ html {
   #loginFullPage #login_1Page .loginPageContent .rightLogin .forgerPassword {
     margin-top: 81px;
     margin-left: 0px;
+  }
+  #loginStep2FullPage {
+    height: 812px !important;
+    background-image: url("../../images/loginStep2_mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #loginStep2FullPage .navBarStp2 {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    justify-content: center;
+    padding: 40px 0 75px 0;
+  }
+  #loginStep2FullPage .navBarStp2 .logoS2 a:first-child {
+    display: none;
+  }
+  #loginStep2FullPage .navBarStp2 .logoS2 a:last-child {
+    display: block;
+  }
+  #loginStep2FullPage .navBarStp2 .leftNavS2 {
+    display: none;
+  }
+  #loginStep2FullPage #formcontent .loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px !important;
+    justify-content: center !important;
+  }
+  #loginStep2FullPage #formcontent .loginForm .leftSide {
+    display: none;
+  }
+  #loginStep2FullPage #formcontent .loginForm .rightSide {
+    padding-top: 0px;
+  }
+  #loginStep2FullPage #formcontent .loginForm .rightSide h2 {
+    font-size: 40px;
+    width: 311px;
+    margin: 0 auto !important;
+    text-align: center;
+  }
+  #loginStep2FullPage #formcontent .loginForm .rightSide p {
+    font-size: 15px;
+    padding: 16px 0 40px 0;
+    text-align: center;
+  }
+  #loginStep2FullPage #formcontent .loginForm .rightSide .formSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    align-items: start;
+  }
+  #loginStep2FullPage #formcontent .loginForm .rightSide .formSide .emailDv,
+  #loginStep2FullPage #formcontent .loginForm .rightSide .formSide .passDv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    align-items: start;
+  }
+  #loginStep2FullPage #formcontent .loginForm .rightSide .formSide .emailDv .passName,
+  #loginStep2FullPage #formcontent .loginForm .rightSide .formSide .passDv .passName {
+    width: 310px;
+  }
+  #loginStep2FullPage #formcontent .loginForm .rightSide .formSide .emailDv .inputDv img,
+  #loginStep2FullPage #formcontent .loginForm .rightSide .formSide .passDv .inputDv img {
+    position: absolute;
+    top: -50%;
+    transform: translateY(62px);
+    left: 32px;
+  }
+  #loginStep2FullPage #formcontent .loginForm .rightSide .formSide .emailDv .inputDv input,
+  #loginStep2FullPage #formcontent .loginForm .rightSide .formSide .passDv .inputDv input {
+    padding: 24px 0 24px 58px;
+    width: 311px;
+  }
+  #loginStep2FullPage #formcontent .loginForm .rightSide .formSide button {
+    width: 311px;
+  }
+  #loginStep2FullPage #formcontent .loginForm #notANumberTxt {
+    display: block;
+    text-align: center;
+    color: #5956e9;
   }
 }/*# sourceMappingURL=main.css.map */

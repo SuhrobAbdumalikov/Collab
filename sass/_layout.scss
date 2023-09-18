@@ -2510,6 +2510,13 @@ html {
     @include d-flex(0px);
     justify-content: space-between;
     padding: 48px 0 100px 0;
+    .logoS2 {
+      a {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
     .leftNavS2 {
       @include d-flex(32px);
       a {
@@ -2645,6 +2652,9 @@ html {
             @include btnBlue(24px, 80px);
           }
         }
+      }
+      #notANumberTxt{
+        display: none;
       }
     }
   }
@@ -3447,13 +3457,20 @@ html {
 
   //================>> login step 2 full page <<==============//
   #loginStep2FullPage {
-    height: 767px !important;
-    background-image: url("../../images/loginStep1tabletBc.png") !important;
+    height: 767px;
+    background-image: url("../../images/loginStep1tabletBc.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     .navBarStp2 {
       padding: 40px 0 72px 0 !important;
+      .logoS2 {
+        a {
+          &:last-child {
+            display: none;
+          }
+        }
+      }
     }
     #formcontent {
       .loginForm {
@@ -3581,7 +3598,7 @@ html {
           #emailBtn {
             @include btnBlue(23px, 65px!important);
           }
-          .forgerPassword{
+          .forgerPassword {
             margin-top: 81px;
             margin-left: 0px;
           }
@@ -3591,7 +3608,84 @@ html {
   }
 
   //============>> login step 2 mobile <<==============//
-  #loginStep2FullPage{
-    
+  #loginStep2FullPage {
+    height: 812px !important;
+    background-image: url("../../images/loginStep2_mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .navBarStp2 {
+      @include d-flex(0px);
+      justify-content: center;
+      padding: 40px 0 75px 0;
+      .logoS2 {
+        a {
+          &:first-child {
+            display: none;
+          }
+          &:last-child {
+            display: block;
+          }
+        }
+      }
+      .leftNavS2 {
+        display: none;
+      }
+    }
+    #formcontent {
+      .loginForm {
+        @include d-column(32px!important);
+        justify-content: center!important;
+        .leftSide {
+          display: none;
+        }
+        .rightSide {
+          padding-top: 0px;
+          h2 {
+            font-size: 40px;
+            width: 311px;
+            margin: 0 auto!important;
+            text-align:center;
+          }
+          p {
+            font-size: 15px;
+            padding: 16px 0 40px 0;
+            text-align: center;
+          }
+          .formSide {
+            @include d-column(32px);
+            align-items: start;
+            .emailDv,
+            .passDv {
+              @include d-column(12px);
+              align-items: start;
+              .passName {
+                width: 310px;
+              }
+              .inputDv {
+                img {
+                  position: absolute;
+                  top: -50%;
+                  transform: translateY(62px);
+                  left: 32px;
+                }
+                input {
+                  padding: 24px 0 24px 58px;
+                  width: 311px;
+                }
+              }
+            }
+            button {
+              width: 311px;
+            }
+          }
+        }
+        #notANumberTxt{
+          display: block;
+          text-align:center;
+          color:#5956e9;
+        }
+      }
+    }
   }
 }
