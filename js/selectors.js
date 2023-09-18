@@ -11,3 +11,5 @@ export const email = document.querySelector("#email");
 export const message = document.querySelector("#message");
 export const sendContactBtn = document.querySelector("#sendContactBtn");
 export const loginBtn = document.querySelector("#loginBtn");
+export const bars = document.querySelector(".bars")
+export const nav_menu = document.querySelector(".nav-menu")

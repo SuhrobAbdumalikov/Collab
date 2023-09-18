@@ -114,3 +114,14 @@ for (let i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// ==============>> menu bar <<================//
+selectors.bars.addEventListener("click",()=>{
+  selectors.bars.classList.toggle("active");
+  selectors.nav_menu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  selectors.bars.classList.remove("active");
+  selectors.nav_menu.classList.remove("active");
+}))

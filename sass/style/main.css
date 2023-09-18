@@ -75,6 +75,10 @@ html {
   z-index: 2;
   right: 0;
 }
+.fullPage #navBarSection #navBarTopYellow {
+  position: absolute;
+  z-index: -1;
+}
 .fullPage #navBarSection .navbar {
   display: flex;
   align-items: center;
@@ -238,6 +242,9 @@ html {
 .fullPage #navBarSection .navbar .rightNav #getStart:active {
   transform: scale(0.95);
 }
+.fullPage .navbarMenu {
+  display: none;
+}
 .fullPage main .mainSection {
   position: relative;
   display: flex;
@@ -347,6 +354,9 @@ html {
   bottom: 163px;
   margin-left: 350px;
   z-index: 2;
+}
+.fullPage main .mainSection .rightContent img:last-child {
+  display: none;
 }
 .fullPage main .mainSection #circlePinkLittle {
   position: absolute;
@@ -3163,9 +3173,6 @@ html {
 }
 
 @media screen and (max-width: 1024px) {
-  .fullPage {
-    overflow-x: hidden;
-  }
   .container {
     width: 879px;
     margin: 0 auto;
@@ -3658,13 +3665,219 @@ html {
   }
 }
 @media screen and (max-width: 376px) {
+  .fullPage {
+    width: 376px;
+    margin: 0 auto;
+    border: 2px solid blue;
+  }
   .container {
     width: 311px;
     margin: 0 auto;
+    border: 1px solid red;
   }
   .Navcontainer {
     width: 311px;
     margin: 0 auto;
+    border: 1px solid red;
+  }
+  #navBarSection #navBarTopYellow {
+    display: none;
+  }
+  #navBarSection #tabletBluImg {
+    width: 70px !important;
+    height: 190px !important;
+    top: 116px;
+  }
+  #navBarSection .navbar {
+    display: none !important;
+  }
+  .navbarMenu {
+    display: flex !important;
+    margin-bottom: 103px;
+  }
+  .navbarMenu .navMenuBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbarMenu .navMenuBar i {
+    font-size: 22px;
+  }
+  .navbarMenu .bar {
+    display: block;
+  }
+  .navbarMenu .bars {
+    display: block;
+  }
+  .navbarMenu .bars.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .navbarMenu .bars.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(11.5px);
+  }
+  .navbarMenu .bars.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-11.5px);
+  }
+  .navbarMenu .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    width: 376px;
+    text-align: center;
+    background: white;
+    transition: 0.3s;
+    z-index: 2;
+  }
+  .navbarMenu .nav-link {
+    color: #999fae;
+  }
+  .navbarMenu .nav-link:hover {
+    color: black;
+  }
+  .navbarMenu .nav-item {
+    padding: 1.5rem 0;
+  }
+  .navbarMenu .nav-menu.active {
+    left: 0;
+  }
+  main .mainSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+  main .mainSection .leftContent {
+    margin-left: 0px !important;
+  }
+  main .mainSection .leftContent h1 {
+    font-size: 60px !important;
+  }
+  main .mainSection .leftContent p {
+    margin: 39px 0 48px 0;
+    width: 230px !important;
+  }
+  main .mainSection .leftContent .btns {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  main .mainSection .leftContent .btns .actionBtn a:first-child {
+    border: 1px solid red;
+    padding: 24px;
+    border-radius: 16px;
+  }
+  main .mainSection .leftContent .btns .actionBtn a:last-child {
+    display: none;
+  }
+  main .mainSection .rightContent img {
+    display: none;
+  }
+  main .mainSection .rightContent img:last-child {
+    display: block !important;
+  }
+  main .mainSection #circleYellowMain {
+    width: 35px;
+    height: 35px;
+    top: 130px !important;
+    margin-right: -210px !important;
+  }
+  main .mainSection #circleBottmPink {
+    bottom: 220px !important;
+    right: 60px !important;
+    z-index: -1 !important;
+  }
+  #designToolSection {
+    margin-top: 35px !important;
+    padding: 80px 0 50px 0 !important;
+  }
+  #designToolSection .designTool .toolTopTexts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px !important;
+  }
+  #designToolSection .designTool .toolTopTexts h4 {
+    font-size: 16px !important;
+  }
+  #designToolSection .designTool .toolTopTexts #swiperNextBtn {
+    bottom: 500px !important;
+    left: 30px !important;
+    z-index: 1;
+    margin-bottom: 10px;
+  }
+  #designToolSection .designTool .toolTopTexts #swiperPrevBtn {
+    bottom: 500px !important;
+    left: 100px !important;
+    margin-bottom: 10px;
+  }
+  #designToolSection .designTool .toolTopTexts .mainTextTool h2 {
+    font-size: 48px !important;
+    width: 311px;
+  }
+  #designToolSection .designTool .toolTopTexts .mainTextTool p {
+    font-size: 16px !important;
+    width: 246px !important;
+  }
+  #designToolSection .designTool .toolTopTexts .swiper .swiper-slide h4 {
+    font-size: 20px !important;
+  }
+  #designToolSection .designTool .toolTopTexts .swiper .swiper-slide p {
+    font-size: 15px !important;
+    width: 277px !important;
+  }
+  #designToolSection .designTool .toolTopTexts .swiper .swiper-pagination-bullet {
+    display: none;
+  }
+  #designToolSection .designTool #circleGrey {
+    top: 50px !important;
+    right: -200px !important;
+  }
+  #designToolSection .designTool #circleGreyLittle {
+    bottom: 490px !important;
+    left: 130px !important;
+  }
+  #signUpSection {
+    padding-top: 140px !important;
+    padding-bottom: 120px;
+  }
+  #signUpSection .signUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px !important;
+  }
+  #signUpSection .signUp .images #mainSignImg {
+    width: 350px;
+  }
+  #signUpSection .signUp .images #blueBackSign {
+    width: 311px !important;
+    margin-left: -335px !important;
+    margin-top: 20px !important;
+  }
+  #signUpSection .signUp .bottomContent h4 {
+    font-size: 20px !important;
+    margin-bottom: 32px !important;
+  }
+  #signUpSection .signUp .bottomContent .inputEmailContents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px !important;
+  }
+  #signUpSection .signUp .bottomContent .inputEmailContents img {
+    top: 23px;
+    left: 30px !important;
+  }
+  #signUpSection .signUp .bottomContent .inputEmailContents input {
+    height: 72px !important;
+    width: 311px !important;
+    padding: 24px 72px !important;
+  }
+  #signUpSection .signUp .bottomContent .inputEmailContents button {
+    position: relative !important;
+    width: 311px;
+    right: 0 !important;
   }
   #loginFullPage {
     height: 813px;
@@ -3838,4 +4051,43 @@ html {
     text-align: center;
     color: #5956e9;
   }
+}
+.navbarMenu {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+/* transition for links */
+.nav-link {
+  transition: 0.5s ease;
+}
+
+.bars {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background: black;
+}
+
+.nav-item {
+  padding: 0 1.5rem;
 }/*# sourceMappingURL=main.css.map */
