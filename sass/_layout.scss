@@ -652,6 +652,9 @@ html {
           }
         }
       }
+      .protoIm1{
+        display: none;
+      }
     }
   }
 
@@ -1175,7 +1178,7 @@ html {
           .swiperTAblet {
             display: none;
             .swiper {
-              width: 500px !important;
+              width: 500px;
               height: 400px;
               display: flex;
               align-items: center;
@@ -2940,7 +2943,7 @@ html {
       .leftContentList {
         .topContent {
           h2 {
-            font-size: 68px !important;
+            font-size: 68px;
             padding: 23px 0 32px 0 !important;
           }
         }
@@ -3523,7 +3526,7 @@ html {
     width: 376px;
     margin: 0 auto;
     border: 2px solid blue;
-      // overflow-x: hidden;
+    // overflow-x: hidden;
   }
   .container {
     width: 311px;
@@ -3656,112 +3659,329 @@ html {
   }
   //============>> design tool section <<==============//
   #designToolSection {
-    margin-top: 35px!important;
-    padding: 80px 0 50px 0!important;
-    .designTool{
-      .toolTopTexts{
+    margin-top: 35px !important;
+    padding: 80px 0 50px 0 !important;
+    .designTool {
+      .toolTopTexts {
         @include d-column(16px!important);
-        h4{
-          font-size: 16px!important;
+        h4 {
+          font-size: 16px !important;
         }
-        #swiperNextBtn{
-          bottom: 500px!important;
-          left: 30px!important;
+        #swiperNextBtn {
+          bottom: 500px !important;
+          left: 30px !important;
           z-index: 1;
           margin-bottom: 10px;
         }
-        #swiperPrevBtn{
-          bottom: 500px!important;
-          left: 100px!important;
+        #swiperPrevBtn {
+          bottom: 500px !important;
+          left: 100px !important;
           margin-bottom: 10px;
         }
-        .mainTextTool{
-          h2{
-            font-size: 48px!important;
+        .mainTextTool {
+          h2 {
+            font-size: 48px !important;
             width: 311px;
           }
-          p{
-            font-size: 16px!important;
-            width: 246px!important;
+          p {
+            font-size: 16px !important;
+            width: 246px !important;
           }
         }
-        .swiper{
-          .swiper-slide{
-            h4{
-              font-size: 20px!important;
+        .swiper {
+          .swiper-slide {
+            h4 {
+              font-size: 20px !important;
             }
-            p{
-              font-size: 15px!important;
-              width: 277px!important;
+            p {
+              font-size: 15px !important;
+              width: 277px !important;
             }
           }
-          .swiper-pagination-bullet{
+          .swiper-pagination-bullet {
             display: none;
           }
         }
       }
-      #circleGrey{
-        top: 50px!important;
-        right: -200px!important;
+      #circleGrey {
+        top: 50px !important;
+        right: -200px !important;
       }
-      #circleGreyLittle{
-        bottom: 490px!important;
-        left: 130px!important;
+      #circleGreyLittle {
+        bottom: 490px !important;
+        left: 130px !important;
       }
     }
   }
 
   //============>> sign up section <<============//
   #signUpSection {
-    padding-top: 140px!important;
-    padding-bottom:120px;
-    .signUp{
+    padding-top: 140px !important;
+    padding-bottom: 120px;
+    .signUp {
       @include d-column(5px!important);
-      .images{
-        #mainSignImg{
+      .images {
+        #mainSignImg {
           width: 350px;
         }
-        #blueBackSign{
-          width: 311px!important;
-          margin-left: -335px!important;
-          margin-top: 20px!important;
+        #blueBackSign {
+          width: 311px !important;
+          margin-left: -335px !important;
+          margin-top: 20px !important;
         }
       }
-      .bottomContent{
-        h4{
-          font-size: 20px!important;
-          margin-bottom: 32px!important;
+      .bottomContent {
+        h4 {
+          font-size: 20px !important;
+          margin-bottom: 32px !important;
         }
-        .inputEmailContents{
+        .inputEmailContents {
           @include d-column(16px!important);
-          img{
+          img {
             top: 23px;
-            left: 30px!important;
+            left: 30px !important;
           }
-          input{
-            height: 72px!important;
-            width: 311px!important;
-            padding: 24px 72px!important;
+          input {
+            height: 72px !important;
+            width: 311px !important;
+            padding: 24px 72px !important;
           }
-          button{
-            position: relative!important;
+          button {
+            position: relative !important;
             width: 311px;
-            right: 0!important;
+            right: 0 !important;
           }
         }
       }
     }
   }
+
+  //============>> feature list section <<==========//
   #featureListSsection {
+    padding: 80px 0 90px 0 !important;
+    .featureList {
+      padding: 0px !important;
+      @include d-column(50px!important);
+      .topContent {
+        span {
+          font-size: 16px !important;
+        }
+        h2 {
+          font-size: 48px !important;
+          width: 311px !important;
+        }
+        p {
+          font-size: 16px;
+          width: 311px !important;
+        }
+      }
+      .rightContentList {
+        img {
+          width: 379px;
+        }
+      }
+    }
   }
+
+  //==========>> prototype section <<=============//
   #prototypeSection {
+    padding: 40px 0 73px 0 !important;
+    .prototype {
+      padding: 70px 16px 40px 16px !important;
+      @include d-column(1px!important);
+      z-index: 1;
+      .protoLeftContent {
+        @include d-column(32px!important);
+        h2 {
+          font-size: 48px !important;
+          width: 311px !important;
+          text-align: center;
+        }
+        p {
+          font-size: 14px !important;
+          width: 290px !important;
+          margin: 0 auto;
+          text-align: center;
+        }
+        button{
+          width: 253px;
+          margin: 0 auto;
+        }
+      }
+      .protoIm1{
+        display: block!important;
+        img {
+          display: none;
+          &:first-child {
+            display: block;
+            width: 300px !important;
+            height: 300px !important;
+            margin-left:163px;
+          }
+          &:nth-child(2){
+            display: block;
+            width: 252px;
+            height: 252px;
+            z-index: -1!important;
+            top: 80px!important; 
+            right: 30px!important;
+          }
+          &:nth-child(4){
+            display: block;
+            width: 34px!important;
+            height: 34px!important;
+            top: 101px!important;
+            right: 230px!important;
+          }
+        }
+      }
+      .protoIm2{
+        display: none;
+      }
+    }
   }
+
+  //==========>> pricing section <<===========//
   #PricingSection {
+    padding-bottom: 40px!important;
+    .Pricing{
+      @include d-column(32px!important);
+      .topContentPrice{
+        h4{
+          font-size: 16px!important;
+        }
+        h2{
+          font-size: 48px!important;
+          width: 310px!important;
+        }
+        p{
+          font-size: 16px!important;
+          width: 310px!important;
+        }
+      }
+      .middleContentPrice{
+        @include d-flex(0px!important);
+        justify-content: space-between;
+        width: 311px!important;
+        margin: 0 auto;
+      }
+      .bottomContentPrice{
+        .professionalItem{
+          width: 310px;
+        }
+        .StandartItem{
+          display: none;
+        }
+        .ultimateItem{
+          display: none;
+        }
+      }
+    }
   }
+
+  //==========>> get work dane section <<===========//
   #getWorkDoneSection {
+    padding: 80px 0 0 0!important;
+    .imagesPosition{
+      img{
+        &:first-child{
+          top: 100px!important;
+          right: -120px!important;
+        }
+        &:nth-child(2){
+          display: none;
+        }
+        &:nth-child(4){
+          // display: none;
+          top: 300px!important;
+          width: 260px!important;
+        }
+        &:nth-child(5){
+          display: none;
+        }
+        &:nth-child(3){
+          width: 112px!important;
+          left: 150px!important;
+          top: 1010px!important;
+        }
+        &:nth-child(8){
+          display: none;
+        }
+      }
+    }
+    .workDone{
+      span{
+        font-size: 16px!important;
+      }
+      h2{
+        font-size: 78px!important;
+        width: 311px!important;
+        span{
+          font-size: 78px!important;
+          width: 311px!important;
+        }
+      }
+      .bottomContent{
+        right: -60px!important;
+        @include d-column(32px!important);
+        justify-content: center!important;
+        align-items: center!important;
+        bottom: -150px!important;
+        img{
+          background-color: white!important;
+          padding: 30px;
+          width: 100px!important;
+          border-radius: 50%;
+          height: 100px!important;
+        }
+        p{
+          font-size: 18px!important;
+          text-align:center;
+        }
+        .lineAndA{
+          .line{
+            display: none;
+          }
+          a{
+            @include btnPink(29px,45px);
+            color: black !important;;
+          }
+        }
+      }
+    }
   }
+
+  //==========>> testimonial section <<=============//
   #TestimonialSection {
+    padding: 250px 0 112px 0!important;
+    .testimonial{
+      @include d-column(45px!important);
+      .testimonialTopContent{
+        span{
+          font-size: 16px!important;
+        }
+        h2{
+          font-size: 48px!important;
+          width: 309px!important;
+        }
+      }
+      .testimonialBottomContent{
+        @include d-column(40px!important);
+        .swiper{
+          width: 270px!important;
+        }
+        .swiper-slide{
+          @include d-column(0px!important);
+          p{
+            font-size: 18px!important;
+            width: 229px!important;
+          }
+        }
+      }
+    }
   }
+
+  //==========>> speed section <<==============//
   #speedSection {
   }
   #FeatureBoxSection {
@@ -3911,7 +4131,6 @@ html {
     }
   }
 }
-
 
 //===========>> navbar menu styles <<===============//
 .navbarMenu {

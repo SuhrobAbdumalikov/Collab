@@ -744,6 +744,9 @@ html {
   top: 130px;
   right: 620px;
 }
+.fullPage #prototypeSection .prototype .protoIm1 {
+  display: none;
+}
 .fullPage #PricingSection {
   padding-bottom: 112px;
 }
@@ -1334,7 +1337,7 @@ html {
   display: none;
 }
 .fullPage #TestimonialSection .testimonial .testimonialBottomContent .rightContentTes .swiperTAblet .swiper {
-  width: 500px !important;
+  width: 500px;
   height: 400px;
   display: flex;
   align-items: center;
@@ -3246,7 +3249,7 @@ html {
     gap: 30px !important;
   }
   #featureListSsection .featureList .leftContentList .topContent h2 {
-    font-size: 68px !important;
+    font-size: 68px;
     padding: 23px 0 32px 0 !important;
   }
   #prototypeSection .prototype {
@@ -3878,6 +3881,245 @@ html {
     position: relative !important;
     width: 311px;
     right: 0 !important;
+  }
+  #featureListSsection {
+    padding: 80px 0 90px 0 !important;
+  }
+  #featureListSsection .featureList {
+    padding: 0px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px !important;
+  }
+  #featureListSsection .featureList .topContent span {
+    font-size: 16px !important;
+  }
+  #featureListSsection .featureList .topContent h2 {
+    font-size: 48px !important;
+    width: 311px !important;
+  }
+  #featureListSsection .featureList .topContent p {
+    font-size: 16px;
+    width: 311px !important;
+  }
+  #featureListSsection .featureList .rightContentList img {
+    width: 379px;
+  }
+  #prototypeSection {
+    padding: 40px 0 73px 0 !important;
+  }
+  #prototypeSection .prototype {
+    padding: 70px 16px 40px 16px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px !important;
+    z-index: 1;
+  }
+  #prototypeSection .prototype .protoLeftContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px !important;
+  }
+  #prototypeSection .prototype .protoLeftContent h2 {
+    font-size: 48px !important;
+    width: 311px !important;
+    text-align: center;
+  }
+  #prototypeSection .prototype .protoLeftContent p {
+    font-size: 14px !important;
+    width: 290px !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #prototypeSection .prototype .protoLeftContent button {
+    width: 253px;
+    margin: 0 auto;
+  }
+  #prototypeSection .prototype .protoIm1 {
+    display: block !important;
+  }
+  #prototypeSection .prototype .protoIm1 img {
+    display: none;
+  }
+  #prototypeSection .prototype .protoIm1 img:first-child {
+    display: block;
+    width: 300px !important;
+    height: 300px !important;
+    margin-left: 163px;
+  }
+  #prototypeSection .prototype .protoIm1 img:nth-child(2) {
+    display: block;
+    width: 252px;
+    height: 252px;
+    z-index: -1 !important;
+    top: 80px !important;
+    right: 30px !important;
+  }
+  #prototypeSection .prototype .protoIm1 img:nth-child(4) {
+    display: block;
+    width: 34px !important;
+    height: 34px !important;
+    top: 101px !important;
+    right: 230px !important;
+  }
+  #prototypeSection .prototype .protoIm2 {
+    display: none;
+  }
+  #PricingSection {
+    padding-bottom: 40px !important;
+  }
+  #PricingSection .Pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px !important;
+  }
+  #PricingSection .Pricing .topContentPrice h4 {
+    font-size: 16px !important;
+  }
+  #PricingSection .Pricing .topContentPrice h2 {
+    font-size: 48px !important;
+    width: 310px !important;
+  }
+  #PricingSection .Pricing .topContentPrice p {
+    font-size: 16px !important;
+    width: 310px !important;
+  }
+  #PricingSection .Pricing .middleContentPrice {
+    display: flex;
+    align-items: center;
+    gap: 0px !important;
+    justify-content: space-between;
+    width: 311px !important;
+    margin: 0 auto;
+  }
+  #PricingSection .Pricing .bottomContentPrice .professionalItem {
+    width: 310px;
+  }
+  #PricingSection .Pricing .bottomContentPrice .StandartItem {
+    display: none;
+  }
+  #PricingSection .Pricing .bottomContentPrice .ultimateItem {
+    display: none;
+  }
+  #getWorkDoneSection {
+    padding: 80px 0 0 0 !important;
+  }
+  #getWorkDoneSection .imagesPosition img:first-child {
+    top: 100px !important;
+    right: -120px !important;
+  }
+  #getWorkDoneSection .imagesPosition img:nth-child(2) {
+    display: none;
+  }
+  #getWorkDoneSection .imagesPosition img:nth-child(4) {
+    top: 300px !important;
+    width: 260px !important;
+  }
+  #getWorkDoneSection .imagesPosition img:nth-child(5) {
+    display: none;
+  }
+  #getWorkDoneSection .imagesPosition img:nth-child(3) {
+    width: 112px !important;
+    left: 150px !important;
+    top: 1010px !important;
+  }
+  #getWorkDoneSection .imagesPosition img:nth-child(8) {
+    display: none;
+  }
+  #getWorkDoneSection .workDone span {
+    font-size: 16px !important;
+  }
+  #getWorkDoneSection .workDone h2 {
+    font-size: 78px !important;
+    width: 311px !important;
+  }
+  #getWorkDoneSection .workDone h2 span {
+    font-size: 78px !important;
+    width: 311px !important;
+  }
+  #getWorkDoneSection .workDone .bottomContent {
+    right: -60px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    bottom: -150px !important;
+  }
+  #getWorkDoneSection .workDone .bottomContent img {
+    background-color: white !important;
+    padding: 30px;
+    width: 100px !important;
+    border-radius: 50%;
+    height: 100px !important;
+  }
+  #getWorkDoneSection .workDone .bottomContent p {
+    font-size: 18px !important;
+    text-align: center;
+  }
+  #getWorkDoneSection .workDone .bottomContent .lineAndA .line {
+    display: none;
+  }
+  #getWorkDoneSection .workDone .bottomContent .lineAndA a {
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 29px 45px;
+    background-color: #fab8c4;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -0.64px;
+    color: #2522ba;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color: black !important;
+  }
+  #getWorkDoneSection .workDone .bottomContent .lineAndA a:hover {
+    opacity: 0.8;
+  }
+  #getWorkDoneSection .workDone .bottomContent .lineAndA a:active {
+    transform: scale(0.95);
+  }
+  #TestimonialSection {
+    padding: 250px 0 112px 0 !important;
+  }
+  #TestimonialSection .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px !important;
+  }
+  #TestimonialSection .testimonial .testimonialTopContent span {
+    font-size: 16px !important;
+  }
+  #TestimonialSection .testimonial .testimonialTopContent h2 {
+    font-size: 48px !important;
+    width: 309px !important;
+  }
+  #TestimonialSection .testimonial .testimonialBottomContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px !important;
+  }
+  #TestimonialSection .testimonial .testimonialBottomContent .swiper {
+    width: 270px !important;
+  }
+  #TestimonialSection .testimonial .testimonialBottomContent .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px !important;
+  }
+  #TestimonialSection .testimonial .testimonialBottomContent .swiper-slide p {
+    font-size: 18px !important;
+    width: 229px !important;
   }
   #loginFullPage {
     height: 813px;
