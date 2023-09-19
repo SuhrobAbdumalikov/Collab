@@ -86,6 +86,22 @@ const FeatureSlideSwiper = new Swiper(".FeatureSlideSwiper", {
   },
 });
 
+//=============>> Feature slide Box swiper mobile <<=============//
+const FeatureSlideSwiperMobile = new Swiper(".FeatureSlideSwiperMobile", {
+  slidesPerView: 1,
+  spaceBetween: 26,
+  loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".nextSlideBtn",
+    prevEl: ".prevSlideBtn",
+  },
+});
+
 //==========>> Vertical Swiper <<===================//
 const verticalSwiper = new Swiper(".VerticalSwiper", {
   direction: "vertical",
@@ -125,3 +141,17 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   selectors.bars.classList.remove("active");
   selectors.nav_menu.classList.remove("active");
 }))
+
+//=============>> footer accordion <<=================//
+const footerAcardion = document.getElementsByClassName("footerAcardion");
+for (let i = 0; i < footerAcardion.length; i++) {
+  footerAcardion[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let footerPanel = this.nextElementSibling;
+    if (footerPanel.style.maxHeight) {
+      footerPanel.style.maxHeight = null;
+    } else {
+      footerPanel.style.maxHeight = footerPanel.scrollHeight + 'px';
+    }
+  });
+}

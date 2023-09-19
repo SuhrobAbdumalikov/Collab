@@ -13,3 +13,4 @@ export const sendContactBtn = document.querySelector("#sendContactBtn");
 export const loginBtn = document.querySelector("#loginBtn");
 export const bars = document.querySelector(".bars")
 export const nav_menu = document.querySelector(".nav-menu")
+export const footerPanel = document.querySelector(".footerPanel");
