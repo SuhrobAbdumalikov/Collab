@@ -4769,6 +4769,7 @@ html {
     justify-content: center;
   }
   footer .footerSection .topFooterSection .mobileFooter {
+    display: block !important;
     width: 311px;
   }
   footer .footerSection .topFooterSection .mobileFooter .footerAcardion {
