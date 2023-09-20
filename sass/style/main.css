@@ -3882,7 +3882,7 @@ html {
     gap: 16px;
   }
   main .mainSection .leftContent .btns .actionBtn a:first-child {
-    border: 1px solid #999FAE;
+    border: 1px solid #999fae;
     padding: 24px;
     border-radius: 16px;
   }
@@ -4786,7 +4786,7 @@ html {
   }
   footer .footerSection .topFooterSection .mobileFooter .footerAcardion {
     background-color: #fff;
-    color: #999FAE;
+    color: #999fae;
     cursor: pointer;
     padding: 18px 18px 18px 0;
     width: 100%;

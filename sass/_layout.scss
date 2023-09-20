@@ -28,7 +28,7 @@ html {
 //=============>> home page <<====================//
 //=========>> full page section <<============//
 .fullPage {
-  overflow:hidden;
+  overflow: hidden;
 
   [data-aos="example-anim3"] {
     transform: rotate(45deg);
@@ -39,6 +39,9 @@ html {
       opacity: 1;
     }
   }
+  // width: 1440px;
+  // margin: 0 auto;
+  // border: 1px solid red;
 
   //=======>> navbar section <<========//
   #navBarSection {
@@ -2482,7 +2485,7 @@ html {
             }
           }
         }
-        .mobileFooter{
+        .mobileFooter {
           display: none;
         }
       }
@@ -3492,8 +3495,8 @@ html {
     }
   }
 
-  footer{
-    .mobileFooter{
+  footer {
+    .mobileFooter {
       display: none;
     }
   }
@@ -3738,7 +3741,7 @@ html {
           @include d-flex(16px);
           .actionBtn {
             a:first-child {
-              border: 1px solid #999FAE;
+              border: 1px solid #999fae;
               padding: 24px;
               border-radius: 16px;
             }
@@ -4631,11 +4634,11 @@ html {
           @include d-flex-sb();
         }
         .mobileFooter {
-          display: block!important;
+          display: block !important;
           width: 311px;
           .footerAcardion {
             background-color: #fff;
-            color: #999FAE;
+            color: #999fae;
             cursor: pointer;
             padding: 18px 18px 18px 0;
             width: 100%;
@@ -4653,7 +4656,7 @@ html {
             &.active {
               border-bottom: 1px solid #5956e9;
               color: #5956e9;
-              &::after{
+              &::after {
                 padding: 16px 0;
               }
             }
@@ -4666,14 +4669,14 @@ html {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.2s ease-out;
-            ul{
+            ul {
               @include d-column(10px);
               align-items: start;
-              li{
-                a{
-                  color:black;
-                  &:hover{
-                    color:#5956e9;
+              li {
+                a {
+                  color: black;
+                  &:hover {
+                    color: #5956e9;
                   }
                 }
               }
@@ -4684,9 +4687,9 @@ html {
           display: none;
         }
       }
-      .bottomFooterSection{
-        .rightBy{
-          a:last-child{
+      .bottomFooterSection {
+        .rightBy {
+          a:last-child {
             display: none;
           }
         }

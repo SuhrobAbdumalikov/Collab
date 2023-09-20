@@ -123,38 +123,40 @@ const verticalSwiper = new Swiper(".VerticalSwiper", {
 //==========>> accordion <<===========//
 const acc = document.getElementsByClassName("accordion");
 for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
     let panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
-      panel.style.maxHeight = panel.scrollHeight + 'px';
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
 }
 
 // ==============>> menu bar <<================//
-selectors.bars.addEventListener("click",()=>{
+selectors.bars.addEventListener("click", () => {
   selectors.bars.classList.toggle("active");
   selectors.nav_menu.classList.toggle("active");
-})
+});
 
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-  selectors.bars.classList.remove("active");
-  selectors.nav_menu.classList.remove("active");
-}))
+document.querySelectorAll(".nav-link").forEach((n) =>
+  n.addEventListener("click", () => {
+    selectors.bars.classList.remove("active");
+    selectors.nav_menu.classList.remove("active");
+  })
+);
 
 //=============>> footer accordion <<=================//
 const footerAcardion = document.getElementsByClassName("footerAcardion");
 for (let i = 0; i < footerAcardion.length; i++) {
-  footerAcardion[i].addEventListener("click", function() {
+  footerAcardion[i].addEventListener("click", function () {
     this.classList.toggle("active");
     let footerPanel = this.nextElementSibling;
     if (footerPanel.style.maxHeight) {
       footerPanel.style.maxHeight = null;
     } else {
-      footerPanel.style.maxHeight = footerPanel.scrollHeight + 'px';
+      footerPanel.style.maxHeight = footerPanel.scrollHeight + "px";
     }
   });
 }
