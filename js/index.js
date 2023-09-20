@@ -1,5 +1,8 @@
-import Swiper from "../node_modules/swiper/swiper-bundle.min.mjs";
 import * as selectors from "./selectors.js";
+import Swiper from "../node_modules/swiper/swiper-bundle.min.mjs";
+// import Aos from "../node_modules/aos";
+
+// Aos.init();
 
 //===========>> Swiper in tool section <<============//
 const swiper = new Swiper(".mySwiper", {

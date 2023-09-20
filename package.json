@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "This is Collab website",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start":"parcel index.html"
+  },
   "keywords": [],
   "author": "Abdumalikov Suhrob",
   "license": "ISC",
   "dependencies": {
     "accordion-js": "^3.3.4",
-    "aos": "^3.0.0-beta.6",
+    "aos": "^2.3.4",
     "swiper": "^10.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3"
   }
 }

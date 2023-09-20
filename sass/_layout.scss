@@ -28,9 +28,17 @@ html {
 //=============>> home page <<====================//
 //=========>> full page section <<============//
 .fullPage {
-  // width: 1440px;
-  // margin: 0 auto;
-  // border: 1px solid red;
+  overflow:hidden;
+
+  [data-aos="example-anim3"] {
+    transform: rotate(45deg);
+    opacity: 0;
+    transition-property: transform, opacity;
+    &.aos-animate {
+      transform: rotate(0);
+      opacity: 1;
+    }
+  }
 
   //=======>> navbar section <<========//
   #navBarSection {

@@ -11,6 +11,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,16 +43,18 @@
           alt="headerCircleBcImg"
           loading="lazy"
           id="HeaderBackImgBlue"
+          style="z-index: -1;"
         />
         <img
           src="../images/headerCircleBcImgTablet.png"
           alt="tabletImg"
           loading="lazy"
           id="tabletBluImg"
+          style="z-index: -1;"
         />
         <div class="Navcontainer">
           <div class="navbar">
-            <div class="leftNav">
+            <div class="leftNav" data-aos="fade-down-right" data-aos-delay="50" data-aos-duration="1000">
               <div class="logo">
                 <a href="#0">
                   <img
@@ -182,7 +186,7 @@
                 </div>
               </div>
             </div>
-            <div class="rightNav">
+            <div class="rightNav" data-aos="fade-down-left" data-aos-delay="50" data-aos-duration="1000">
               <div class="searchDiv">
                 <input
                   type="search"
@@ -191,7 +195,7 @@
                 />
                 <i class="fas fa-search" id="searchIcon"></i>
               </div>
-              <a href="./pages/loginStep1.html" id="getStart">Get Start</a>
+              <a href="#" id="getStart">Get Start</a>
             </div>
           </div>
         </div>
@@ -220,7 +224,7 @@
                 <a href="#0" class="nav-link">About</a>
               </li>
               <li class="nav-item">
-                <a href="./loginStep1.html" class="nav-link">Work</a>
+                <a href="#0" class="nav-link">Work</a>
               </li>
               <li class="nav-item">
                 <a href="#0" class="nav-link">Contact</a>
@@ -233,7 +237,7 @@
       <main>
         <div class="container">
           <div class="mainSection">
-            <div class="leftContent">
+            <div class="leftContent" data-aos="fade-up-right" data-aos-delay="50" data-aos-duration="1000">
               <h1>Create Like<span>_</span> Never Before<span>.</span></h1>
               <p>
                 Create, build, collaborate and ship products faster. Good bye
@@ -260,7 +264,7 @@
                 <a href="#0">See It In Action!</a>
               </div>
             </div>
-            <div class="rightContent">
+            <div class="rightContent" data-aos="fade-up-left" data-aos-delay="50" data-aos-duration="1000">
               <img
                 src="../images/headerMainImage.png"
                 alt="mainImg"
@@ -296,12 +300,14 @@
               alt="circleYellowMain"
               loading="lazy"
               id="circleYellowMain"
+              style="z-index: -1;"
             />
             <img
               src="../images/CircleWhiteMain.png"
               alt="CircleWhiteMain"
               loading="lazy"
               id="circleWhiteMain"
+              style="z-index: -1;"
             />
             <img
               src="../images/CircleBlueMain.png"
@@ -318,7 +324,7 @@
           <div class="designTool">
             <div class="toolTopTexts">
               <div class="rightContent">
-                <h4>Features</h4>
+                <h4 data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">Features</h4>
                 <div class="swiperButtons">
                   <div class="prev-btn" id="swiperNextBtn">
                     <i class="fa-solid fa-arrow-left-long"></i>
@@ -329,7 +335,7 @@
                 </div>
               </div>
               <div class="leftContentTool">
-                <div class="mainTextTool">
+                <div class="mainTextTool" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
                   <h2>The world’s most powerful design tool.</h2>
                   <p>
                     Simultaneously design, code and collaborate with your team
@@ -337,7 +343,7 @@
                   </p>
                 </div>
                 <!-- Swiper -->
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper" data-aos="zoom-in-left" data-aos-delay="10" data-aos-duration="800">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <img
@@ -425,29 +431,34 @@
                 alt="signUpSectionMainImg"
                 loading="lazy"
                 id="mainSignImg"
+                data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800"
               />
               <img
                 src="../images/signUpBlueBack.png"
                 alt="signUpBlueBack"
                 loading="lazy"
                 id="blueBackSign"
+                data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000"
               />
             </div>
             <div class="bottomContent">
-              <h4>Ready to get started? <br />Sign up with your email</h4>
+              <h4 data-aos="fade-down" data-aos-delay="10" data-aos-duration="900">Ready to get started? <br />Sign up with your email</h4>
               <form class="inputEmailContents">
                 <img
                   src="../images/icons/Sending mail.svg"
                   alt="inputEamilIcon"
                   loading="lazy"
+                  style="z-index: 1;"
+                  data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000"
                 />
                 <input
                   type="email"
                   id="emailInput"
                   placeholder="Email address"
                   required
+                  data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000"
                 />
-                <button id="getStartEmail">Get Started</button>
+                <button id="getStartEmail" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">Get Started</button>
               </form>
             </div>
           </div>
@@ -458,7 +469,7 @@
         <div class="container">
           <div class="featureList">
             <div class="leftContentList">
-              <div class="topContent">
+              <div class="topContent" data-aos="fade-down-right" data-aos-delay="50" data-aos-duration="1000">
                 <span>Auto Adaptive layouts</span>
                 <h2>Responsive DNA<span>.</span></h2>
                 <p>
@@ -466,7 +477,7 @@
                   production-ready code.
                 </p>
               </div>
-              <div class="bottomContent">
+              <div class="bottomContent" data-aos="fade-up-right" data-aos-delay="50" data-aos-duration="1000">
                 <div class="items">
                   <img
                     src="../images/icons/iconFeatureList1.svg"
@@ -493,7 +504,7 @@
                 </div>
               </div>
             </div>
-            <div class="rightContentList">
+            <div class="rightContentList" data-aos="fade-left" data-aos-delay="200" data-aos-duration="2000">
               <img
                 src="../images/GraphicImg.png"
                 alt="featureListSsection"
@@ -534,9 +545,9 @@
                 loading="lazy"
               />
             </div>
-            <div class="protoLeftContent">
-              <h2>Native-like Prototying<span>.</span></h2>
-              <p>
+            <div class="protoLeftContent" data-aos="fade-right" data-aos-delay="100" data-aos-duration="2000">
+              <h2 data-aos="fade-right" data-aos-delay="50" data-aos-duration="1500">Native-like Prototying<span>.</span></h2>
+              <p data-aos="fade-right" data-aos-delay="50" data-aos-duration="1700">
                 With Collab Smart Prototype you create your interactions and
                 animations once and store as presets in the cloud for future
                 use. <br /><br />
@@ -549,6 +560,9 @@
                 src="../images/protoHand.png"
                 alt="prototypeHand"
                 loading="lazy"
+                
+                data-aos-duration="1000"
+                data-aos="example-anim3"
               />
               <img
                 src="../images/OvalProto.png"
@@ -559,6 +573,7 @@
                 src="../images/yellowProtoImg.png"
                 alt="yellowProtoImg"
                 loading="lazy"
+                data-aos="fade-up-right" data-aos-duration="1000"
               />
               <img
                 src="../images/blueProto.png"
@@ -578,7 +593,9 @@
       <section id="PricingSection">
         <div class="container">
           <div class="Pricing">
-            <div class="topContentPrice">
+            <div class="topContentPrice" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="100" data-aos-duration="1200">
               <h4>Join The Revolution</h4>
               <h2>Find the <span>Right Plan.</span></h2>
               <p>
@@ -586,13 +603,15 @@
                 and design teams.
               </p>
             </div>
-            <div class="middleContentPrice">
+            <div class="middleContentPrice" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
               <span id="monthlyBilled" class="active">Billed monthly</span>
               <div class="togglebtn"></div>
               <span id="yearlyBilled">Billed yearly</span>
             </div>
             <div class="bottomContentPrice">
-              <div class="professionalItem">
+              <div class="professionalItem" data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom" data-aos-duration="800">
                 <img
                   src="../images/icons/StarIcon.svg"
                   alt="StarIcon"
@@ -641,7 +660,8 @@
                 </div>
                 <button id="pricingBtn">Try free for 30 days</button>
               </div>
-              <div class="StandartItem">
+              <div class="StandartItem" data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom" data-aos-duration="850">
                 <div class="smile">
                   <img
                     src="../images/icons/smileWhite.svg"
@@ -684,7 +704,8 @@
                 </div>
                 <button id="pricingBtn">Try free for 30 days</button>
               </div>
-              <div class="ultimateItem">
+              <div class="ultimateItem" data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom" data-aos-duration="900">
                 <div class="smile">
                   <img
                     src="../images/icons/smileWhite.svg"
@@ -741,19 +762,23 @@
               src="../images/FillGetWorlDone.png"
               alt="fillImg"
               loading="lazy"
+              data-aos="fade-down-left"
+              data-aos-duration="900"
             />
             <img
               src="../images/signUpBlueBack.png"
               alt="blueImg"
               loading="lazy"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
             />
             <img
               src="../images/CursorGetWorkDone.png"
               alt="CursorGetWorkDone"
               loading="lazy"
             />
-            <img src="../images/leftHand.png" alt="leftHand" loading="lazy" />
-            <img src="../images/rightHand.png" alt="rightHand" loading="lazy" />
+            <img src="../images/leftHand.png" alt="leftHand" loading="lazy" data-aos="fade-left" data-aos-duration="1100"/>
+            <img src="../images/rightHand.png" alt="rightHand" loading="lazy" data-aos="fade-right" data-aos-duration="1100"/>
             <img
               src="../images/CircleWhiteMain.png"
               alt="whiteWorkDone"
@@ -772,8 +797,8 @@
           </div>
           <div class="workDone">
             <span>Collaboration Redefined</span>
-            <h2>Get Work Done <span>together</span></h2>
-            <div class="bottomContent">
+            <h2 data-aos="fade-right" data-aos-duration="900">Get Work Done <span>together</span></h2>
+            <div class="bottomContent" data-aos="fade-up" data-aos-duration="1000">
               <img
                 src="../images/icons/logoIcon.svg"
                 alt="logo"
@@ -783,7 +808,7 @@
                 Let your personalized Collab assistant do the heavy lifting
                 while you focus on creating.
               </p>
-              <div class="lineAndA">
+              <div class="lineAndA" data-aos="fade-right" data-aos-duration="1200">
                 <div class="line"></div>
                 <a href="#0">Find out more</a>
               </div>
@@ -795,14 +820,14 @@
       <section id="TestimonialSection">
         <div class="container">
           <div class="testimonial">
-            <div class="testimonialTopContent">
+            <div class="testimonialTopContent" data-aos="fade-right" data-aos-duration="1000">
               <span>Team Collaboration Redefined</span>
               <h2>
                 Helping world-class teams design faster together<span>.</span>
               </h2>
             </div>
             <div class="testimonialBottomContent">
-              <div class="leftContentTes">
+              <div class="leftContentTes" data-aos="fade-up" data-aos-duration="1000">
                 <h3>What others are saying</h3>
                 <div class="swiperBtns">
                   <div class="prevBtn">
@@ -813,7 +838,7 @@
                   </div>
                 </div>
               </div>
-              <div class="rightContentTes">
+              <div class="rightContentTes" data-aos="fade-left" data-aos-duration="1100">
                 <!-- Swiper -->
                 <div class="swiperDesktop">
                   <div class="swiper myTestimonialSwiper">
@@ -1104,15 +1129,15 @@
         <div class="container">
           <div class="Speed">
             <div class="leftContentSpeed">
-              <span>Collab is fast, super fast.</span>
-              <h2>Speed up your workflow<span>.</span></h2>
-              <p>
+              <span >Collab is fast, super fast.</span>
+              <h2 data-aos="fade-up" data-aos-duration="1000">Speed up your workflow<span>.</span></h2>
+              <p data-aos="fade-right" data-aos-duration="1100">
                 Essentially no lag, no matter the size of the file, even on
                 mobile devices.
               </p>
-              <strong>8.1<span>x</span></strong>
+              <strong data-aos="fade-up" data-aos-duration="1200">8.1<span>x</span></strong>
             </div>
-            <div class="rightContentSpeed">
+            <div class="rightContentSpeed" data-aos="flip-right" data-aos-duration="1300">
               <img
                 src="../images/GraphicImgSpeed.png"
                 alt="GraphicImgSpeed"
@@ -1137,7 +1162,7 @@
       <section id="FeatureBoxSection">
         <div class="Navcontainer">
           <div class="featureBox">
-            <div class="leftContentBox">
+            <div class="leftContentBox" data-aos="fade-down-right" data-aos-duration="1000">
               <div class="smileSpan">
                 <img
                   src="../images/icons/smileWhite.svg"
@@ -1245,6 +1270,7 @@
                 src="../images/LaptopBox.png"
                 alt="LaptopBox"
                 loading="lazy"
+                data-aos="fade-left" data-aos-duration="1100"
               />
               <img
                 src="../images/featureBoxImg.png"
@@ -1255,6 +1281,7 @@
                 src="../images/signUpBlueBack.png"
                 alt="bluMiddleImg"
                 loading="lazy"
+                data-aos="fade-up" data-aos-duration="1200"
               />
               <img
                 src="../images/CircleWhiteMain.png"
@@ -1269,7 +1296,7 @@
       <section id="coreSection">
         <div class="container">
           <div class="coreFeatures">
-            <div class="topTexts">
+            <div class="topTexts" data-aos="fade-down" data-aos-duration="1000">
               <h4>🔥</h4>
               <p>
                 We offer flexible pricing options for freelancers and design
@@ -1277,7 +1304,7 @@
               </p>
             </div>
             <div class="bottomContents">
-              <div class="leftCore rectangle">
+              <div class="leftCore rectangle" data-aos="fade-right" data-aos-duration="1100">
                 <h2>Schedule Product Demo</h2>
                 <p>
                   Still not sure? Schedule a demo to see how Collab can help you
@@ -1285,7 +1312,7 @@
                 </p>
                 <button>Schedule a Demo</button>
               </div>
-              <div class="rightCore rectangle">
+              <div class="rightCore rectangle" data-aos="fade-left" data-aos-duration="1100">
                 <h2>Get Started Now</h2>
                 <p>
                   Ready to revolutionize your design workflow? Try Collab for
@@ -1324,7 +1351,8 @@
               <div class="desktobAndTablet">
                 <div class="swiper FeatureSlideSwiper">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide fSlide1">
+                    <div class="swiper-slide fSlide1" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-duration="800">
                       <div class="topImg">
                         <img
                           src="../images/fillColor.png"
@@ -1345,7 +1373,8 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="swiper-slide fSlide2">
+                    <div class="swiper-slide fSlide2" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
                       <div class="topImg">
                         <img
                           src="../images/builderGuide.png"
@@ -1363,7 +1392,8 @@
                         ></a>
                       </div>
                     </div>
-                    <div class="swiper-slide fSlide3">
+                    <div class="swiper-slide fSlide3" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-duration="1200">
                       <div class="topImg">
                         <img
                           src="../images/icons/cursorRight.svg"
@@ -1702,7 +1732,7 @@
       <section id="researchSection">
         <div class="container">
           <div class="research">
-            <div class="resTopTexts">
+            <div class="resTopTexts" data-aos="fade-right" data-aos-duration="1000">
               <h2>
                 Research & <br />
                 background, summary.
@@ -1715,7 +1745,7 @@
             <div class="resBottom">
               <div class="leftSwiper">
                 <!-- Vertical Swiper -->
-                <div class="swiper VerticalSwiper">
+                <div class="swiper VerticalSwiper" data-aos="fade-up" data-aos-duration="1200">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <p>16<span>m</span></p>
@@ -1796,6 +1826,7 @@
                   src="../images/MobileResearch.png"
                   alt="mobileImg"
                   loading="lazy"
+                  data-aos="fade-down" data-aos-duration="1200"
                 />
                 <img
                   src="../images/yellowProtoImg.png"
@@ -1816,12 +1847,12 @@
       <section id="simpleCallSection">
         <div class="Navcontainer">
           <div class="simpleCall">
-            <h2>Ready to use the smartest design tool?</h2>
-            <p>
+            <h2 data-aos="fade-right" data-aos-duration="1000">Ready to use the smartest design tool?</h2>
+            <p data-aos="fade-left" data-aos-duration="1000">
               We offer flexible pricing options for freelancers and design
               teams.
             </p>
-            <button>Try free for 30 days</button>
+            <button data-aos="fade-up" data-aos-duration="1100">Try free for 30 days</button>
           </div>
         </div>
         <img
@@ -1829,12 +1860,14 @@
           alt="rightHand"
           loading="lazy"
           id="callHand"
+          data-aos="fade-down-left" data-aos-duration="1200"
         />
         <img
           src="../images/rightHandCallTablet.png"
           alt="rightHandCallTablet"
           loading="lazy"
           id="callHandTablet"
+          data-aos="fade-up-left" data-aos-duration="1200"
         />
       </section>
       <!-- timeline section  -->
@@ -1842,7 +1875,7 @@
         <div class="container">
           <div class="timeline">
             <div class="timeTopContent">
-              <div class="timeLeft">
+              <div class="timeLeft" data-aos="fade-right" data-aos-duration="900">
                 <span>Roadmap</span>
                 <h2>All systems are a go<span>.</span></h2>
                 <p>
@@ -1865,6 +1898,7 @@
                   src="../images/GraphicTimeline.png"
                   alt="GraphicTimeline"
                   loading="lazy"
+                  data-aos="fade-down-left" data-aos-duration="1000"
                 />
                 <img
                   src="../images/GraphictimelineTablet.png"
@@ -1874,16 +1908,18 @@
               </div>
             </div>
             <div class="timeBottomDiagram">
-              <img src="../images/diagram.png" alt="diagram" loading="lazy" />
+              <img src="../images/diagram.png" alt="diagram" loading="lazy" data-aos="fade-up" data-aos-duration="1000"/>
               <img
                 src="../images/yellowProtoImg.png"
                 alt="yellowBack"
                 loading="lazy"
+                data-aos="fade-left" data-aos-duration="1000"
               />
               <img
                 src="../images/CirclePinkMain.png"
                 alt="pinkBack"
                 loading="lazy"
+                data-aos="fade-right" data-aos-duration="1000"
               />
               <img src="../images/Cloud.png" alt="cloud" loading="lazy" />
               <img src="../images/ChartImg.png" alt="ChartImg" loading="lazy" />
@@ -1896,12 +1932,12 @@
         <div class="container">
           <div class="listToggle">
             <div class="leftToggle">
-              <h2>Technological maturity.</h2>
-              <p>
+              <h2 data-aos="fade-right" data-aos-duration="900">Technological maturity.</h2>
+              <p data-aos="fade-right" data-aos-duration="1000">
                 Collab is fast. Files are always up to date and ready for
                 production.
               </p>
-              <div class="bottomItems">
+              <div class="bottomItems" data-aos="fade-up" data-aos-duration="1000">
                 <div class="item pinkItem">
                   <i class="fa-solid fa-circle-check"></i>
                   <span>Collab Cloud</span>
@@ -1920,7 +1956,7 @@
                 </div>
               </div>
             </div>
-            <div class="rightToggle">
+            <div class="rightToggle" data-aos="fade-left" data-aos-duration="1000">
               <button class="accordion">
                 <div>
                   <img src="../images/icons/iconFeatureList3.svg" alt="" /> In
@@ -2155,8 +2191,8 @@
         <div class="container">
           <div class="clients">
             <div class="clientsTop">
-              <span>Clients</span>
-              <div class="clientsRightTexts">
+              <span data-aos="fade-right" data-aos-duration="800">Clients</span>
+              <div class="clientsRightTexts" data-aos="fade-left" data-aos-duration="900">
                 <h2>More than 68,219 designers use Collab.</h2>
                 <p>
                   Design anything from simple icons to fully featured websites
@@ -2167,16 +2203,18 @@
                 src="../images/circleGreyTollSec.png"
                 alt="greyBAckImg"
                 loading="lazy"
+                data-aos="fade-down-left" data-aos-duration="950"
               />
               <img
                 src="../images/circleGreyTollSec.png"
                 alt="greyLittle"
                 loading="lazy"
                 id="littleGreyImg"
+                data-aos="fade-up-right" data-aos-duration="1000"
               />
             </div>
             <div class="clientsBottom">
-              <div class="firstStep">
+              <div class="firstStep" data-aos="fade-left" data-aos-duration="900">
                 <div class="img">
                   <img
                     src="../images/icons/logowaves.svg"
@@ -2207,7 +2245,7 @@
                   />
                 </div>
               </div>
-              <div class="secondStep">
+              <div class="secondStep" data-aos="fade-right" data-aos-duration="950">
                 <div class="img">
                   <img
                     src="../images/icons/Rotashowlogo.svg"
@@ -2246,7 +2284,7 @@
         <div class="container">
           <div class="featureTable">
             <div class="tableTopContent">
-              <div class="leftStep">
+              <div class="leftStep" data-aos="fade-down-right" data-aos-duration="900">
                 <span>Effortless</span>
                 <h2>Go from ideation to design and done.</h2>
                 <p>
@@ -2254,7 +2292,7 @@
                   production-ready code.
                 </p>
               </div>
-              <div class="rightStep">
+              <div class="rightStep" data-aos="fade-up" data-aos-duration="950">
                 <img
                   src="../images/LampTable.png"
                   alt="LampTable"
@@ -2265,7 +2303,7 @@
             <div class="lineTable"></div>
             <div class="tableBottomContent">
               <div class="leftContent">
-                <div class="tableItem">
+                <div class="tableItem" data-aos="zoom-in" data-aos-duration="800">
                   <img
                     src="../images/CameraTable.png"
                     alt="CameraTable"
@@ -2284,7 +2322,7 @@
                   </div>
                 </div>
                 <div class="lineTable"></div>
-                <div class="tableItem">
+                <div class="tableItem" data-aos="zoom-in" data-aos-duration="850">
                   <img
                     src="../images/cupTable.png"
                     alt="CameraTable"
@@ -2304,7 +2342,7 @@
                 </div>
               </div>
               <div class="rightContent">
-                <div class="tableItem">
+                <div class="tableItem" data-aos="zoom-in" data-aos-duration="950">
                   <img
                     src="../images/ClockTable.png"
                     alt="CameraTable"
@@ -2322,7 +2360,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tableItem">
+                <div class="tableItem" data-aos="zoom-in" data-aos-duration="1000">
                   <img
                     src="../images/Chatbox _Table.png"
                     alt="CameraTable"
@@ -2350,17 +2388,18 @@
         <div class="container">
           <div class="showcase">
             <div class="showTopContent">
-              <span>Showcase</span>
-              <h2>Created with Collab<span>.</span></h2>
-              <p>
+              <span data-aos="fade-right" data-aos-duration="900">Showcase</span>
+              <h2 data-aos="fade-right" data-aos-duration="950">Created with Collab<span>.</span></h2>
+              <p data-aos="fade-left" data-aos-duration="1000">
                 See what designers around the world are building with Collab.
               </p>
-              <button>View More Projects</button>
+              <button data-aos="fade-up" data-aos-duration="1100">View More Projects</button>
             </div>
             <img
               src="../images/bcBlueShowcase.png"
               alt="bcBlueShowcase"
               loading="lazy"
+              data-aos="zoom-in" data-aos-duration="900"
             />
             <img
               src="../images/bcBlueShowcaseTabler.png"
@@ -2370,7 +2409,7 @@
           </div>
         </div>
         <div class="showBottomContent">
-          <img src="../images/ShowcaseImg.png" alt="showcase" loading="lazy" />
+          <img src="../images/ShowcaseImg.png" alt="showcase" loading="lazy" data-aos="zoom-out" data-aos-duration="900"/>
           <img
             src="../images/showcaseTablet.png"
             alt="showcaseTablet"
@@ -2383,15 +2422,15 @@
         <div class="Navcontainer">
           <div class="cta">
             <div class="topCta">
-              <h2>Ready to use the smartest design tool?</h2>
-              <p>
+              <h2 data-aos="fade-right" data-aos-duration="800">Ready to use the smartest design tool?</h2>
+              <p data-aos="fade-left" data-aos-duration="850">
                 We offer flexible pricing options for freelancing and design
                 teams.
               </p>
-              <button>Try free for 30 days</button>
+              <button data-aos="fade-down" data-aos-duration="900">Try free for 30 days</button>
             </div>
             <div class="bottomCta">
-              <img src="../images/3DAssets.png" alt="3DAssets" loading="lazy" />
+              <img src="../images/3DAssets.png" alt="3DAssets" loading="lazy" data-aos="fade-up" data-aos-duration="950"/>
               <img
                 src="../images/3DAssetsTable.png"
                 alt="3DAssetsTable"
@@ -2406,7 +2445,7 @@
         <div class="container">
           <div class="footerSection">
             <div class="topFooterSection">
-              <div class="logoFooter">
+              <div class="logoFooter" data-aos="fade-right" data-aos-duration="800">
                 <a href="#0">
                   <img
                     src="../images/icons/logoFooter.svg"
@@ -2414,7 +2453,7 @@
                     loading="lazy"
                 /></a>
               </div>
-              <div class="companyItems deskTopAccardion">
+              <div class="companyItems deskTopAccardion" data-aos="fade-down" data-aos-duration="900">
                 <ul>
                   <li class="nameLink">Company</li>
                   <li><a href="#0">About Us</a></li>
@@ -2423,7 +2462,7 @@
                   <li><a href="#0">Blog</a></li>
                 </ul>
               </div>
-              <div class="supportItems deskTopAccardion">
+              <div class="supportItems deskTopAccardion" data-aos="fade-up" data-aos-duration="1000">
                 <ul>
                   <li class="nameLink">Support</li>
                   <li><a href="./pages/contact.html">Contact Us</a></li>
@@ -2432,7 +2471,7 @@
                   <li><a href="#0">Sitemap</a></li>
                 </ul>
               </div>
-              <div class="communityItems deskTopAccardion">
+              <div class="communityItems deskTopAccardion" data-aos="fade-down" data-aos-duration="1100">
                 <ul>
                   <li class="nameLink">Community</li>
                   <li><a href="#0">Developers</a></li>
@@ -2441,7 +2480,7 @@
                   <li><a href="#0">UI8</a></li>
                 </ul>
               </div>
-              <div class="mobileFooter">
+              <div class="mobileFooter" data-aos="fade-left" data-aos-duration="900">
                 <button class="footerAcardion">
                   Company
                   <i class="fas fa-chevron-down"></i>
@@ -2481,13 +2520,13 @@
               </div>
             </div>
             <div class="bottomFooterSection">
-              <div class="leftBy">
+              <div class="leftBy" data-aos="fade-right" data-aos-duration="900">
                 <a href="https://ui8.net/"
                   ><img src="../images/icons/ui8.svg" alt="ui8" loading="lazy"
                 /></a>
                 <a href="#0">© 2020, UI8 LLC.</a>
               </div>
-              <div class="rightBy">
+              <div class="rightBy" data-aos="fade-left" data-aos-duration="900">
                 <a href="#navBarSection">
                   <img
                     src="../images/icons/scroll-horitontal1.svg"
@@ -2502,6 +2541,10 @@
         </div>
       </footer>
     </div>
-    <script src="../js/index.js" type="module"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>
